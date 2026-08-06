@@ -418,7 +418,7 @@
                   class="button button--primary"
                   type="submit"
                 >
-                  Open Email App
+                  Send Message
                 </button>
 
                 <a
@@ -638,62 +638,13 @@
   <script src="../assets/js/theme.js"></script>
   <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/main.js"></script>
-
-  <script>
-    (() => {
-      const form = document.getElementById("contact-email-form");
-
-      form?.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const name =
-          document.getElementById("contact-name")?.value.trim() || "";
-
-        const email =
-          document.getElementById("contact-email")?.value.trim() || "";
-
-        const app =
-          document.getElementById("contact-app")?.value || "NivAk Technologies";
-
-        const topic =
-          document.getElementById("contact-topic")?.value || "General";
-
-        const subjectInput =
-          document.getElementById("contact-subject")?.value.trim() || "";
-
-        const message =
-          document.getElementById("contact-message")?.value.trim() || "";
-
-        const subject =
-          subjectInput || `${app} - ${topic}`;
-
-        const bodyLines = [
-          `App / Project: ${app}`,
-          `Topic: ${topic}`,
-          name ? `Name: ${name}` : "",
-          email ? `Reply email: ${email}` : "",
-          "",
-          "Message:",
-          message,
-        ].filter((line, index, allLines) => {
-          if (line !== "") {
-            return true;
-          }
-
-          return allLines[index - 1] !== "";
-        });
-
-        const mailto =
-          "mailto:nivaktechnologies@outlook.com" +
-          `?subject=${encodeURIComponent(subject)}` +
-          `&body=${encodeURIComponent(bodyLines.join("\n"))}`;
-
-        window.location.href = mailto;
-      });
-    })();
-  </script>
+  <script
+    type="module"
+    src="../assets/js/firebase-contact.js"
+  ></script>
 </body>
 </html>
+
 
 
 
