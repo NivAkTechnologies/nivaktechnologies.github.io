@@ -614,6 +614,12 @@ html[data-theme="dark"] .site-header {
 
   box-shadow: 0 14px 34px rgba(11, 46, 99, 0.18);
 }
+.app-symbol--image {
+  display: block;
+  object-fit: cover;
+  padding: 0;
+  background: transparent;
+}
 
 .app-symbol--quickcalc {
   background:
@@ -891,3 +897,4 @@ html[data-theme="dark"] .site-header {
     display: none;
   }
 }
+
