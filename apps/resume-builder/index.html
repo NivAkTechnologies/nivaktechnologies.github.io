@@ -31,35 +31,7 @@
     <link rel="stylesheet" href="../../assets/css/app-page.css" />
 
     <style>
-      .resume-preview-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
-
-        padding: 18px;
-
-        border: 1px solid var(--color-border);
-        border-radius: 30px;
-
-        background: var(--color-surface);
-        box-shadow: var(--shadow-large);
-      }
-
-      .resume-preview-grid img {
-        width: 100%;
-
-        border: 1px solid var(--color-border);
-        border-radius: 18px;
-
-        box-shadow: var(--shadow-small);
-      }
-
-      .resume-preview-grid img:nth-child(2),
-      .resume-preview-grid img:nth-child(4) {
-        transform: translateY(20px);
-      }
-
-      .resume-status-note {
+.resume-status-note {
         margin-top: 18px;
 
         color: var(--color-text-muted);
@@ -69,22 +41,7 @@
       }
 
       @media (max-width: 580px) {
-        .resume-preview-grid {
-          gap: 10px;
-          padding: 12px;
-
-          border-radius: 22px;
-        }
-
-        .resume-preview-grid img {
-          border-radius: 13px;
-        }
-
-        .resume-preview-grid img:nth-child(2),
-        .resume-preview-grid img:nth-child(4) {
-          transform: translateY(10px);
-        }
-      }
+}
     </style>
   </head>
 
@@ -224,26 +181,32 @@
               </p>
             </div>
 
-            <div class="resume-preview-grid reveal reveal-delay-2">
-              <img
-                src="../../assets/images/apps/resume-builder/website-image-01.png"
-                alt="Resume Builder promotional image 1"
-              />
+            <div class="feature-graphic-frame reveal reveal-delay-2">
+              <div class="feature-image-grid">
+                <img
+                  class="feature-graphic"
+                  src="../../assets/images/apps/resume-builder/website-image-01.png"
+                  alt="Resume Builder promotional image 1"
+                >
 
-              <img
-                src="../../assets/images/apps/resume-builder/website-image-02.png"
-                alt="Resume Builder promotional image 2"
-              />
+                <img
+                  class="feature-graphic"
+                  src="../../assets/images/apps/resume-builder/website-image-02.png"
+                  alt="Resume Builder promotional image 2"
+                >
 
-              <img
-                src="../../assets/images/apps/resume-builder/website-image-03.png"
-                alt="Resume Builder promotional image 3"
-              />
+                <img
+                  class="feature-graphic"
+                  src="../../assets/images/apps/resume-builder/website-image-03.png"
+                  alt="Resume Builder promotional image 3"
+                >
 
-              <img
-                src="../../assets/images/apps/resume-builder/website-image-04.png"
-                alt="Resume Builder promotional image 4"
-              />
+                <img
+                  class="feature-graphic"
+                  src="../../assets/images/apps/resume-builder/website-image-04.png"
+                  alt="Resume Builder promotional image 4"
+                >
+              </div>
             </div>
           </div>
         </section>
@@ -663,5 +626,7 @@
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>
+
+
 
 
