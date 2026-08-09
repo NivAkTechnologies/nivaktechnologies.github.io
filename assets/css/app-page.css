@@ -69,12 +69,13 @@ html[data-theme="dark"] .app-hero::before {
     minmax(0, 0.9fr)
     minmax(380px, 1.1fr);
 
-  align-items: center;
+align-items: start;
   gap: clamp(52px, 7vw, 96px);
 }
 
 .app-hero-content {
   max-width: 690px;
+padding-top: 28px;
 }
 
 .app-identity {
@@ -191,6 +192,18 @@ html[data-theme="dark"] .app-hero::before {
   width: 100%;
 
   border-radius: 20px;
+}
+
+.feature-image-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 10px;
+}
+
+.feature-image-grid .feature-graphic {
+display: block;
+width: 100%;
+height: auto;
 }
 
 .product-section {
@@ -531,3 +544,4 @@ html[data-theme="dark"] .app-hero::before {
     grid-auto-columns: minmax(215px, 82vw);
   }
 }
+
