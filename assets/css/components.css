@@ -349,6 +349,10 @@ html[data-theme="dark"] .site-header {
   background: rgba(118, 131, 154, 0.13);
   color: var(--color-text-muted);
 }
+.status-badge--production {
+  background: rgba(22, 163, 74, 0.12);
+  color: #16a34a;
+}
 
 .site-footer {
   position: relative;
@@ -897,4 +901,5 @@ html[data-theme="dark"] .site-header {
     display: none;
   }
 }
+
 
