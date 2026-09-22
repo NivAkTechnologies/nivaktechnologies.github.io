@@ -336,3 +336,120 @@ p {
 
 
 
+
+/* =========================================================
+   NIVAK PREMIUM BRAND THEME
+   ========================================================= */
+
+:root {
+  /* Brand */
+  --color-primary-950: #071a38;
+  --color-primary-900: #0b2e63;
+  --color-primary-800: #123f80;
+  --color-primary-700: #1951a0;
+  --color-primary-600: #2466c2;
+  --color-primary-500: #3478db;
+  --color-primary-400: #4b8ef0;
+
+  --color-accent-700: #c6530b;
+  --color-accent-600: #df6815;
+  --color-accent-500: #f58220;
+  --color-accent-400: #ff9b46;
+
+  /* Premium light surfaces */
+  --color-background: #f5f8fc;
+  --color-background-soft: #eef3fa;
+
+  --color-surface: rgba(255, 255, 255, 0.84);
+  --color-surface-solid: #ffffff;
+  --color-surface-muted: #f0f4f9;
+
+  /* Typography */
+  --color-text: #152238;
+  --color-text-soft: #52627a;
+  --color-text-muted: #748198;
+
+  /* Borders */
+  --color-border: rgba(21, 34, 56, 0.10);
+
+  /* RGB helpers */
+  --rgb-primary: 52, 120, 219;
+  --rgb-primary-700: 25, 81, 160;
+  --rgb-primary-dark: 11, 46, 99;
+  --rgb-primary-deep: 7, 26, 56;
+
+  --rgb-accent: 245, 130, 32;
+
+  --rgb-text: 21, 34, 56;
+  --rgb-muted: 116, 129, 152;
+
+  --rgb-white: 255, 255, 255;
+  --rgb-black: 0, 0, 0;
+}
+
+html[data-theme="dark"] {
+  --color-background: #081426;
+  --color-background-soft: #0d1b30;
+
+  --color-surface: rgba(16, 30, 51, 0.86);
+  --color-surface-solid: #101e33;
+  --color-surface-muted: #162741;
+
+  --color-text: #f2f6fc;
+  --color-text-soft: #c1ccdc;
+  --color-text-muted: #91a0b6;
+
+  --color-border: rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================================================
+   GLOBAL NIVAK EYEBROW BADGE
+   ========================================================= */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  width: fit-content;
+
+  padding: 8px 13px;
+
+  border: 1px solid rgba(var(--rgb-primary), 0.22);
+  border-radius: var(--radius-pill);
+
+  background: rgba(var(--rgb-white), 0.68);
+
+  color: var(--color-primary-700);
+
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  backdrop-filter: blur(16px);
+}
+
+.eyebrow::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: var(--color-accent-500);
+
+  box-shadow:
+    0 0 0 4px rgba(var(--rgb-accent), 0.10);
+}
+
+html[data-theme="dark"] .eyebrow {
+  background: rgba(var(--rgb-white), 0.05);
+  border-color: rgba(var(--rgb-primary), 0.30);
+  color: #8fbdff;
+}
+
