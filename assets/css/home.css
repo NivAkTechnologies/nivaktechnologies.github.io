@@ -10,12 +10,12 @@
   background:
     linear-gradient(
       115deg,
-      rgba(52, 120, 219, 0.08),
+      rgba(var(--rgb-primary), 0.08),
       transparent 40%
     ),
     linear-gradient(
       245deg,
-      rgba(245, 130, 32, 0.09),
+      rgba(var(--rgb-accent), 0.09),
       transparent 42%
     );
 }
@@ -29,12 +29,12 @@
 
   background-image:
     linear-gradient(
-      rgba(21, 34, 56, 0.035) 1px,
+      rgba(var(--rgb-text), 0.035) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(21, 34, 56, 0.035) 1px,
+      rgba(var(--rgb-text), 0.035) 1px,
       transparent 1px
     );
 
@@ -43,7 +43,7 @@
   mask-image:
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.75),
+      rgba(var(--rgb-black), 0.75),
       transparent 92%
     );
 }
@@ -51,12 +51,12 @@
 html[data-theme="dark"] .hero::before {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.035) 1px,
+      rgba(var(--rgb-white), 0.035) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.035) 1px,
+      rgba(var(--rgb-white), 0.035) 1px,
       transparent 1px
     );
 }
@@ -146,13 +146,13 @@ html[data-theme="dark"] .hero::before {
   background:
     linear-gradient(
       150deg,
-      rgba(255, 255, 255, 0.96),
-      rgba(255, 255, 255, 0.74)
+      rgba(var(--rgb-white), 0.96),
+      rgba(var(--rgb-white), 0.74)
     );
 
   box-shadow:
-    0 42px 100px rgba(7, 26, 56, 0.19),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    0 42px 100px rgba(var(--rgb-primary-deep), 0.19),
+    inset 0 1px 0 rgba(var(--rgb-white), 0.8);
 
   transform:
     rotateY(-4deg)
@@ -168,8 +168,8 @@ html[data-theme="dark"] .hero-panel {
     );
 
   box-shadow:
-    0 42px 100px rgba(0, 0, 0, 0.42),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    0 42px 100px rgba(var(--rgb-black), 0.42),
+    inset 0 1px 0 rgba(var(--rgb-white), 0.06);
 }
 
 .hero-panel:hover {
@@ -205,7 +205,7 @@ html[data-theme="dark"] .hero-panel {
 .hero-panel-tags span {
   padding: 8px 12px;
 
-  border-color: rgba(52, 120, 219, 0.15);
+  border-color: rgba(var(--rgb-primary), 0.15);
 }
 
 .hero-orb {
@@ -229,8 +229,8 @@ html[data-theme="dark"] .hero-panel {
     linear-gradient(
       180deg,
       transparent,
-      rgba(52, 120, 219, 0.035) 18%,
-      rgba(245, 130, 32, 0.025) 82%,
+      rgba(var(--rgb-primary), 0.035) 18%,
+      rgba(var(--rgb-accent), 0.025) 82%,
       transparent
     );
 }
@@ -256,7 +256,7 @@ html[data-theme="dark"] .hero-panel {
   background:
     radial-gradient(
       circle at 92% 8%,
-      rgba(52, 120, 219, 0.12),
+      rgba(var(--rgb-primary), 0.12),
       transparent 34%
     ),
     var(--color-surface);
@@ -266,7 +266,7 @@ html[data-theme="dark"] .hero-panel {
   background:
     radial-gradient(
       circle at 92% 8%,
-      rgba(245, 130, 32, 0.12),
+      rgba(var(--rgb-accent), 0.12),
       transparent 34%
     ),
     var(--color-surface);
@@ -286,7 +286,7 @@ html[data-theme="dark"] .hero-panel {
   background:
     radial-gradient(
       circle at 92% 8%,
-      rgba(22, 131, 83, 0.12),
+      rgba(var(--rgb-success), 0.12),
       transparent 34%
     ),
     var(--color-surface);
@@ -316,9 +316,9 @@ html[data-theme="dark"] .hero-panel {
   background:
     linear-gradient(
       125deg,
-      rgba(52, 120, 219, 0.08),
-      rgba(255, 255, 255, 0.4) 46%,
-      rgba(245, 130, 32, 0.09)
+      rgba(var(--rgb-primary), 0.08),
+      rgba(var(--rgb-white), 0.4) 46%,
+      rgba(var(--rgb-accent), 0.09)
     );
 }
 
@@ -326,9 +326,9 @@ html[data-theme="dark"] .company-strip {
   background:
     linear-gradient(
       125deg,
-      rgba(52, 120, 219, 0.12),
+      rgba(var(--rgb-primary), 0.12),
       rgba(16, 30, 51, 0.72) 46%,
-      rgba(245, 130, 32, 0.1)
+      rgba(var(--rgb-accent), 0.1)
     );
 }
 
@@ -396,7 +396,7 @@ html[data-theme="dark"] .company-strip {
   background:
     linear-gradient(
       120deg,
-      #0b2e63,
+      var(--color-primary-900),
       #174b96 52%,
       #2864bd
     );
@@ -412,13 +412,13 @@ html[data-theme="dark"] .company-strip {
   background:
     radial-gradient(
       circle at 90% 10%,
-      rgba(255, 255, 255, 0.18),
+      rgba(var(--rgb-white), 0.18),
       transparent 34%
     ),
     linear-gradient(
       120deg,
       transparent,
-      rgba(245, 130, 32, 0.1)
+      rgba(var(--rgb-accent), 0.1)
     );
 }
 
@@ -503,3 +503,6 @@ html[data-theme="dark"] .company-strip {
     min-height: auto;
   }
 }
+
+
+

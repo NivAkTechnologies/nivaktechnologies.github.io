@@ -1,6 +1,22 @@
 ﻿:root {
   color-scheme: light;
 
+  /* Global theme RGB tokens */
+  --rgb-primary: 52, 120, 219;
+  --rgb-primary-dark: 11, 46, 99;
+  --rgb-primary-deep: 7, 26, 56;
+
+  --rgb-accent: 245, 130, 32;
+
+  --rgb-text: 21, 34, 56;
+  --rgb-muted: 118, 131, 154;
+
+  --rgb-success: 22, 131, 83;
+  --rgb-warning: 217, 119, 6;
+
+  --rgb-white: 255, 255, 255;
+  --rgb-black: 0, 0, 0;
+
   --color-primary-950: #071a38;
   --color-primary-900: #0b2e63;
   --color-primary-800: #123f80;
@@ -15,27 +31,27 @@
 
   --color-background: #f7f9fc;
   --color-background-soft: #eef3fa;
-  --color-surface: rgba(255, 255, 255, 0.82);
+  --color-surface: rgba(var(--rgb-white), 0.82);
   --color-surface-solid: #ffffff;
   --color-surface-muted: #edf2f8;
 
   --color-text: #152238;
   --color-text-soft: #526078;
   --color-text-muted: #76839a;
-  --color-border: rgba(21, 34, 56, 0.11);
+  --color-border: rgba(var(--rgb-text), 0.11);
 
   --color-success: #168353;
   --color-warning: #d97706;
   --color-danger: #c93d3d;
 
   --shadow-small:
-    0 8px 24px rgba(11, 46, 99, 0.08);
+    0 8px 24px rgba(var(--rgb-primary-dark), 0.08);
 
   --shadow-medium:
-    0 18px 50px rgba(11, 46, 99, 0.12);
+    0 18px 50px rgba(var(--rgb-primary-dark), 0.12);
 
   --shadow-large:
-    0 30px 80px rgba(7, 26, 56, 0.17);
+    0 30px 80px rgba(var(--rgb-primary-deep), 0.17);
 
   --radius-small: 12px;
   --radius-medium: 18px;
@@ -62,16 +78,16 @@ html[data-theme="dark"] {
   --color-text: #f4f7fb;
   --color-text-soft: #bdc8d8;
   --color-text-muted: #8998ae;
-  --color-border: rgba(255, 255, 255, 0.11);
+  --color-border: rgba(var(--rgb-white), 0.11);
 
   --shadow-small:
-    0 8px 24px rgba(0, 0, 0, 0.22);
+    0 8px 24px rgba(var(--rgb-black), 0.22);
 
   --shadow-medium:
-    0 18px 50px rgba(0, 0, 0, 0.28);
+    0 18px 50px rgba(var(--rgb-black), 0.28);
 
   --shadow-large:
-    0 30px 80px rgba(0, 0, 0, 0.36);
+    0 30px 80px rgba(var(--rgb-black), 0.36);
 }
 
 *,
@@ -93,12 +109,12 @@ body {
   background:
     radial-gradient(
       circle at 12% 10%,
-      rgba(52, 120, 219, 0.13),
+      rgba(var(--rgb-primary), 0.13),
       transparent 34%
     ),
     radial-gradient(
       circle at 88% 16%,
-      rgba(245, 130, 32, 0.12),
+      rgba(var(--rgb-accent), 0.12),
       transparent 30%
     ),
     var(--color-background);
@@ -185,7 +201,7 @@ p {
 }
 
 ::selection {
-  background: rgba(245, 130, 32, 0.28);
+  background: rgba(var(--rgb-accent), 0.28);
   color: var(--color-text);
 }
 
@@ -228,10 +244,10 @@ p {
   margin-bottom: 14px;
   padding: 7px 12px;
 
-  border: 1px solid rgba(245, 130, 32, 0.28);
+  border: 1px solid rgba(var(--rgb-accent), 0.28);
   border-radius: var(--radius-pill);
 
-  background: rgba(245, 130, 32, 0.09);
+  background: rgba(var(--rgb-accent), 0.09);
   color: var(--color-accent-600);
 
   font-size: 0.78rem;
@@ -305,3 +321,7 @@ p {
 .skip-link:focus {
   transform: translateY(0);
 }
+
+
+
+

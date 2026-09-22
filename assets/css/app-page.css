@@ -12,12 +12,12 @@
   background:
     radial-gradient(
       circle at 10% 15%,
-      rgba(52, 120, 219, 0.15),
+      rgba(var(--rgb-primary), 0.15),
       transparent 35%
     ),
     radial-gradient(
       circle at 92% 20%,
-      rgba(245, 130, 32, 0.12),
+      rgba(var(--rgb-accent), 0.12),
       transparent 32%
     );
 }
@@ -31,12 +31,12 @@
 
   background-image:
     linear-gradient(
-      rgba(21, 34, 56, 0.03) 1px,
+      rgba(var(--rgb-text), 0.03) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(21, 34, 56, 0.03) 1px,
+      rgba(var(--rgb-text), 0.03) 1px,
       transparent 1px
     );
 
@@ -45,7 +45,7 @@
   mask-image:
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.7),
+      rgba(var(--rgb-black), 0.7),
       transparent
     );
 }
@@ -53,12 +53,12 @@
 html[data-theme="dark"] .app-hero::before {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.035) 1px,
+      rgba(var(--rgb-white), 0.035) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.035) 1px,
+      rgba(var(--rgb-white), 0.035) 1px,
       transparent 1px
     );
 }
@@ -95,7 +95,7 @@ padding-top: 28px;
   border-radius: 24px;
 
   box-shadow:
-    0 22px 48px rgba(11, 46, 99, 0.22);
+    0 22px 48px rgba(var(--rgb-primary-dark), 0.22);
 }
 
 .app-identity-meta {
@@ -180,8 +180,8 @@ padding-top: 28px;
   background:
     linear-gradient(
       110deg,
-      rgba(52, 120, 219, 0.34),
-      rgba(245, 130, 32, 0.26)
+      rgba(var(--rgb-primary), 0.34),
+      rgba(var(--rgb-accent), 0.26)
     );
 
   filter: blur(48px);
@@ -215,7 +215,7 @@ height: auto;
     linear-gradient(
       180deg,
       transparent,
-      rgba(52, 120, 219, 0.035),
+      rgba(var(--rgb-primary), 0.035),
       transparent
     );
 }
@@ -257,8 +257,8 @@ height: auto;
   background:
     linear-gradient(
       145deg,
-      rgba(52, 120, 219, 0.16),
-      rgba(245, 130, 32, 0.13)
+      rgba(var(--rgb-primary), 0.16),
+      rgba(var(--rgb-accent), 0.13)
     );
 
   color: var(--color-primary-600);
@@ -350,8 +350,8 @@ height: auto;
   background:
     linear-gradient(
       135deg,
-      rgba(52, 120, 219, 0.07),
-      rgba(245, 130, 32, 0.06)
+      rgba(var(--rgb-primary), 0.07),
+      rgba(var(--rgb-accent), 0.06)
     );
 }
 
@@ -453,7 +453,7 @@ height: auto;
   background:
     linear-gradient(
       120deg,
-      #0b2e63,
+      var(--color-primary-900),
       #1851a0
     );
 
@@ -480,8 +480,8 @@ height: auto;
 }
 
 .testing-panel .button--secondary {
-  border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(var(--rgb-white), 0.25);
+  background: rgba(var(--rgb-white), 0.1);
   color: #ffffff;
 }
 
@@ -544,4 +544,7 @@ height: auto;
     grid-auto-columns: minmax(215px, 82vw);
   }
 }
+
+
+
 
