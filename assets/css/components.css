@@ -942,3 +942,231 @@ html[data-theme="dark"] .site-header {
 
 
 
+
+
+
+/* =========================================================
+   FINAL GLOBAL FOOTER
+   ========================================================= */
+
+.site-footer {
+  padding-top: 54px;
+  padding-bottom: 24px;
+}
+
+.site-footer .footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 360px)
+    160px
+    240px;
+
+  justify-content: space-between;
+  align-items: start;
+
+  width: 100%;
+
+  column-gap: 80px;
+  row-gap: 32px;
+}
+
+.site-footer .footer-brand {
+  max-width: 360px;
+}
+
+.site-footer .footer-heading {
+  margin-bottom: 16px;
+}
+
+.site-footer .footer-links {
+  gap: 12px;
+}
+
+.site-footer .footer-description {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.site-footer .footer-bottom {
+  margin-top: 38px;
+  padding-top: 20px;
+}
+
+/* Company */
+.site-footer .footer-grid > div:nth-child(2) {
+  justify-self: center;
+}
+
+/* Legal */
+.site-footer .footer-grid > div:nth-child(3) {
+  justify-self: end;
+}
+
+
+/* Tablet */
+@media (max-width: 820px) {
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 56px;
+  }
+
+  .site-footer .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .site-footer .footer-grid > div:nth-child(2),
+  .site-footer .footer-grid > div:nth-child(3) {
+    justify-self: start;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 560px) {
+  .site-footer {
+    padding-top: 42px;
+  }
+
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .site-footer .footer-brand {
+    grid-column: auto;
+  }
+
+  .site-footer .footer-grid > div:nth-child(2),
+  .site-footer .footer-grid > div:nth-child(3) {
+    justify-self: start;
+  }
+
+  .site-footer .footer-bottom {
+    margin-top: 28px;
+  }
+}
+
+
+/* =========================================================
+   STANDARD GLOBAL FOOTER
+   ========================================================= */
+
+.site-footer {
+  padding-top: 54px;
+  padding-bottom: 24px;
+}
+
+.site-footer .footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 1.4fr)
+    minmax(140px, 0.55fr)
+    minmax(140px, 0.55fr)
+    minmax(210px, 0.75fr);
+
+  gap: clamp(46px, 6vw, 92px);
+
+  align-items: start;
+}
+
+.site-footer .footer-brand {
+  max-width: 360px;
+}
+
+.site-footer .footer-heading {
+  margin-bottom: 15px;
+}
+
+.site-footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.site-footer .footer-description {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.site-footer .footer-bottom {
+  margin-top: 38px;
+  padding-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 38px 54px;
+  }
+
+  .site-footer .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 520px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .site-footer {
+    padding-top: 42px;
+  }
+
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .site-footer .footer-brand {
+    grid-column: auto;
+  }
+}
+
+
+/* =========================================================
+   FOOTER - EVEN COLUMN SPACING
+   ========================================================= */
+
+.site-footer .footer-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px, 1.5fr)
+    repeat(3, minmax(150px, 1fr));
+
+  column-gap: 56px;
+  row-gap: 32px;
+
+  align-items: start;
+}
+
+/* Keep every navigation column aligned the same */
+.site-footer .footer-grid > div:nth-child(2),
+.site-footer .footer-grid > div:nth-child(3),
+.site-footer .footer-grid > div:nth-child(4) {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  justify-self: start;
+}
+
+@media (max-width: 900px) {
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 52px;
+  }
+
+  .site-footer .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-footer .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+

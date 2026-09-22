@@ -428,19 +428,7 @@ html[data-theme="dark"] .company-strip {
   letter-spacing: -0.045em;
 }
 
-.site-footer {
-  margin-top: 24px;
-}
 
-.footer-grid {
-  gap: 58px;
-}
-
-.footer-description {
-  margin-top: 22px;
-
-  line-height: 1.75;
-}
 
 @media (max-width: 1000px) {
   .hero {
@@ -2134,24 +2122,7 @@ html[data-theme="dark"] .premium-hero h1 {
 }
 
 
-/* Cleaner footer */
-.site-footer {
-  background:
-    linear-gradient(
-      180deg,
-      #f7f9fc 0%,
-      #edf3fa 100%
-    );
-}
 
-html[data-theme="dark"] .site-footer {
-  background:
-    linear-gradient(
-      180deg,
-      #0d1b30 0%,
-      #081426 100%
-    );
-}
 
 
 /* =========================================================
@@ -3326,4 +3297,62 @@ html[data-theme="dark"] .technology-panel {
   box-shadow:
     0 6px 18px rgba(var(--rgb-primary-deep), 0.08);
 }
+
+
+/* =========================================================
+   APPS PAGE SPACING FIX
+   ========================================================= */
+
+/* Reduce the large Apps-page hero height */
+.apps-directory-hero {
+  padding-top: 72px;
+  padding-bottom: 54px;
+  min-height: auto;
+}
+
+/* Keep hero content compact */
+.apps-directory-hero h1 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.apps-directory-hero p {
+  margin-bottom: 0;
+}
+
+.apps-directory-stats {
+  margin-top: 28px;
+}
+
+/* Pull the products section closer to the hero */
+.apps-directory-hero + #apps {
+  padding-top: 58px;
+}
+
+/* Reduce oversized intro spacing inside products section */
+#apps .section-heading {
+  margin-bottom: 38px;
+}
+
+#apps .section-heading h2 {
+  max-width: 760px;
+  margin-bottom: 18px;
+}
+
+#apps .section-heading p {
+  max-width: 720px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .apps-directory-hero {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  .apps-directory-hero + #apps {
+    padding-top: 42px;
+  }
+}
+
 

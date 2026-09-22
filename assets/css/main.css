@@ -453,3 +453,68 @@ html[data-theme="dark"] .eyebrow {
   color: #8fbdff;
 }
 
+
+/* =========================================================
+   GLOBAL PAGE SPACING SYSTEM
+   ========================================================= */
+
+:root {
+  --section-space: clamp(60px, 6vw, 88px);
+  --section-space-compact: clamp(40px, 4.5vw, 64px);
+  --hero-space-top: clamp(54px, 6vw, 82px);
+  --hero-space-bottom: clamp(46px, 5vw, 70px);
+}
+
+/* Standard content sections */
+.section {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+/* Smaller sections */
+.section--compact {
+  padding-top: var(--section-space-compact);
+  padding-bottom: var(--section-space-compact);
+}
+
+/* Consistent page heroes */
+.about-hero,
+.contact-hero,
+.support-hero,
+.legal-hero,
+.app-hero,
+.apps-directory-hero {
+  min-height: auto;
+
+  padding-top: var(--hero-space-top);
+  padding-bottom: var(--hero-space-bottom);
+}
+
+/* Reduce oversized heading gaps */
+.section-heading {
+  margin-bottom: 36px;
+}
+
+.section-heading h2 {
+  margin-bottom: 16px;
+}
+
+.section-heading p {
+  margin-bottom: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 640px) {
+  :root {
+    --section-space: 48px;
+    --section-space-compact: 34px;
+    --hero-space-top: 42px;
+    --hero-space-bottom: 38px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+}
+
