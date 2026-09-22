@@ -756,7 +756,7 @@ html[data-theme="dark"] .site-header {
     linear-gradient(
       135deg,
       rgba(var(--rgb-primary-dark), 0.96),
-      rgba(25, 81, 160, 0.94)
+      rgba(var(--rgb-primary-700), 0.94)
     );
 
   box-shadow: var(--shadow-large);
@@ -937,6 +937,7 @@ html[data-theme="dark"] .site-header {
   border-color: var(--color-primary-600);
   box-shadow: 0 8px 22px rgba(var(--rgb-primary), 0.13);
 }
+
 
 
 

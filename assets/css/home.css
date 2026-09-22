@@ -84,7 +84,7 @@ html[data-theme="dark"] .hero::before {
     linear-gradient(
       100deg,
       var(--color-primary-600) 4%,
-      #6574bd 48%,
+      var(--color-hero-mid) 48%,
       var(--color-accent-500) 96%
     );
 }
@@ -163,8 +163,8 @@ html[data-theme="dark"] .hero-panel {
   background:
     linear-gradient(
       150deg,
-      rgba(22, 39, 65, 0.98),
-      rgba(12, 25, 43, 0.88)
+      rgba(var(--rgb-dark-surface-1), 0.98),
+      rgba(var(--rgb-dark-surface-2), 0.88)
     );
 
   box-shadow:
@@ -327,7 +327,7 @@ html[data-theme="dark"] .company-strip {
     linear-gradient(
       125deg,
       rgba(var(--rgb-primary), 0.12),
-      rgba(16, 30, 51, 0.72) 46%,
+      rgba(var(--rgb-dark-surface-3), 0.72) 46%,
       rgba(var(--rgb-accent), 0.1)
     );
 }
@@ -397,8 +397,8 @@ html[data-theme="dark"] .company-strip {
     linear-gradient(
       120deg,
       var(--color-primary-900),
-      #174b96 52%,
-      #2864bd
+      var(--color-primary-650) 52%,
+      var(--color-primary-550)
     );
 }
 
@@ -503,6 +503,7 @@ html[data-theme="dark"] .company-strip {
     min-height: auto;
   }
 }
+
 
 
 

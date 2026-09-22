@@ -454,7 +454,7 @@ height: auto;
     linear-gradient(
       120deg,
       var(--color-primary-900),
-      #1851a0
+      var(--color-primary-750)
     );
 
   box-shadow: var(--shadow-large);
@@ -544,6 +544,7 @@ height: auto;
     grid-auto-columns: minmax(215px, 82vw);
   }
 }
+
 
 
 

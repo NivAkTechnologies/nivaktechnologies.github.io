@@ -263,7 +263,7 @@ html[data-theme="dark"] .support-hero::before {
     linear-gradient(
       120deg,
       var(--color-primary-900),
-      #1851a0
+      var(--color-primary-750)
     );
 
   box-shadow: var(--shadow-large);
@@ -346,6 +346,7 @@ html[data-theme="dark"] .support-hero::before {
     padding: 28px;
   }
 }
+
 
 
 
