@@ -10,12 +10,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDM52_dAWmORw3Z765PvmFA9JnJE6tkL90",
-  authDomain: "resume-builder-nivak.firebaseapp.com",
-  projectId: "resume-builder-nivak",
-  storageBucket: "resume-builder-nivak.firebasestorage.app",
-  messagingSenderId: "213872036572",
-  appId: "1:213872036572:web:5a1c95cc86b74e94bcc219",
+  apiKey: "AIzaSyBjFB4acVLJBCxIfiiDINB_Grn-RenNnJo",
+  authDomain: "nivak-technologies-website.firebaseapp.com",
+  projectId: "nivak-technologies-website",
+  storageBucket: "nivak-technologies-website.firebasestorage.app",
+  messagingSenderId: "715215788586",
+  appId: "1:715215788586:web:6d904ee80912b667fdc153",
 };
 
 const app = initializeApp(firebaseConfig);
@@ -121,4 +121,5 @@ form?.addEventListener("submit", async (event) => {
     setSubmitting(false);
   }
 });
+
 
