@@ -1605,3 +1605,125 @@ main > .section--brand-dark > .container,
 }
 
 
+
+/* Apps & Games page spacing */
+
+.apps-page .page-hero {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.apps-page .page-hero__content {
+  max-width: 760px;
+}
+
+.apps-page .page-hero + .section {
+  padding-top: 42px;
+}
+
+.apps-page .section-heading--split {
+  margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   APPS PAGE — SECTION SPACING POLISH
+   ========================================================= */
+
+/* Product catalog -> Our Approach */
+.apps-page .products-catalog-grid {
+  margin-bottom: 0;
+}
+
+.apps-page .section:has(.products-catalog-grid) {
+  padding-bottom: 54px;
+}
+
+/* Our Approach section */
+.apps-page .section--brand-dark {
+  padding-top: 0;
+  padding-bottom: 54px;
+}
+
+/* Our Approach panel itself */
+.apps-page .section--brand-dark > .container {
+  margin-top: 0;
+}
+
+/* CTA section */
+.apps-page .section--brand-dark + .section {
+  padding-top: 0;
+  padding-bottom: 54px;
+}
+
+/* Footer should follow CTA naturally */
+.apps-page .cta-panel {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   HOME — VERTICAL RHYTHM
+   Spacing only. Do not alter locked visual design.
+   ========================================================= */
+
+.home-page .hero {
+  padding-bottom: 58px;
+}
+
+.home-page main > .section {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+/* First section immediately after hero */
+.home-page .hero + .section {
+  padding-top: 42px;
+}
+
+/* Keep headings close to their content */
+.home-page .section-heading {
+  margin-bottom: 28px;
+}
+
+/* Dark quality panel */
+.home-page main > .section--brand-dark {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+/* Avoid extra space around CTA/panel containers */
+.home-page .section--brand-dark > .container,
+.home-page .cta-panel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .hero {
+    padding-bottom: 48px;
+  }
+
+  .home-page main > .section,
+  .home-page main > .section--brand-dark {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .home-page .hero + .section {
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero {
+    padding-bottom: 40px;
+  }
+
+  .home-page main > .section,
+  .home-page main > .section--brand-dark {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+

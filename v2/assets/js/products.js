@@ -1,7 +1,7 @@
-﻿"use strict";
+"use strict";
 
 /*
- * NivAk Technologies — Central Product Catalog
+ * NivAk Technologies � Central Product Catalog
  *
  * Add or update products here.
  * Home and Apps & Games pages can reuse this same data.
@@ -57,7 +57,8 @@ window.NIVAK_PRODUCTS = [
     icon: "assets/images/apps/quick-play.png",
     description:
       "A collection of quick mobile mini-games designed for simple and accessible entertainment.",
-    playStore: ""
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.nivaktechnologies.quickplay"
   },
 
   {
@@ -111,3 +112,4 @@ window.NIVAK_PRODUCT_STATUS = {
     className: "badge--development"
   }
 };
+

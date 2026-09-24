@@ -309,3 +309,82 @@
   }
 }
 
+
+/* Apps & Games catalog */
+
+@media (max-width: 900px) {
+  .product-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .products-catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .product-summary {
+    gap: 10px;
+  }
+
+  .product-summary__item {
+    min-height: 96px;
+    padding: 16px 10px;
+  }
+
+  .products-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-product-card {
+    min-height: 0;
+  }
+
+  .product-filters {
+    gap: 8px;
+  }
+
+  .product-filter {
+    padding: 8px 13px;
+    font-size: .8rem;
+  }
+}
+
+
+/* Services page responsive */
+
+@media (max-width: 900px) {
+  .services-catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-page main > .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-hero__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .services-hero__actions .button {
+    width: 100%;
+  }
+
+  .service-detail-card {
+    min-height: 0;
+  }
+
+  .services-page main > .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+

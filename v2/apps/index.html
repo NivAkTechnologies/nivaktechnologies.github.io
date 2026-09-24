@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apps & Games | NivAk Technologies</title>
+  <meta name="description" content="Explore mobile apps and games developed by NivAk Technologies, including released products and projects currently in development.">
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body class="apps-page">
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="site-brand" href="../" aria-label="NivAk Technologies home">
+      <img
+        class="site-brand__logo"
+        src="../assets/images/nivak-logo.png"
+        alt=""
+      >
+
+      <span class="site-brand__text">
+        <span class="site-brand__name">NivAk Technologies</span>
+        <span class="site-brand__sub">Digital Products & Solutions</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="../">Home</a>
+      <a class="nav-link is-active" href="./">Apps & Games</a>
+      <a class="nav-link" href="../services/">Services</a>
+      <a class="nav-link" href="../offers/">Offers</a>
+        <a class="nav-link" href="../faq/">FAQ</a>
+      <a class="nav-link" href="../about/">About</a>
+      <a class="nav-link" href="../support/">Support</a>
+      <a class="nav-link" href="../contact/">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch theme"
+        title="Change theme"
+      >
+        ?
+      </button>
+
+      <a class="button button--accent button--small header-cta" href="../contact/">
+        Work With Us
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ?
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <div class="page-hero__content">
+        <span class="eyebrow">NivAk Product Portfolio</span>
+
+        <h1>Apps & Games</h1>
+
+        <p>
+          Explore released apps, mobile games and new products currently being developed by NivAk Technologies.
+        </p>
+
+        <div class="apps-hero-stats">
+          <span><strong>7</strong> Products</span>
+          <span><strong>4</strong> Available Now</span>
+          <span>Apps & Games</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCT CATALOG -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-heading section-heading--split">
+        <div>
+          <span class="eyebrow">Our Products</span>
+          <h2>Explore the NivAk portfolio.</h2>
+        </div>
+
+        <p>
+          One growing collection of utility apps, productivity tools,
+          puzzle games and interactive mobile experiences.
+        </p>
+      </div>
+<!-- FILTERS -->
+      <div class="product-filters" aria-label="Filter products">
+
+        <button
+          class="product-filter is-active"
+          type="button"
+          data-product-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="product-filter"
+          type="button"
+          data-product-filter="production"
+        >
+          Available
+        </button>
+
+        <button
+          class="product-filter"
+          type="button"
+          data-product-filter="nearly-complete"
+        >
+          Nearly Complete
+        </button>
+
+        <button
+          class="product-filter"
+          type="button"
+          data-product-filter="development"
+        >
+          In Development
+        </button>
+
+      </div>
+
+
+      <!-- PRODUCTS ARE RENDERED FROM products.js -->
+      <div
+        class="products-catalog-grid"
+        id="products-catalog"
+        aria-live="polite"
+      ></div>
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCT PHILOSOPHY -->
+  <section class="section section--brand-dark">
+    <div class="container">
+
+      <div class="section-heading section-heading--light">
+        <span class="eyebrow">Our Approach</span>
+
+        <h2>
+          Products designed for useful, enjoyable digital experiences.
+        </h2>
+
+        <p>
+          We focus on clear interfaces, dependable functionality and
+          continuous improvement as our portfolio grows.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <article class="feature-item">
+          <h3>Purposeful</h3>
+          <p>
+            Each product starts with a clear use case or gameplay experience.
+          </p>
+        </article>
+
+        <article class="feature-item">
+          <h3>User Focused</h3>
+          <p>
+            Interfaces are designed around clarity, accessibility and
+            straightforward interaction.
+          </p>
+        </article>
+
+        <article class="feature-item">
+          <h3>Continuously Improved</h3>
+          <p>
+            Released products can continue evolving through fixes,
+            improvements and new features.
+          </p>
+        </article>
+
+        <article class="feature-item">
+          <h3>Growing Portfolio</h3>
+          <p>
+            New apps and games are being developed as the NivAk product
+            portfolio expands.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+
+      <div class="cta-panel">
+        <div>
+          <span class="eyebrow">Development Services</span>
+
+          <h2>Have an app idea or an existing project?</h2>
+
+          <p>
+            Explore our development services or contact NivAk Technologies
+            to discuss your project.
+          </p>
+        </div>
+
+        <div class="cta-panel__actions">
+          <a class="button button--accent" href="../services/">
+            Explore Services
+          </a>
+
+          <a class="button button--outline-light" href="../contact/">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-main">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <a class="site-brand" href="../">
+          <img
+            class="site-brand__logo"
+            src="../assets/images/nivak-logo.png"
+            alt=""
+          >
+
+          <span class="site-brand__text">
+            <span class="site-brand__name">NivAk Technologies</span>
+            <span class="site-brand__sub">Digital Products & Solutions</span>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          Building smart mobile apps, games and digital solutions
+          for a growing connected world.
+        </p>
+
+      </div>
+
+
+      <div>
+        <h2 class="footer-heading">Explore</h2>
+
+        <ul class="footer-links">
+          <li><a class="footer-link" href="./">Apps & Games</a></li>
+          <li><a class="footer-link" href="../services/">Services</a></li>
+          <li><a class="footer-link" href="../offers/">Offers</a></li>
+          <li><a class="footer-link" href="../about/">About</a></li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h2 class="footer-heading">Help</h2>
+
+        <ul class="footer-links">
+          <li><a class="footer-link" href="../support/">Support</a></li>
+          <li><a class="footer-link" href="../contact/">Contact</a></li>
+          <li><a class="footer-link" href="../privacy/">Privacy</a></li>
+          <li><a class="footer-link" href="../terms/">Terms</a></li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="mailto:contact@nivak-technologies.com"
+            >
+              Company & Business
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="footer-link"
+              href="mailto:support@nivak-technologies.com"
+            >
+              Customer Support
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <p>
+      © <span data-current-year></span> NivAk Technologies.
+      All rights reserved.
+    </p>
+
+    <div class="footer-contact">
+
+      <a href="mailto:contact@nivak-technologies.com">
+        contact@nivak-technologies.com
+      </a>
+
+      <a href="mailto:support@nivak-technologies.com">
+        support@nivak-technologies.com
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="../assets/js/products.js"></script>
+
+<script>
+(function () {
+  "use strict";
+
+  const products = window.NIVAK_PRODUCTS || [];
+  const statusMap = window.NIVAK_PRODUCT_STATUS || {};
+  const catalog = document.getElementById("products-catalog");
+  const filters = document.querySelectorAll("[data-product-filter]");
+
+  const iconPath = (path) => "../" + path;
+
+  function createProductCard(product) {
+    const status =
+      statusMap[product.status] || {
+        label: product.status,
+        className: ""
+      };
+
+    const article = document.createElement("article");
+    article.className = "product-card catalog-product-card";
+    article.dataset.status = product.status;
+
+    const action = product.playStore
+      ? `
+        <a
+          class="btn btn--primary btn--small"
+          href="${product.playStore}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on Google Play
+        </a>
+      `
+      : `
+        <span class="catalog-product-card__availability">
+          ${status.label}
+        </span>
+      `;
+
+    article.innerHTML = `
+      <div class="catalog-product-card__top">
+        <img
+          class="catalog-product-card__icon"
+          src="${iconPath(product.icon)}"
+          alt="${product.name} app icon"
+          loading="lazy"
+        >
+
+        <span class="badge ${status.className}">
+          ${status.label}
+        </span>
+      </div>
+
+      <div class="catalog-product-card__content">
+        <span class="catalog-product-card__type">
+          ${product.type}
+        </span>
+
+        <h3>${product.name}</h3>
+
+        <p>${product.description}</p>
+      </div>
+
+      <div class="catalog-product-card__footer">
+        ${action}
+      </div>
+    `;
+
+    return article;
+  }
+
+  function renderProducts(filter = "all") {
+    catalog.innerHTML = "";
+
+    const visibleProducts =
+      filter === "all"
+        ? products
+        : products.filter(product => product.status === filter);
+
+    visibleProducts.forEach(product => {
+      catalog.appendChild(createProductCard(product));
+    });
+  }
+
+  filters.forEach(button => {
+    button.addEventListener("click", () => {
+      filters.forEach(item => item.classList.remove("is-active"));
+      button.classList.add("is-active");
+      renderProducts(button.dataset.productFilter);
+    });
+  });
+
+  renderProducts();
+})();
+</script>
+
+<script src="../assets/js/site.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

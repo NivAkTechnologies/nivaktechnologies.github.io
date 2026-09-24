@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | NivAk Technologies</title>
+
+  <meta
+    name="description"
+    content="Contact NivAk Technologies for Android, web, mobile app, backend, Firebase, AdMob, game development and digital product services."
+  >
+
+  <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body class="contact-page">
+
+<header class="site-header">
+    <div class="container header-inner">
+
+      <a class="site-brand" href="../" aria-label="NivAk Technologies home">
+        <img
+          class="site-brand__logo"
+          src="../assets/images/nivak-logo.png"
+          alt=""
+        >
+
+        <span class="site-brand__text">
+          <span class="site-brand__name">NivAk Technologies</span>
+          <span class="site-brand__sub">Digital Products & Solutions</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="../">Home</a>
+        <a class="nav-link" href="../apps/">Apps & Games</a>
+        <a class="nav-link" href="../services/">Services</a>
+        <a class="nav-link" href="../offers/">Offers</a>
+        <a class="nav-link" href="../faq/">FAQ</a>
+        <a class="nav-link" href="../about/">About</a>
+        <a class="nav-link" href="../support/">Support</a>
+        <a class="nav-link is-active" href="./">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch theme"
+          title="Change theme"
+        >
+          ?
+        </button>
+
+        <a class="button button--accent button--small header-cta" href="./">
+          Work With Us
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ?
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+
+
+<main>
+
+  <section class="page-hero contact-hero">
+    <div class="container">
+
+      <div class="page-hero__content">
+
+        <span class="eyebrow" id="contactEyebrow">
+          Contact NivAk
+        </span>
+
+        <h1 id="contactTitle">
+          How can we help?
+        </h1>
+
+        <p id="contactIntro">
+          Contact NivAk Technologies about a project, service,
+          product or general business enquiry.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section contact-section">
+    <div class="container">
+
+      <div class="contact-layout">
+
+        <!-- CONTACT INFORMATION -->
+        <aside class="contact-info">
+
+          <span class="eyebrow">Get in Touch</span>
+
+          <h2>
+            Start a conversation with NivAk.
+          </h2>
+
+          <p>
+            Tell us what you need and provide the important project
+            details. We will use your information to understand the
+            request and respond appropriately.
+          </p>
+
+          <div class="contact-info-card">
+
+            <span class="contact-info-label">
+              Company &amp; Business
+            </span>
+
+            <a href="mailto:contact@nivak-technologies.com">
+              contact@nivak-technologies.com
+            </a>
+
+          </div>
+
+          <div class="contact-info-card">
+
+            <span class="contact-info-label">
+              Customer Support
+            </span>
+
+            <a href="mailto:support@nivak-technologies.com">
+              support@nivak-technologies.com
+            </a>
+
+          </div>
+
+        </aside>
+
+
+        <!-- FORM -->
+        <div class="contact-form-panel">
+
+          <div class="contact-form-heading">
+
+            <span class="eyebrow" id="formEyebrow">
+              Contact Form
+            </span>
+
+            <h2 id="formTitle">
+              Send us a message.
+            </h2>
+
+            <p id="formDescription">
+              Complete the form below and we will receive your message.
+            </p>
+
+          </div>
+
+
+          <form id="v2ContactForm" class="contact-form">
+
+            <!-- PROJECT SERVICE -->
+            <div
+              class="form-group form-group--full service-field"
+              id="serviceField"
+              hidden
+            >
+              <label for="selectedService">
+                Selected Service
+              </label>
+
+              <input
+                id="selectedService"
+                name="service"
+                type="text"
+                readonly
+              >
+            </div>
+
+            <div
+              class="form-group form-group--full offer-field"
+              id="offerField"
+              hidden
+            >
+              <label for="selectedOffer">
+                Selected Offer
+              </label>
+
+              <input
+                id="selectedOffer"
+                name="selectedOffer"
+                type="text"
+                readonly
+              >
+            </div>
+
+            <div
+              class="form-group form-group--full offer-field"
+              id="promoCodeField"
+              hidden
+            >
+              <label for="promoCode">
+                Promo Code
+              </label>
+
+              <input
+                id="promoCode"
+                name="promoCode"
+                type="text"
+                readonly
+              >
+            </div>
+
+
+            <div class="form-grid">
+
+              <div class="form-group">
+                <label for="contactName">
+                  Name <span>*</span>
+                </label>
+
+                <input
+                  id="contactName"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  placeholder="Your name"
+                >
+              </div>
+
+
+              <div class="form-group">
+                <label for="contactEmail">
+                  Email Address <span>*</span>
+                </label>
+
+                <input
+                  id="contactEmail"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="name@example.com"
+                >
+              </div>
+
+
+              <!-- PROJECT-ONLY FIELDS -->
+
+              <div
+                class="form-group form-group--full project-field"
+                hidden
+              >
+                <label for="projectTitle">
+                  Project Title <span>*</span>
+                </label>
+
+                <input
+                  id="projectTitle"
+                  name="projectTitle"
+                  type="text"
+                  placeholder="e.g. Food Delivery App"
+                >
+              </div>
+
+
+              <div
+                class="form-group project-field"
+                hidden
+              >
+                <label for="targetPlatform">
+                  Target Platform <span>*</span>
+                </label>
+
+                <select
+                  id="targetPlatform"
+                  name="targetPlatform"
+                >
+                  <option value="">Select platform</option>
+                  <option value="Android">Android</option>
+                  <option value="Web">Web</option>
+                  <option value="Android & Web">Android &amp; Web</option>
+                  <option value="Not Sure">Not Sure</option>
+                </select>
+              </div>
+
+
+              <div
+                class="form-group project-field"
+                hidden
+              >
+                <label for="projectStage">
+                  Project Stage <span>*</span>
+                </label>
+
+                <select
+                  id="projectStage"
+                  name="projectStage"
+                >
+                  <option value="">Select project stage</option>
+                  <option value="New Project">New Project</option>
+                  <option value="Existing Project">Existing Project</option>
+                  <option value="Needs Bug Fixing">Needs Bug Fixing</option>
+                  <option value="Needs New Features">Needs New Features</option>
+                  <option value="Testing or Release Stage">
+                    Testing or Release Stage
+                  </option>
+                </select>
+              </div>
+
+
+              <div
+                class="form-group form-group--full project-field"
+                hidden
+              >
+                <label for="preferredStart">
+                  Preferred Start <span>*</span>
+                </label>
+
+                <select
+                  id="preferredStart"
+                  name="preferredStart"
+                >
+                  <option value="">Select preferred start</option>
+                  <option value="As Soon as Possible">
+                    As Soon as Possible
+                  </option>
+                  <option value="Within 2 Weeks">
+                    Within 2 Weeks
+                  </option>
+                  <option value="Within 1 Month">
+                    Within 1 Month
+                  </option>
+                  <option value="Flexible">
+                    Flexible
+                  </option>
+                </select>
+              </div>
+
+
+              <!-- GENERAL CONTACT SUBJECT -->
+              <div
+                class="form-group form-group--full general-field"
+                id="generalSubjectField"
+              >
+                <label for="contactSubject">
+                  Subject <span>*</span>
+                </label>
+
+                <input
+                  id="contactSubject"
+                  name="subject"
+                  type="text"
+                  required
+                  placeholder="What would you like to contact us about?"
+                >
+              </div>
+
+
+              <div class="form-group form-group--full">
+
+                <label for="contactMessage" id="messageLabel">
+                  Message <span>*</span>
+                </label>
+
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="7"
+                  required
+                  placeholder="Tell us how we can help."
+                ></textarea>
+
+              </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+              <button
+                class="button button--accent"
+                id="contactSubmit"
+                type="submit"
+              >
+                Send Message
+              </button>
+
+              <p class="form-status" id="contactStatus" aria-live="polite"></p>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT PATHS -->
+  <section class="section contact-paths-section">
+    <div class="container">
+
+      <div class="contact-paths-heading">
+        <span class="eyebrow">Explore NivAk</span>
+        <h2>Find the right next step.</h2>
+        <p>
+          Looking for something specific? Choose the area that
+          best matches what you need.
+        </p>
+      </div>
+
+      <div class="contact-paths-grid">
+
+        <article class="contact-path-card">
+          <span class="contact-path-number">01</span>
+
+          <h3>Need Technical Help?</h3>
+
+          <p>
+            Already using a NivAk Technologies app?
+            Find troubleshooting, installation, privacy and
+            other product support.
+          </p>
+
+          <a class="contact-path-link" href="../support/">
+            Get Support &rarr;
+          </a>
+        </article>
+
+
+        <article class="contact-path-card">
+          <span class="contact-path-number">02</span>
+
+          <h3>Planning a Project?</h3>
+
+          <p>
+            Explore mobile development, Firebase, integrations,
+            monetization, publishing and other development services.
+          </p>
+
+          <a class="contact-path-link" href="../services/">
+            Explore Services &rarr;
+          </a>
+        </article>
+
+
+        <article class="contact-path-card">
+          <span class="contact-path-number">03</span>
+
+          <h3>Looking for an Offer?</h3>
+
+          <p>
+            View current NivAk Technologies promotional offers
+            available for eligible new projects and services.
+          </p>
+
+          <a class="contact-path-link" href="../offers/">
+            View Offers &rarr;
+          </a>
+        </article>
+
+      </div>
+
+
+      <div class="contact-brand-line">
+
+        <p>From an idea to a working product.</p>
+
+        <div class="contact-brand-steps">
+          <span>Innovate</span>
+          <i></i>
+          <span>Develop</span>
+          <i></i>
+          <span>Deploy</span>
+          <i></i>
+          <span>Grow</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+
+<script src="../assets/js/site.js"></script>
+<script type="module" src="../assets/js/contact.js"></script>
+
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+  const offer = params.get("offer");
+
+  if (!service) {
+    return;
+  }
+
+  const offerMode = Boolean(offer);
+
+  document.body.classList.add("project-request-mode");
+
+  if (offerMode) {
+    document.body.classList.add("offer-request-mode");
+  }
+
+  const generalSubjectField = document.getElementById("generalSubjectField");
+
+  if (generalSubjectField) {
+    generalSubjectField.hidden = true;
+
+    const contactSubject = document.getElementById("contactSubject");
+
+    if (contactSubject) {
+      contactSubject.required = false;
+    }
+  }
+
+  const serviceField = document.getElementById("serviceField");
+  const selectedService = document.getElementById("selectedService");
+
+  if (service && serviceField && selectedService) {
+    serviceField.hidden = false;
+    selectedService.value = service;
+  } else if (serviceField) {
+    serviceField.hidden = true;
+  }
+
+  document.querySelectorAll(".project-field").forEach(function (field) {
+    field.hidden = false;
+
+    const control = field.querySelector("input, select, textarea");
+
+    if (control) {
+      control.required = true;
+    }
+  });
+
+  document.querySelectorAll(".general-field").forEach(function (field) {
+    field.hidden = true;
+
+    const control = field.querySelector("input, select, textarea");
+
+    if (control) {
+      control.required = false;
+    }
+  });
+
+  if (offerMode) {
+    const offerField = document.getElementById("offerField");
+    const promoCodeField = document.getElementById("promoCodeField");
+    const selectedOffer = document.getElementById("selectedOffer");
+    const promoCode = document.getElementById("promoCode");
+
+    if (offerField) {
+      offerField.hidden = false;
+    }
+
+    if (promoCodeField) {
+      promoCodeField.hidden = false;
+    }
+
+    if (selectedOffer) {
+      selectedOffer.value = service + " - 10% OFF";
+    }
+
+    if (promoCode) {
+      promoCode.value = offer;
+    }
+  }
+
+  document.getElementById("contactEyebrow").textContent =
+    offerMode ? "Claim Offer" : "Get Started";
+
+  document.getElementById("contactTitle").textContent =
+    offerMode
+      ? "Start your discounted project."
+      : "Tell us about your project.";
+
+  document.getElementById("contactIntro").textContent =
+    offerMode
+      ? "Complete your project details below. Your selected promotional offer and code are already attached to the request."
+      : "You selected " + service +
+        ". Complete the project details below and send your request to NivAk Technologies.";
+
+  document.getElementById("formEyebrow").textContent =
+    offerMode ? "Offer Request" : "Project Request";
+
+  document.getElementById("formTitle").textContent =
+    offerMode
+      ? service + " - 10% OFF"
+      : service;
+
+  document.getElementById("formDescription").textContent =
+    offerMode
+      ? "Provide your project details below to request this promotional offer."
+      : "Provide the key details so we can understand what you need.";
+
+  document.getElementById("messageLabel").innerHTML =
+    'Project Description <span>*</span>';
+
+  document.getElementById("contactMessage").placeholder =
+    "Describe your project, required features, existing setup or the work you need.";
+
+  document.getElementById("contactSubmit").textContent =
+    offerMode
+      ? "Send Offer Request"
+      : "Send Project Request";
+})();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
