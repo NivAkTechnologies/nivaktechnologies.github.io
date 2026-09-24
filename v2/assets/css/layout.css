@@ -1,5 +1,5 @@
-﻿/* =========================================================
-   NivAk Technologies — Website V2
+/* =========================================================
+   NivAk Technologies ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Website V2
    Global Layout System
    ========================================================= */
 
@@ -637,7 +637,7 @@
 
 
 /* =========================================================
-   Page Hero — Inner Pages
+   Page Hero ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Inner Pages
    ========================================================= */
 
 .page-hero {
@@ -814,7 +814,7 @@
 }
 
 /* =========================================================
-   HOME V2 — Continuous Brand Atmosphere
+   HOME V2 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Continuous Brand Atmosphere
    ========================================================= */
 
 /*
@@ -995,13 +995,13 @@ main .card {
   background: transparent !important;
 }
 /* =========================================================
-   HOME V2 — Stronger Continuous Brand Gradient
+   HOME V2 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Stronger Continuous Brand Gradient
    ========================================================= */
 
 main {
   background:
 
-    /* Blue wash — top left */
+    /* Blue wash ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â top left */
     radial-gradient(
       ellipse 100% 45% at -15% 8%,
       rgba(23, 105, 210, 0.44) 0%,
@@ -1010,7 +1010,7 @@ main {
       transparent 78%
     ),
 
-    /* Orange wash — upper right */
+    /* Orange wash ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â upper right */
     radial-gradient(
       ellipse 92% 42% at 115% 22%,
       rgba(255, 98, 0, 0.32) 0%,
@@ -1019,7 +1019,7 @@ main {
       transparent 80%
     ),
 
-    /* Blue continuation — middle/lower left */
+    /* Blue continuation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â middle/lower left */
     radial-gradient(
       ellipse 105% 46% at -18% 58%,
       rgba(23, 105, 210, 0.34) 0%,
@@ -1028,7 +1028,7 @@ main {
       transparent 82%
     ),
 
-    /* Orange continuation — lower right */
+    /* Orange continuation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â lower right */
     radial-gradient(
       ellipse 98% 44% at 118% 78%,
       rgba(255, 98, 0, 0.27) 0%,
@@ -1057,7 +1057,7 @@ main {
 
 
 /* =========================================================
-   WHY NIVAK — Floating Premium Panel
+   WHY NIVAK ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Floating Premium Panel
    ========================================================= */
 
 /* Section itself stays part of continuous page gradient */
@@ -1183,7 +1183,7 @@ main > .section--brand-dark > .container::before {
 
 
 /* =========================================================
-   NIVAK SIGNATURE PANELS — Blue → Orange
+   NIVAK SIGNATURE PANELS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Blue ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Orange
    ========================================================= */
 
 /* Why NivAk */
@@ -1262,12 +1262,12 @@ main > .section--brand-dark > .container {
 
 
 /* =========================================================
-   NIVAK SIGNATURE PANELS — Final Unified Design
+   NIVAK SIGNATURE PANELS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Final Unified Design
    ========================================================= */
 
 /*
  * Shared premium gradient:
- * Royal blue → deep navy → NivAk orange
+ * Royal blue ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ deep navy ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ NivAk orange
  */
 
 main > .section--brand-dark > .container,
@@ -1304,14 +1304,14 @@ main > .section--brand-dark > .container,
 }
 
 
-/* Why NivAk — larger flagship panel */
+/* Why NivAk ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â larger flagship panel */
 
 main > .section--brand-dark > .container {
   border-radius: 26px;
 }
 
 
-/* Bottom CTA — same family, more compact */
+/* Bottom CTA ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â same family, more compact */
 
 .cta {
   border-radius: 24px;
@@ -1380,12 +1380,12 @@ main > .section--brand-dark > .container::before {
 
 
 /* =========================================================
-   NIVAK SIGNATURE PANELS — Correct Selectors
+   NIVAK SIGNATURE PANELS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Correct Selectors
    ========================================================= */
 
 /*
  * Shared signature:
- * blue → navy → orange
+ * blue ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ navy ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ orange
  */
 
 main > .section--brand-dark > .container,
@@ -1475,7 +1475,7 @@ main > .section--brand-dark > .container {
 
 
 /* =========================================================
-   V2 — Remove Decorative Rings
+   V2 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Remove Decorative Rings
    ========================================================= */
 
 /* Hero / logo decorative circles */
@@ -1503,7 +1503,7 @@ main > .section--brand-dark > .container::after {
 
 
 /* =========================================================
-   V2 — Remove Remaining Hero Background Rings
+   V2 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Remove Remaining Hero Background Rings
    ========================================================= */
 
 .hero::before,
@@ -1515,7 +1515,7 @@ main > .section--brand-dark > .container::after {
 
 
 /* =========================================================
-   NIVAK FEATURE PANELS — Navy with Orange Accent
+   NIVAK FEATURE PANELS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Navy with Orange Accent
    ========================================================= */
 
 main > .section--brand-dark > .container,
@@ -1568,7 +1568,7 @@ main > .section--brand-dark > .container,
 
 
 /* =========================================================
-   NIVAK FEATURE PANELS — Blue / Navy Only
+   NIVAK FEATURE PANELS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Blue / Navy Only
    ========================================================= */
 
 main > .section--brand-dark > .container,
@@ -1627,7 +1627,7 @@ main > .section--brand-dark > .container,
 
 
 /* =========================================================
-   APPS PAGE — SECTION SPACING POLISH
+   APPS PAGE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SECTION SPACING POLISH
    ========================================================= */
 
 /* Product catalog -> Our Approach */
@@ -1663,7 +1663,7 @@ main > .section--brand-dark > .container,
 
 
 /* =========================================================
-   HOME — VERTICAL RHYTHM
+   HOME ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â VERTICAL RHYTHM
    Spacing only. Do not alter locked visual design.
    ========================================================= */
 
@@ -1727,3 +1727,46 @@ main > .section--brand-dark > .container,
   }
 }
 
+
+/* =========================================================
+   SECONDARY PAGE HERO TITLE
+   ========================================================= */
+
+.page-hero h1 {
+  margin-bottom: var(--space-5);
+
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.05em;
+  line-height: var(--line-tight);
+
+  background: linear-gradient(
+    105deg,
+    #061b46 0%,
+    #0b3f88 25%,
+    #1769d2 42%,
+    #ff6200 72%,
+    #ff7a18 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+[data-theme="dark"] .page-hero h1 {
+  background: linear-gradient(
+    105deg,
+    #ffffff 0%,
+    #d9e9ff 25%,
+    #69a7ff 55%,
+    #ff8a32 82%,
+    #ff6200 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
