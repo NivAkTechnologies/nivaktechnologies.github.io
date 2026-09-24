@@ -1,0 +1,967 @@
+﻿/* =========================================================
+   NivAk Technologies — Website V2
+   Shared Components
+   ========================================================= */
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+
+  min-height: 48px;
+  padding: 0 22px;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(23, 105, 210, 0.24);
+  outline-offset: 3px;
+}
+
+.button--primary {
+  background: var(--gradient-brand);
+  color: #ffffff;
+  box-shadow: 0 10px 26px rgba(23, 105, 210, 0.22);
+}
+
+.button--primary:hover {
+  box-shadow: 0 14px 34px rgba(23, 105, 210, 0.30);
+}
+
+.button--accent {
+  background: var(--gradient-orange);
+  color: #ffffff;
+  box-shadow: 0 10px 26px rgba(255, 98, 0, 0.22);
+}
+
+.button--accent:hover {
+  box-shadow: 0 14px 34px rgba(255, 98, 0, 0.30);
+}
+
+.button--secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+.button--secondary:hover {
+  border-color: var(--brand-blue);
+}
+
+.button--ghost {
+  background: transparent;
+  color: var(--brand-blue);
+}
+
+.button--small {
+  min-height: 40px;
+  padding: 0 18px;
+  font-size: var(--text-sm);
+}
+
+
+/* =========================================================
+   Eyebrow / Section Label
+   ========================================================= */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: var(--space-4);
+  padding: 7px 12px;
+
+  border: 1px solid var(--border-brand);
+  border-radius: var(--radius-pill);
+
+  background: rgba(23, 105, 210, 0.06);
+
+  color: var(--brand-blue);
+
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.09em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 7px;
+  height: 7px;
+
+  background: var(--brand-orange);
+  border-radius: 50%;
+
+  content: "";
+  flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   Section Headings
+   ========================================================= */
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: var(--space-12);
+}
+
+.section-heading--center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: var(--space-4);
+
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.035em;
+}
+
+.section-description {
+  max-width: 680px;
+  margin-bottom: 0;
+
+  color: var(--text-secondary);
+  font-size: var(--text-lg);
+}
+
+.section-heading--center .section-description {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* =========================================================
+   Generic Cards
+   ========================================================= */
+
+.card {
+  position: relative;
+
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+
+  overflow: hidden;
+
+  transition:
+    transform var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-brand);
+  box-shadow: var(--shadow-md);
+}
+
+.card__body {
+  padding: var(--space-8);
+}
+
+.card__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.card__text {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   Icon Containers
+   ========================================================= */
+
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: var(--space-5);
+
+  border: 1px solid var(--border-brand);
+  border-radius: var(--radius-md);
+
+  background: rgba(23, 105, 210, 0.07);
+  color: var(--brand-blue);
+}
+
+.icon-box--orange {
+  border-color: rgba(255, 98, 0, 0.20);
+  background: rgba(255, 98, 0, 0.08);
+  color: var(--brand-orange);
+}
+
+
+/* =========================================================
+   Status / Information Badges
+   ========================================================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 6px 10px;
+
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+
+  background: var(--bg-soft);
+
+  color: var(--text-secondary);
+
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+}
+
+.badge--production {
+  border-color: rgba(23, 105, 210, 0.18);
+  background: rgba(23, 105, 210, 0.08);
+  color: var(--brand-blue);
+}
+
+.badge--development {
+  border-color: rgba(255, 98, 0, 0.20);
+  background: rgba(255, 98, 0, 0.08);
+  color: var(--brand-orange);
+}
+
+
+/* =========================================================
+   Product Cards
+   ========================================================= */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+
+  margin-bottom: var(--space-6);
+}
+
+.product-card__icon {
+  width: 68px;
+  height: 68px;
+
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+
+  object-fit: cover;
+}
+
+.product-card__category {
+  margin-bottom: var(--space-2);
+
+  color: var(--brand-blue);
+
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.product-card__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.product-card__description {
+  margin-bottom: var(--space-6);
+  color: var(--text-secondary);
+}
+
+.product-card__footer {
+  margin-top: auto;
+}
+
+
+/* =========================================================
+   Service Cards
+   ========================================================= */
+
+.service-card {
+  height: 100%;
+}
+
+.service-card__number {
+  margin-bottom: var(--space-5);
+
+  color: var(--brand-orange);
+
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+}
+
+.service-card__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.service-card__description {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   Offer Cards
+   ========================================================= */
+
+.offer-card {
+  position: relative;
+  height: 100%;
+}
+
+.offer-card__code {
+  display: inline-flex;
+
+  margin-bottom: var(--space-5);
+  padding: 7px 11px;
+
+  border: 1px dashed rgba(255, 98, 0, 0.45);
+  border-radius: var(--radius-sm);
+
+  background: rgba(255, 98, 0, 0.07);
+  color: var(--brand-orange);
+
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.04em;
+}
+
+.offer-card__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-xl);
+}
+
+.offer-card__description {
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   Feature / Value Items
+   ========================================================= */
+
+.feature-item {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.feature-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 13px;
+
+  background: rgba(255, 98, 0, 0.09);
+  color: var(--brand-orange);
+
+  flex: 0 0 auto;
+}
+
+.feature-item__title {
+  margin-bottom: 4px;
+  font-size: var(--text-base);
+}
+
+.feature-item__text {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+}
+
+
+/* =========================================================
+   Forms
+   ========================================================= */
+
+.form-group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.form-label {
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.form-control {
+  width: 100%;
+  min-height: 50px;
+
+  padding: 12px 15px;
+
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+
+  outline: none;
+
+  background: var(--bg-card);
+  color: var(--text-primary);
+
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+.form-control:focus {
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 4px rgba(23, 105, 210, 0.10);
+}
+
+
+/* =========================================================
+   Inline Links
+   ========================================================= */
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--brand-blue);
+  font-weight: var(--font-weight-semibold);
+
+  transition:
+    color var(--transition-fast),
+    gap var(--transition-fast);
+}
+
+.text-link:hover {
+  gap: 10px;
+  color: var(--brand-orange);
+}
+
+
+/* =========================================================
+   Dividers
+   ========================================================= */
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: var(--space-8) 0;
+
+  border: 0;
+  background: var(--border-light);
+}
+
+/* =========================================================
+   Product Status — Nearly Complete
+   ========================================================= */
+
+.badge--nearly {
+  border-color: rgba(255, 98, 0, 0.24);
+  background: rgba(255, 98, 0, 0.09);
+  color: var(--brand-orange);
+}
+
+
+/* =========================================================
+   Featured Product Card — Premium Visual Upgrade
+   ========================================================= */
+
+#featured-products {
+  gap: 28px;
+}
+
+#featured-products .product-card {
+  min-height: 320px;
+}
+
+#featured-products .card__body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  padding: 28px;
+}
+
+#featured-products .product-card__top {
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+#featured-products .product-card__icon {
+  width: 86px;
+  height: 86px;
+
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+
+  box-shadow:
+    0 12px 30px rgba(3, 19, 47, 0.13);
+
+  object-fit: cover;
+}
+
+#featured-products .product-card__category {
+  margin-bottom: 8px;
+
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+}
+
+#featured-products .product-card__title {
+  margin-bottom: 12px;
+
+  font-size: 1.45rem;
+  letter-spacing: -0.025em;
+}
+
+#featured-products .product-card__description {
+  margin-bottom: 26px;
+
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+#featured-products .product-card__footer {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+#featured-products .badge {
+  margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+  #featured-products .product-card {
+    min-height: auto;
+  }
+
+  #featured-products .product-card__icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 18px;
+  }
+}
+
+
+/* =========================================================
+   V2 — Premium Card System
+   ========================================================= */
+
+main .card {
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid rgba(6, 27, 70, 0.11);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(255, 255, 255, 0.84)
+    );
+
+  box-shadow:
+    0 8px 24px rgba(6, 27, 70, 0.07),
+    0 2px 6px rgba(6, 27, 70, 0.035);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+
+/* Fine brand highlight along the top */
+
+main .card::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(23, 105, 210, 0.55),
+    rgba(255, 98, 0, 0.48),
+    transparent
+  );
+
+  opacity: 0.65;
+}
+
+
+/* Desktop interaction */
+
+@media (hover: hover) {
+
+  main .card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(23, 105, 210, 0.20);
+
+    box-shadow:
+      0 18px 42px rgba(6, 27, 70, 0.12),
+      0 5px 12px rgba(6, 27, 70, 0.05);
+  }
+
+}
+
+
+/* Product cards */
+
+#featured-products .product-card {
+  min-height: 330px;
+}
+
+#featured-products .card__body {
+  padding: 28px;
+}
+
+#featured-products .product-card__icon {
+  width: 88px;
+  height: 88px;
+
+  border-radius: 21px;
+
+  border: 1px solid rgba(6, 27, 70, 0.10);
+
+  box-shadow:
+    0 10px 24px rgba(6, 27, 70, 0.14);
+}
+
+
+/* Service / generic icon containers */
+
+main .icon-box {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 13px;
+
+  border: 1px solid rgba(23, 105, 210, 0.15);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(23, 105, 210, 0.10),
+      rgba(255, 255, 255, 0.82)
+    );
+
+  box-shadow:
+    0 5px 14px rgba(6, 27, 70, 0.06);
+}
+
+
+/* Alternate orange icon treatment where already marked accent */
+
+main .icon-box--accent {
+  border-color: rgba(255, 98, 0, 0.18);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 98, 0, 0.12),
+      rgba(255, 255, 255, 0.84)
+    );
+}
+
+
+/* Offer cards get a slightly warmer character */
+
+main .offer-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(255, 248, 242, 0.88)
+    );
+}
+
+
+/* Keep dark feature cards independent */
+
+main .section--brand-dark .feature-item {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.035)
+    );
+
+  box-shadow: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 640px) {
+
+  main .card {
+    border-radius: 16px;
+  }
+
+  #featured-products .product-card {
+    min-height: auto;
+  }
+
+  #featured-products .product-card__icon {
+    width: 78px;
+    height: 78px;
+    border-radius: 19px;
+  }
+
+}
+/* =========================================================
+   V2 — Clean Premium Cards
+   ========================================================= */
+
+main .card:not(.feature-item) {
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(6, 27, 70, 0.12);
+
+  box-shadow:
+    0 10px 26px rgba(6, 27, 70, 0.075);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* Small brand accent — not a full-card gradient */
+
+main .card:not(.feature-item)::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 18px;
+  right: 18px;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #1769d2,
+    #6fb5f5 38%,
+    #ffb37d 68%,
+    #ff6200
+  );
+
+  opacity: 0.65;
+}
+
+
+@media (hover: hover) {
+
+  main .card:not(.feature-item):hover {
+    transform: translateY(-4px);
+
+    background: #ffffff;
+
+    border-color: rgba(23, 105, 210, 0.22);
+
+    box-shadow:
+      0 18px 38px rgba(6, 27, 70, 0.12);
+  }
+
+}
+
+
+/* Why NivAk feature cards stay dark glass */
+
+main .section--brand-dark .feature-item {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+/* =========================================================
+   V2 — Remove Card Top Accent
+   ========================================================= */
+
+main .card:not(.feature-item)::before {
+  display: none !important;
+  content: none !important;
+}
+
+main .card:not(.feature-item) {
+  border: 1px solid rgba(6, 27, 70, 0.14);
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 10px 28px rgba(6, 27, 70, 0.08);
+}
+
+
+/* =========================================================
+   V2 — Full Card Border
+   ========================================================= */
+
+main .card:not(.feature-item) {
+  border: 1.5px solid rgba(23, 105, 210, 0.24);
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 8px 24px rgba(6, 27, 70, 0.07);
+}
+
+
+/* Full border remains visible on hover */
+
+@media (hover: hover) {
+
+  main .card:not(.feature-item):hover {
+    border-color: rgba(255, 98, 0, 0.38);
+
+    box-shadow:
+      0 16px 34px rgba(6, 27, 70, 0.11);
+  }
+
+}
+
+
+/* =========================================================
+   V2 — Dark Mode Card Contrast Fix
+   ========================================================= */
+
+[data-theme="dark"] main .card:not(.feature-item) {
+  background: rgba(248, 251, 255, 0.97);
+
+  border-color: rgba(105, 167, 255, 0.34);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+
+/* Main card headings */
+
+[data-theme="dark"] main .card:not(.feature-item) h2,
+[data-theme="dark"] main .card:not(.feature-item) h3,
+[data-theme="dark"] main .card:not(.feature-item) h4,
+[data-theme="dark"] main .card:not(.feature-item) .card__title,
+[data-theme="dark"] main .card:not(.feature-item) .product-card__title,
+[data-theme="dark"] main .card:not(.feature-item) .service-card__title,
+[data-theme="dark"] main .card:not(.feature-item) .offer-card__title {
+  color: #061b46 !important;
+}
+
+
+/* Card descriptions / secondary text */
+
+[data-theme="dark"] main .card:not(.feature-item) p,
+[data-theme="dark"] main .card:not(.feature-item) .card__text,
+[data-theme="dark"] main .card:not(.feature-item) .product-card__description,
+[data-theme="dark"] main .card:not(.feature-item) .service-card__description,
+[data-theme="dark"] main .card:not(.feature-item) .offer-card__description {
+  color: #536783 !important;
+}
+
+
+/* Links remain clearly visible */
+
+[data-theme="dark"] main .card:not(.feature-item) a {
+  color: #075fc4;
+}
+
+
+/* Product/category labels */
+
+[data-theme="dark"] main .card:not(.feature-item) .product-card__category {
+  color: #1769d2;
+}
+
+
+/* Process cards */
+
+[data-theme="dark"] main .card:not(.feature-item) .card__eyebrow {
+  color: #ff6200;
+}
+
+
+/* Keep Why NivAk glass cards LIGHT TEXT on DARK */
+
+[data-theme="dark"] .section--brand-dark .feature-item,
+[data-theme="dark"] .section--brand-dark .feature-item__title,
+[data-theme="dark"] .section--brand-dark .feature-item__text {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .section--brand-dark .feature-item__text {
+  color: rgba(255, 255, 255, 0.76);
+}
+
