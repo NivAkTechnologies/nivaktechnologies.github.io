@@ -65,6 +65,7 @@ form?.addEventListener("submit", async (event) => {
   const email = getValue("contact-email");
   const appName = getValue("contact-app");
   const topic = getValue("contact-topic");
+  const offer = getValue("contact-offer");
   const subject = getValue("contact-subject");
   const message = getValue("contact-message");
 
@@ -93,8 +94,9 @@ form?.addEventListener("submit", async (event) => {
       {
         name,
         email,
-        app: appName || "Resume Builder",
-        topic: topic || "Support",
+        app: appName || "General Enquiry",
+        topic: topic || "General",
+        offer: offer || "",
         subject,
         message,
         createdAt: serverTimestamp(),
@@ -119,3 +121,4 @@ form?.addEventListener("submit", async (event) => {
     setSubmitting(false);
   }
 });
+
