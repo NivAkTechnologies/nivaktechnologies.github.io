@@ -1129,14 +1129,59 @@ main {
     overflow-wrap: anywhere;
   }
 }
-/* ---------- Legal mobile footer edge adjustment ---------- */
+/* ---------- Correct legal mobile footer ---------- */
 
 @media (max-width: 760px) {
 
-  .site-footer .footer-main > .container,
-  .site-footer .footer-bottom > .container {
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-    box-sizing: border-box;
+  .site-footer .container {
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  .site-footer .footer-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 30px !important;
+  }
+
+  .site-footer .footer-grid > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .site-footer .footer-brand {
+    max-width: 100% !important;
+  }
+
+  .site-footer .footer-bottom {
+    width: auto !important;
+    max-width: none !important;
+
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    gap: 14px !important;
+  }
+
+  .site-footer .footer-contact {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 8px !important;
+  }
+
+  .site-footer a,
+  .site-footer p,
+  .site-footer span {
+    max-width: 100% !important;
+    overflow-wrap: anywhere;
   }
 }
