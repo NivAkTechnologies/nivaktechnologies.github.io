@@ -952,3 +952,53 @@ body {
     flex: 0 0 40px;
   }
 }
+/* ---------- Legal mobile page overflow fix ---------- */
+
+html,
+body,
+.site-page,
+main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 760px) {
+
+  .legal-hero,
+  .legal-hero-grid,
+  .legal-layout,
+  .legal-section,
+  .legal-contact-card,
+  .legal-meta-card,
+  .deletion-app-grid,
+  .deletion-app-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .legal-section,
+  .legal-meta-card,
+  .deletion-app-card {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .legal-section a,
+  .legal-contact-value,
+  .legal-meta-row dd {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code,
+  table {
+    max-width: 100%;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+}
