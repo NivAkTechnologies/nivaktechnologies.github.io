@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Terms and Conditions for the Resume Builder Android application by NivAk Technologies."
+  >
+
+  <meta
+    name="theme-color"
+    content="#0B2E63"
+  >
+
+  <title>
+    Resume Builder Terms & Conditions | NivAk Technologies
+  </title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="../../assets/icons/app-icons/resume-builder.png"
+  >
+
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/animations.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link rel="stylesheet" href="../../assets/css/legal.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">
+    Skip to content
+  </a>
+
+  <div class="site-page">
+    <header
+      class="site-header"
+      data-site-header
+    >
+      <div class="container navbar">
+        <a
+          class="brand"
+          href="../../"
+          aria-label="NivAk Technologies home"
+        >
+          <img
+            class="brand-logo"
+            src="../../assets/images/brand/nivak-logo.png"
+            alt="NivAk Technologies logo"
+          >
+
+          <span class="brand-text">
+            <span class="brand-name">
+              NivAk Technologies
+            </span>
+
+            <span class="brand-subtitle">
+              Apps & Games
+            </span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-menu" data-nav-menu>
+            <li>
+              <a class="nav-link" href="../../">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="../../#apps">
+                Apps
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="../../about/">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="../../support/">
+                Support
+              </a>
+            </li>
+
+            <li>
+              <a class="nav-link" href="../../contact/">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="icon-button"
+            type="button"
+            data-theme-toggle
+            aria-label="Switch theme"
+            title="Switch theme"
+          >
+            <span data-theme-icon aria-hidden="true">☾</span>
+          </button>
+
+          <button
+            class="icon-button menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-label="Open navigation"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true">☰</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="legal-hero">
+        <div class="container legal-hero-grid">
+          <div class="reveal">
+            <div class="legal-app-identity">
+              <img
+                class="legal-app-icon"
+                src="../../assets/icons/app-icons/resume-builder.png"
+                alt="Resume Builder app icon"
+              >
+
+              <div class="legal-app-meta">
+                <span class="legal-app-name">
+                  Resume Builder
+                </span>
+
+                <span class="legal-app-category">
+                  NivAk Technologies
+                </span>
+              </div>
+            </div>
+
+            <span class="eyebrow">
+              Legal Center
+            </span>
+
+            <h1>
+              Terms &
+              <span class="gradient-text">
+                Conditions
+              </span>
+            </h1>
+
+            <p class="legal-summary">
+              These Terms and Conditions explain the rules that apply
+              when you access or use the Resume Builder application and
+              its related features.
+            </p>
+          </div>
+
+          <aside class="legal-meta-card reveal reveal-delay-1">
+            <dl class="legal-meta-list">
+              <div class="legal-meta-row">
+                <dt>Effective date</dt>
+                <dd>6 August 2026</dd>
+              </div>
+
+              <div class="legal-meta-row">
+                <dt>Last updated</dt>
+                <dd>6 August 2026</dd>
+              </div>
+
+              <div class="legal-meta-row">
+                <dt>Developer</dt>
+                <dd>NivAk Technologies</dd>
+              </div>
+
+              <div class="legal-meta-row">
+                <dt>Contact</dt>
+                <dd>nivaktechnologies@outlook.com</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container legal-layout">
+          <aside class="legal-sidebar reveal">
+            <nav
+              class="legal-toc"
+              aria-label="Terms and Conditions contents"
+            >
+              <h2>On this page</h2>
+
+              <ol class="legal-toc-list">
+                <li>
+                  <a class="legal-toc-link" href="#acceptance">
+                    Acceptance
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#service">
+                    About Resume Builder
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#license">
+                    App Licence
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#responsibilities">
+                    User Responsibilities
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#resume-content">
+                    Resume Content
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#templates">
+                    Templates
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#pdf">
+                    PDF Export
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#local-storage">
+                    Local Storage
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#acceptable-use">
+                    Acceptable Use
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#third-parties">
+                    Third-Party Services
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#availability">
+                    Availability
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#updates">
+                    Updates
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#disclaimer">
+                    Disclaimer
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#liability">
+                    Liability
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#termination">
+                    Termination
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#privacy">
+                    Privacy
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#law">
+                    Applicable Law
+                  </a>
+                </li>
+
+                <li>
+                  <a class="legal-toc-link" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </aside>
+
+          <article class="legal-content">
+            <section
+              class="legal-section reveal"
+              id="acceptance"
+            >
+              <span class="legal-section-number">01</span>
+
+              <h2>Acceptance of These Terms</h2>
+
+              <p>
+                By downloading, installing, accessing or using Resume
+                Builder, you agree to these Terms and Conditions.
+              </p>
+
+              <p>
+                If you do not agree with these Terms, you should not
+                use the application.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="service"
+            >
+              <span class="legal-section-number">02</span>
+
+              <h2>About Resume Builder</h2>
+
+              <p>
+                Resume Builder is an Android productivity application
+                developed by NivAk Technologies.
+              </p>
+
+              <p>
+                The application may allow users to:
+              </p>
+
+              <ul class="legal-list">
+                <li>Create and edit professional resumes</li>
+                <li>Enter profile and career information</li>
+                <li>Add education and employment history</li>
+                <li>Add skills, projects and certificates</li>
+                <li>Select resume templates</li>
+                <li>Save and manage multiple resumes</li>
+                <li>Generate PDF documents</li>
+                <li>Share or print exported resumes</li>
+              </ul>
+
+              <p>
+                Features may change as the application is developed,
+                tested and updated.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="license"
+            >
+              <span class="legal-section-number">03</span>
+
+              <h2>Limited Licence to Use the App</h2>
+
+              <p>
+                Subject to these Terms, NivAk Technologies grants you a
+                limited, personal, non-exclusive, non-transferable and
+                revocable licence to install and use Resume Builder for
+                lawful personal or professional purposes.
+              </p>
+
+              <p>
+                This licence does not transfer ownership of the app,
+                source code, branding, templates, designs or other
+                intellectual property to you.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="responsibilities"
+            >
+              <span class="legal-section-number">04</span>
+
+              <h2>User Responsibilities</h2>
+
+              <p>
+                You are responsible for the information entered into
+                Resume Builder and for reviewing the final resume
+                before using or sharing it.
+              </p>
+
+              <p>You are responsible for:</p>
+
+              <ul class="legal-list">
+                <li>Entering accurate and truthful information</li>
+                <li>Reviewing spelling, grammar and dates</li>
+                <li>Checking contact information</li>
+                <li>Confirming education and employment details</li>
+                <li>Reviewing exported PDF documents</li>
+                <li>Protecting locally stored resume information</li>
+                <li>Sharing resumes only with intended recipients</li>
+              </ul>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="resume-content"
+            >
+              <span class="legal-section-number">05</span>
+
+              <h2>Resume Content</h2>
+
+              <p>
+                Resume Builder provides tools for organizing user-entered
+                information. NivAk Technologies does not independently
+                verify the accuracy of resume content.
+              </p>
+
+              <div class="legal-note legal-warning">
+                <p>
+                  You must not include false, misleading, unlawful,
+                  discriminatory or fraudulent information in a resume.
+                </p>
+              </div>
+
+              <p>
+                You should avoid including unnecessary sensitive
+                information such as passwords, banking details,
+                identification numbers or confidential employer data.
+              </p>
+
+              <p>
+                You remain responsible for ensuring that resume content
+                complies with applicable laws and professional
+                requirements.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="templates"
+            >
+              <span class="legal-section-number">06</span>
+
+              <h2>Templates and ATS Compatibility</h2>
+
+              <p>
+                Resume Builder may provide ATS-friendly, modern and
+                professional templates.
+              </p>
+
+              <p>
+                Template labels and descriptions are intended to help
+                users choose a suitable layout.
+              </p>
+
+              <div class="legal-note legal-warning">
+                <p>
+                  NivAk Technologies does not guarantee that any resume
+                  will pass every Applicant Tracking System or result
+                  in an interview, employment offer or other outcome.
+                </p>
+              </div>
+
+              <p>
+                Applicant Tracking Systems, recruiters and employers
+                may use different criteria, software and formatting
+                requirements.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="pdf"
+            >
+              <span class="legal-section-number">07</span>
+
+              <h2>PDF Export, Sharing and Printing</h2>
+
+              <p>
+                Resume Builder may allow users to generate, save, open,
+                share and print resume PDF documents.
+              </p>
+
+              <p>You are responsible for:</p>
+
+              <ul class="legal-list">
+                <li>Checking the exported PDF before using it</li>
+                <li>Selecting the correct storage location</li>
+                <li>Choosing the correct recipient</li>
+                <li>Protecting documents containing personal data</li>
+                <li>Deleting outdated exported files when appropriate</li>
+              </ul>
+
+              <p>
+                NivAk Technologies does not control third-party email
+                apps, file managers, cloud services, printers or sharing
+                applications selected by the user.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="local-storage"
+            >
+              <span class="legal-section-number">08</span>
+
+              <h2>Local Storage and Data Loss</h2>
+
+              <p>
+                Resume and profile information may be stored locally on
+                the user's Android device.
+              </p>
+
+              <p>
+                Local data may be lost if:
+              </p>
+
+              <ul class="legal-list">
+                <li>The app's storage is cleared</li>
+                <li>The app is uninstalled</li>
+                <li>The device is reset</li>
+                <li>The device storage fails</li>
+                <li>The operating system removes app data</li>
+                <li>The user deletes a resume</li>
+              </ul>
+
+              <p>
+                Users should keep copies of important exported resumes
+                in a secure location.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="acceptable-use"
+            >
+              <span class="legal-section-number">09</span>
+
+              <h2>Acceptable Use</h2>
+
+              <p>
+                You must not misuse Resume Builder, the website or
+                related services.
+              </p>
+
+              <p>You must not:</p>
+
+              <ul class="legal-list">
+                <li>Use the app for unlawful or fraudulent purposes</li>
+                <li>Create deceptive identity or employment documents</li>
+                <li>Attempt to interfere with app security</li>
+                <li>Introduce malware or harmful code</li>
+                <li>Attempt unauthorized access to services or data</li>
+                <li>Copy, resell or redistribute the app without permission</li>
+                <li>Reverse engineer the app where prohibited by law</li>
+                <li>Remove copyright or ownership notices</li>
+              </ul>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="third-parties"
+            >
+              <span class="legal-section-number">10</span>
+
+              <h2>Third-Party Services</h2>
+
+              <p>
+                Resume Builder may interact with third-party services,
+                including:
+              </p>
+
+              <ul class="legal-list">
+                <li>Google Play</li>
+                <li>Android file and document services</li>
+                <li>Photo and media selection services</li>
+                <li>PDF viewers</li>
+                <li>Android printing services</li>
+                <li>Email and sharing applications</li>
+              </ul>
+
+              <p>
+                Third-party services are governed by their own terms,
+                privacy policies, security practices and availability.
+              </p>
+
+              <p>
+                Firebase and advertising services will also be governed
+                by their own policies after they are added.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="availability"
+            >
+              <span class="legal-section-number">11</span>
+
+              <h2>Availability and Compatibility</h2>
+
+              <p>
+                NivAk Technologies does not guarantee that Resume
+                Builder will be available at all times or work on every
+                Android device.
+              </p>
+
+              <p>Availability may be affected by:</p>
+
+              <ul class="legal-list">
+                <li>Maintenance and updates</li>
+                <li>Device limitations</li>
+                <li>Android version changes</li>
+                <li>Insufficient device storage</li>
+                <li>Third-party service interruptions</li>
+                <li>Testing or release restrictions</li>
+              </ul>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="updates"
+            >
+              <span class="legal-section-number">12</span>
+
+              <h2>App Updates and Changes</h2>
+
+              <p>
+                Resume Builder may be updated to add templates, improve
+                PDF output, fix errors, maintain compatibility, improve
+                security or introduce new features.
+              </p>
+
+              <p>
+                Features may be added, modified, suspended or removed.
+              </p>
+
+              <p>
+                Some future features may require internet access,
+                advertising, additional permissions or updated legal
+                information.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="disclaimer"
+            >
+              <span class="legal-section-number">13</span>
+
+              <h2>Disclaimer of Warranties</h2>
+
+              <p>
+                To the extent permitted by applicable law, Resume
+                Builder is provided on an “as is” and “as available”
+                basis.
+              </p>
+
+              <p>NivAk Technologies does not guarantee that:</p>
+
+              <ul class="legal-list">
+                <li>The app will always operate without interruption</li>
+                <li>Every template will suit every employer</li>
+                <li>Every resume will pass an ATS system</li>
+                <li>Using the app will lead to employment</li>
+                <li>All formatting will appear identically everywhere</li>
+                <li>Every software error will be fixed immediately</li>
+              </ul>
+
+              <p>
+                Nothing in these Terms excludes legal rights or
+                warranties that cannot lawfully be excluded.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="liability"
+            >
+              <span class="legal-section-number">14</span>
+
+              <h2>Limitation of Liability</h2>
+
+              <p>
+                To the extent permitted by applicable law, NivAk
+                Technologies will not be responsible for indirect,
+                incidental, special or consequential loss arising from
+                use of or inability to use Resume Builder.
+              </p>
+
+              <p>This may include loss caused by:</p>
+
+              <ul class="legal-list">
+                <li>Incorrect or incomplete resume information</li>
+                <li>Loss of locally stored resume data</li>
+                <li>Device or storage failure</li>
+                <li>Accidental deletion</li>
+                <li>Incorrect sharing recipients</li>
+                <li>Recruiter or employer decisions</li>
+                <li>Third-party app or service failures</li>
+              </ul>
+
+              <p>
+                Nothing in these Terms limits liability that cannot be
+                limited under applicable law.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="termination"
+            >
+              <span class="legal-section-number">15</span>
+
+              <h2>Suspension or Termination</h2>
+
+              <p>
+                You may stop using Resume Builder at any time and may
+                uninstall it from your device.
+              </p>
+
+              <p>
+                NivAk Technologies may restrict online services where
+                reasonably necessary for security, maintenance, legal
+                compliance or prevention of misuse.
+              </p>
+
+              <p>
+                Provisions concerning intellectual property,
+                disclaimers, liability and applicable law may continue
+                after use ends.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="privacy"
+            >
+              <span class="legal-section-number">16</span>
+
+              <h2>Privacy</h2>
+
+              <p>
+                Use of Resume Builder is also subject to the Resume
+                Builder Privacy Policy.
+              </p>
+
+              <p>
+                The Privacy Policy explains local storage, profile
+                photos, PDF documents, support enquiries and future
+                online services.
+              </p>
+
+              <div class="legal-page-actions">
+                <a
+                  class="button button--primary"
+                  href="../privacy/resume-builder.html"
+                >
+                  Read Privacy Policy
+                </a>
+
+                <a
+                  class="button button--secondary"
+                  href="../delete-data/resume-builder.html"
+                >
+                  View Data Deletion Guide
+                </a>
+              </div>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="law"
+            >
+              <span class="legal-section-number">17</span>
+
+              <h2>Applicable Law</h2>
+
+              <p>
+                These Terms are intended to operate in accordance with
+                applicable law.
+              </p>
+
+              <p>
+                Mandatory consumer-protection rights available in your
+                country or region are not excluded or reduced.
+              </p>
+
+              <p>
+                Where a dispute cannot be resolved informally, the
+                applicable law and competent courts will be determined
+                according to relevant legal rules.
+              </p>
+            </section>
+
+            <section
+              class="legal-section reveal"
+              id="contact"
+            >
+              <span class="legal-section-number">18</span>
+
+              <h2>Contact NivAk Technologies</h2>
+
+              <p>
+                Contact us with questions about these Terms or Resume
+                Builder.
+              </p>
+
+              <div class="legal-contact-card">
+                <div class="legal-contact-row">
+                  <span class="legal-contact-label">Developer</span>
+
+                  <span class="legal-contact-value">
+                    NivAk Technologies
+                  </span>
+                </div>
+
+                <div class="legal-contact-row">
+                  <span class="legal-contact-label">Application</span>
+
+                  <span class="legal-contact-value">
+                    Resume Builder
+                  </span>
+                </div>
+
+                <div class="legal-contact-row">
+                  <span class="legal-contact-label">Email</span>
+
+                  <a
+                    class="legal-contact-value"
+                    href="mailto:nivaktechnologies@outlook.com"
+                  >
+                    nivaktechnologies@outlook.com
+                  </a>
+                </div>
+
+                <div class="legal-contact-row">
+                  <span class="legal-contact-label">Website</span>
+
+                  <a
+                    class="legal-contact-value"
+                    href="https://nivaktechnologies.github.io"
+                  >
+                    nivaktechnologies.github.io
+                  </a>
+                </div>
+              </div>
+
+              <div class="legal-page-actions">
+                <a
+                  class="button button--primary"
+                  href="mailto:nivaktechnologies@outlook.com?subject=Resume%20Builder%20Terms%20Enquiry"
+                >
+                  Email Support
+                </a>
+
+                <button
+                  class="button button--secondary"
+                  type="button"
+                  onclick="window.print()"
+                >
+                  Print Terms
+                </button>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="../../">
+              <img
+                class="brand-logo"
+                src="../../assets/images/brand/nivak-logo.png"
+                alt="NivAk Technologies logo"
+              >
+
+              <span class="brand-text">
+                <span class="brand-name">
+                  NivAk Technologies
+                </span>
+
+                <span class="brand-subtitle">
+                  Apps & Games
+                </span>
+              </span>
+            </a>
+
+            <p class="footer-description">
+              Independent mobile app and game development focused on
+              practical tools, polished design and reliable user
+              experiences.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Resume Builder</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a
+                  class="footer-link"
+                  href="../../apps/resume-builder/"
+                >
+                  Product Page
+                </a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="../../support/">
+                  Support
+                </a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="../../contact/">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Company</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a class="footer-link" href="../../about/">
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a class="footer-link" href="../../#apps">
+                  All Apps
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Legal</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a
+                  class="footer-link"
+                  href="../privacy/resume-builder.html"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="footer-link"
+                  href="./resume-builder.html"
+                >
+                  Terms & Conditions
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="footer-link"
+                  href="../delete-data/resume-builder.html"
+                >
+                  Delete Data
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span data-current-year></span>
+            NivAk Technologies. All rights reserved.
+          </p>
+
+          <p>Built independently in Germany.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../assets/js/theme.js"></script>
+  <script src="../../assets/js/navigation.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

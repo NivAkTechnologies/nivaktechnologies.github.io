@@ -1,0 +1,273 @@
+﻿/* =========================================================
+   NivAk Technologies — Website V2
+   Master Design System
+   ========================================================= */
+
+:root {
+  /* ---------- Brand Colors ---------- */
+  --brand-navy-950: #03132f;
+  --brand-navy-900: #061b46;
+  --brand-navy-800: #0a2d67;
+  --brand-blue: #1769d2;
+  --brand-blue-light: #3b82f6;
+  --brand-orange: #ff6200;
+  --brand-orange-light: #ff8a32;
+
+  /* ---------- Backgrounds ---------- */
+  --bg-page: #ffffff;
+  --bg-soft: #f5f8fc;
+  --bg-muted: #edf3fa;
+  --bg-dark: #03132f;
+  --bg-dark-soft: #071d42;
+  --bg-card: #ffffff;
+
+  /* ---------- Text ---------- */
+  --text-primary: #071b3d;
+  --text-secondary: #53647d;
+  --text-muted: #78879b;
+  --text-inverse: #ffffff;
+
+  /* ---------- Borders ---------- */
+  --border-light: #e0e8f2;
+  --border-medium: #cad6e5;
+  --border-brand: rgba(23, 105, 210, 0.22);
+
+  /* ---------- Typography ---------- */
+  --font-primary:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-5xl: 4rem;
+  --text-hero: clamp(3.25rem, 7vw, 6.25rem);
+
+  --line-tight: 1.05;
+  --line-heading: 1.15;
+  --line-body: 1.7;
+
+  /* ---------- Layout ---------- */
+  --container-width: 1240px;
+  --container-padding: 24px;
+
+  --section-space: 112px;
+  --section-space-small: 72px;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-sm:
+    0 4px 16px rgba(3, 19, 47, 0.06);
+
+  --shadow-md:
+    0 12px 32px rgba(3, 19, 47, 0.09);
+
+  --shadow-lg:
+    0 24px 64px rgba(3, 19, 47, 0.14);
+
+  /* ---------- Gradients ---------- */
+  --gradient-brand:
+    linear-gradient(
+      135deg,
+      var(--brand-blue) 0%,
+      var(--brand-navy-800) 55%,
+      var(--brand-navy-950) 100%
+    );
+
+  --gradient-orange:
+    linear-gradient(
+      135deg,
+      var(--brand-orange-light),
+      var(--brand-orange)
+    );
+
+  --gradient-hero:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(23, 105, 210, 0.12),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at 85% 35%,
+      rgba(255, 98, 0, 0.10),
+      transparent 30%
+    ),
+    #ffffff;
+
+  /* ---------- Motion ---------- */
+  --transition-fast: 150ms ease;
+  --transition-normal: 220ms ease;
+  --transition-slow: 350ms ease;
+
+  /* ---------- Layering ---------- */
+  --z-header: 100;
+  --z-menu: 200;
+  --z-modal: 1000;
+}
+
+
+/* =========================================================
+   Dark Theme
+   ========================================================= */
+
+[data-theme="dark"] {
+  --bg-page: #020d21;
+  --bg-soft: #06162f;
+  --bg-muted: #0a2042;
+  --bg-dark: #010918;
+  --bg-dark-soft: #071d42;
+  --bg-card: #071a36;
+
+  --text-primary: #f7faff;
+  --text-secondary: #b7c5d8;
+  --text-muted: #8293aa;
+  --text-inverse: #ffffff;
+
+  --border-light: rgba(255, 255, 255, 0.09);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-brand: rgba(59, 130, 246, 0.30);
+
+  --shadow-sm:
+    0 4px 18px rgba(0, 0, 0, 0.18);
+
+  --shadow-md:
+    0 14px 36px rgba(0, 0, 0, 0.26);
+
+  --shadow-lg:
+    0 28px 72px rgba(0, 0, 0, 0.36);
+
+  --gradient-hero:
+    radial-gradient(
+      circle at 18% 20%,
+      rgba(23, 105, 210, 0.20),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 85% 32%,
+      rgba(255, 98, 0, 0.11),
+      transparent 30%
+    ),
+    #020d21;
+}
+
+
+/* =========================================================
+   Global Reset / Foundation
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background: var(--bg-page);
+  color: var(--text-primary);
+
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-body);
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-heading);
+}
+
+::selection {
+  background: var(--brand-orange);
+  color: #ffffff;
+}
