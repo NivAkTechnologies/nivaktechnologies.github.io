@@ -1,690 +1,462 @@
 ﻿<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <base href="/">
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <meta
-    name="description"
-    content="Explore the complete portfolio of Android apps and games developed by NivAk Technologies."
-  >
-
-  <meta
-    name="theme-color"
-    content="#0B2E63"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Apps & Games | NivAk Technologies</title>
+  <meta name="description" content="Explore mobile apps and games developed by NivAk Technologies, including released products and projects currently in development.">
 
-  <link
-    rel="stylesheet"
-    href="assets/css/main.css?v=20260924-3"
-  >
-
-  <link
-    rel="stylesheet"
-    href="assets/css/components.css?v=20260924-3"
-  >
-
-  <link
-    rel="stylesheet"
-    href="assets/css/animations.css?v=20260924-3"
-  >
-
-  <link
-    rel="stylesheet"
-    href="assets/css/responsive.css?v=20260924-3"
-  >
-
-  <link
-    rel="stylesheet"
-    href="assets/css/home.css?v=20260924-3"
-  >
+  <link rel="stylesheet" href="/assets/site/css/theme.css">
+  <link rel="stylesheet" href="/assets/site/css/components.css?v=20260924-3">
+  <link rel="stylesheet" href="/assets/site/css/layout.css?v=20260925-mobile-2">
+  <link rel="stylesheet" href="/assets/site/css/responsive.css?v=20260924-3">
 </head>
 
-<body>
-  <a
-    class="skip-link"
-    href="#main-content"
-  >
-    Skip to content
-  </a>
+<body class="apps-page">
 
-  <div class="site-page">
-    <header
-      class="site-header"
-      data-site-header
-    >
-      <div class="container navbar">
-        <a
-          class="brand"
-          href="/"
-          aria-label="NivAk Technologies home"
-        >
-          <img
-            class="brand-logo"
-            src="assets/images/brand/nivak-logo.png"
-            alt="NivAk Technologies logo"
-          >
+<header class="site-header">
+  <div class="container header-inner">
 
-          <span class="brand-text">
-            <span class="brand-name">
-              NivAk Technologies
-            </span>
+    <a class="site-brand" href="../" aria-label="NivAk Technologies home">
+      <img
+        class="site-brand__logo"
+        src="/assets/site/images/nivak-logo.png"
+        alt=""
+      >
 
-            <span class="brand-subtitle">
-              Apps & Games
-            </span>
-          </span>
-        </a>
+      <span class="site-brand__text">
+        <span class="site-brand__name">NivAk Technologies</span>
+        <span class="site-brand__sub">Digital Products & Solutions</span>
+      </span>
+    </a>
 
-        <nav aria-label="Primary navigation">
-          <ul
-            class="nav-menu"
-            data-nav-menu
-          >
-            <li>
-              <a
-                class="nav-link"
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link is-active"
-                href="/apps/"
-                aria-current="page"
-              >
-                Apps
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/services/"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/offers/"
-              >
-                Offers
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/about/"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/support/"
-              >
-                Support
-              </a>
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="/contact/"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="../">Home</a>
+      <a class="nav-link is-active" href="./">Apps & Games</a>
+      <a class="nav-link" href="../services/">Services</a>
+      <a class="nav-link" href="../offers/">Offers</a>
+        <a class="nav-link" href="../faq/">FAQ</a>
+      <a class="nav-link" href="../about/">About</a>
+      <a class="nav-link" href="../support/">Support</a>
+      <a class="nav-link" href="../contact/">Contact</a>
+    </nav>
 
-        <div class="nav-actions">
-          <button
-            class="icon-button"
-            type="button"
-            data-theme-toggle
-            aria-label="Switch theme"
-            title="Switch theme"
-          >
-            <span
-              data-theme-icon
-              aria-hidden="true"
-            >
-              ☾
-            </span>
-          </button>
+    <div class="header-actions">
 
-          <button
-            class="icon-button menu-toggle"
-            type="button"
-            data-menu-toggle
-            aria-label="Open navigation"
-            aria-expanded="false"
-          >
-            <span aria-hidden="true">☰</span>
-          </button>
-        </div>
-      </div>
-    </header>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch theme"
+        title="Change theme"
+      >
+        ?
+      </button>
 
-    <main id="main-content">
+      <a class="button button--accent button--small header-cta" href="../contact/">
+        Work With Us
+      </a>
 
-  <section class="apps-directory-hero">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
     <div class="container">
 
-      <span class="eyebrow">
-        NivAk Product Portfolio
-      </span>
+      <div class="page-hero__content">
+        <span class="eyebrow">NivAk Product Portfolio</span>
 
-      <h1>
-        Apps & Games
-        <span class="gradient-text">
-          built with purpose.
-        </span>
-      </h1>
+        <h1>Apps & Games</h1>
 
-      <p>
-        Explore our complete and growing portfolio of practical
-        applications and engaging mobile games.
-      </p>
+        <p>
+          Explore released apps, mobile games and new products currently being developed by NivAk Technologies.
+        </p>
 
-      <div class="apps-directory-stats">
+        <div class="apps-hero-stats">
+          <span><strong>7</strong> Products</span>
+          <span><strong>4</strong> Available Now</span>
+          <span>Apps & Games</span>
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+
+  <!-- PRODUCT CATALOG -->
+  <section class="section">
+    <div class="container">
+
+      <div class="section-heading section-heading--split">
         <div>
-          <strong>7</strong>
-          <span>Products</span>
+          <span class="eyebrow">Our Products</span>
+          <h2>Explore the NivAk portfolio.</h2>
         </div>
 
-        <div>
-          <strong>4</strong>
-          <span>In Production</span>
-        </div>
+        <p>
+          One growing collection of utility apps, productivity tools,
+          puzzle games and interactive mobile experiences.
+        </p>
+      </div>
+<!-- FILTERS -->
+      <div class="product-filters" aria-label="Filter products">
 
-        <div>
-          <strong>Android</strong>
-          <span>Primary Platform</span>
-        </div>
+        <button
+          class="product-filter is-active"
+          type="button"
+          data-product-filter="all"
+        >
+          All
+        </button>
+
+        <button
+          class="product-filter"
+          type="button"
+          data-product-filter="production"
+        >
+          Available
+        </button>
+
+        <button
+          class="product-filter"
+          type="button"
+          data-product-filter="nearly-complete"
+        >
+          Nearly Complete
+        </button>
+
+        <button
+          class="product-filter"
+          type="button"
+          data-product-filter="development"
+        >
+          In Development
+        </button>
+
+      </div>
+
+
+      <!-- PRODUCTS ARE RENDERED FROM products.js -->
+      <div
+        class="products-catalog-grid"
+        id="products-catalog"
+        aria-live="polite"
+      ></div>
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCT PHILOSOPHY -->
+  <section class="section section--brand-dark">
+    <div class="container">
+
+      <div class="section-heading section-heading--light">
+        <span class="eyebrow">Our Approach</span>
+
+        <h2>
+          Products designed for useful, enjoyable digital experiences.
+        </h2>
+
+        <p>
+          We focus on clear interfaces, dependable functionality and
+          continuous improvement as our portfolio grows.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <article class="feature-item">
+          <h3>Purposeful</h3>
+          <p>
+            Each product starts with a clear use case or gameplay experience.
+          </p>
+        </article>
+
+        <article class="feature-item">
+          <h3>User Focused</h3>
+          <p>
+            Interfaces are designed around clarity, accessibility and
+            straightforward interaction.
+          </p>
+        </article>
+
+        <article class="feature-item">
+          <h3>Continuously Improved</h3>
+          <p>
+            Released products can continue evolving through fixes,
+            improvements and new features.
+          </p>
+        </article>
+
+        <article class="feature-item">
+          <h3>Growing Portfolio</h3>
+          <p>
+            New apps and games are being developed as the NivAk product
+            portfolio expands.
+          </p>
+        </article>
 
       </div>
 
     </div>
   </section>
 
-  <section
-        class="section"
-        id="apps"
-      >
-        <div class="container">
-          <div class="section-heading reveal">
-            <span class="eyebrow">
-              Our Products
-            </span>
 
-            <h2>
-              Apps currently being built by
-              NivAk Technologies.
-            </h2>
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
 
-            <p>
-              We publish only real project statuses and update each
-              product page as development and testing progress.
-            </p>
-          </div>
+      <div class="cta-panel">
+        <div>
+          <span class="eyebrow">Development Services</span>
 
-          <div class="surface-grid surface-grid--2">
-            <article class="card app-card reveal">
-              <div class="app-card-header">
-                <img class="app-symbol app-symbol--image" src="assets/icons/app-icons/quickcalc-daily.png" alt="Calculator – Simple & Smart app icon">
+          <h2>Have an app idea or an existing project?</h2>
 
-                <span class="status-badge status-badge--production">
-                  Production
-                </span>
-              </div>
-
-              <h3>Calculator – Simple & Smart</h3>
-
-              <p>
-                A modern calculator collection for daily tasks,
-                including history, favourites, PDF export and useful
-                calculation tools.
-              </p>
-
-              <ul class="feature-list">
-                <li>Everyday calculators</li>
-                <li>History and favourites</li>
-                <li>PDF export and sharing</li>
-                <li>Light and dark themes</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/quickcalc-daily/"
-              >
-                Learn more
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-
-            <article class="card app-card reveal reveal-delay-1">
-              <div class="app-card-header">
-                <img class="app-symbol app-symbol--image" src="assets/icons/app-icons/resume-builder.png" alt="ResumeGo – CV & Resume Maker app icon">
-
-                <span class="status-badge status-badge--production">
-                  Production
-                </span>
-              </div>
-
-              <h3>ResumeGo – CV & Resume Maker</h3>
-
-              <p>
-                Create professional resumes with structured sections,
-                reusable templates, local saving and PDF export.
-              </p>
-
-              <ul class="feature-list">
-                <li>ATS-friendly templates</li>
-                <li>Modern resume designs</li>
-                <li>Saved resume management</li>
-                <li>PDF export, sharing and printing</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/resume-builder/"
-              >
-                View project
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-
-            <article class="card app-card reveal reveal-delay-2">
-              <div class="app-card-header">
-                <img class="app-symbol app-symbol--image" src="assets/icons/app-icons/quick-play.png" alt="Quick Play app icon">
-
-                <span class="status-badge status-badge--production">
-                  Production
-                </span>
-              </div>
-
-              <h3>Quick Play</h3>
-
-              <p>
-                A colourful collection of quick mini-games designed
-                for short, replayable and enjoyable sessions.
-              </p>
-
-              <ul class="feature-list">
-                <li>Memory Match</li>
-                <li>Colour Match</li>
-                <li>Speed Tap</li>
-                <li>Number Match</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/quick-play/"
-              >
-                View project
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-
-            <article class="card app-card reveal reveal-delay-3">
-              <div class="app-card-header">
-                <img class="app-symbol app-symbol--image" src="assets/icons/app-icons/block-quest.png" alt="Block Quest app icon">
-
-                <span class="status-badge status-badge--production">
-                  Production
-                </span>
-              </div>
-
-              <h3>Block Quest</h3>
-
-              <p>
-                A colourful block puzzle adventure with themed maps,
-                rewards and progressive level-based gameplay.
-              </p>
-
-              <ul class="feature-list">
-                <li>Adventure puzzle levels</li>
-                <li>Reward checkpoints</li>
-                <li>Lives and progression</li>
-                <li>Multiple themed worlds</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/block-quest/"
-              >
-                View project
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-
-            <article class="card app-card reveal">
-              <div class="app-card-header">
-                <img class="app-symbol app-symbol--image" src="assets/icons/app-icons/colourflow-master.png" alt="ColourFlow Master app icon">
-
-                <span class="status-badge status-badge--coming">
-                  Nearly Complete
-                </span>
-              </div>
-
-              <h3>ColourFlow Master</h3>
-
-              <p>
-                A colourful water sort puzzle game with relaxing
-                gameplay, progressive difficulty and rewarding challenges.
-              </p>
-
-              <ul class="feature-list">
-                <li>Easy, Medium and Hard levels</li>
-                <li>Coins and rewards</li>
-                <li>Missions and achievements</li>
-                <li>Lives and progression</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/colourflow-master/"
-              >
-                View project
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-            <article class="card app-card reveal reveal-delay-1">
-              <div class="app-card-header">
-                <img
-                  class="app-symbol app-symbol--image"
-                  src="assets/icons/app-icons/photopro-ai.png"
-                  alt="PhotoPro AI app icon"
-                >
-
-                <span class="status-badge status-badge--development">
-                  In Development
-                </span>
-              </div>
-
-              <h3>PhotoPro AI</h3>
-
-              <p>
-                A modern photo editor combining everyday editing tools
-                with powerful AI-assisted image enhancement and creative
-                features.
-              </p>
-
-              <ul class="feature-list">
-                <li>Professional photo editing</li>
-                <li>AI enhancement and restoration</li>
-                <li>Background and object tools</li>
-                <li>AI creative features</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/photopro-ai/"
-              >
-                View project
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-            <article class="card app-card reveal reveal-delay-2">
-              <div class="app-card-header">
-                <img
-                  class="app-symbol app-symbol--image"
-                  src="assets/icons/app-icons/carrom-king-arena.png"
-                  alt="Carrom King Arena app icon"
-                >
-
-                <span class="status-badge status-badge--development">
-                  In Development
-                </span>
-              </div>
-
-              <h3>Carrom King Arena</h3>
-
-              <p>
-                A premium digital carrom game with single-player,
-                local two-player, multiplayer and competitive modes.
-              </p>
-
-              <ul class="feature-list">
-                <li>Vs Computer</li>
-                <li>Two Players & Multiplayer</li>
-                <li>Challenges & Ranking</li>
-                <li>Rewards & Shop</li>
-              </ul>
-
-              <a
-                class="text-link"
-                href="apps/carrom-king-arena/"
-              >
-                View project
-                <span aria-hidden="true">→</span>
-              </a>
-            </article>
-          </div>
+          <p>
+            Explore our development services or contact NivAk Technologies
+            to discuss your project.
+          </p>
         </div>
-      </section>
+
+        <div class="cta-panel__actions">
+          <a class="button button--accent" href="../services/">
+            Explore Services
+          </a>
+
+          <a class="button button--outline-light" href="../contact/">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 </main>
 
-    <footer class="site-footer">
-  <div class="container">
+
+<footer class="site-footer">
+
+  <div class="container footer-main">
 
     <div class="footer-grid">
 
       <div class="footer-brand">
-        <a class="brand" href="/">
+
+        <a class="site-brand" href="../">
           <img
-            class="brand-logo"
-            src="/assets/images/brand/nivak-logo.png"
-            alt="NivAk Technologies logo"
+            class="site-brand__logo"
+            src="/assets/site/images/nivak-logo.png"
+            alt=""
           >
 
-          <span class="brand-text">
-            <span class="brand-name">
-              NivAk Technologies
-            </span>
-
-            <span class="brand-subtitle">
-              Apps & Games
-            </span>
+          <span class="site-brand__text">
+            <span class="site-brand__name">NivAk Technologies</span>
+            <span class="site-brand__sub">Digital Products & Solutions</span>
           </span>
         </a>
 
         <p class="footer-description">
-          Independent mobile app and game development focused on
-          practical tools, polished design and reliable user experiences.
+          Building smart mobile apps, games and digital solutions
+          for a growing connected world.
         </p>
 
-        <div class="footer-social-links">
-
-          <a
-            class="footer-social-link"
-            href="https://www.facebook.com/profile.php?id=61594030499432"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="NivAk Technologies on Facebook"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v9h4v-9h3.2l.8-4H13V9c0-.7.3-1 1-1z"/>
-            </svg>
-            <span>Facebook</span>
-          </a>
-
-          <a
-            class="footer-social-link"
-            href="https://www.instagram.com/nivak_technologies/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="NivAk Technologies on Instagram"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8zm0 2A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zM17.5 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
-            </svg>
-            <span>Instagram</span>
-          </a>
-
-        </div>
       </div>
 
+
       <div>
-        <h3 class="footer-heading">
-          Contact
-        </h3>
+        <h2 class="footer-heading">Explore</h2>
 
         <ul class="footer-links">
+          <li><a class="footer-link" href="./">Apps & Games</a></li>
+          <li><a class="footer-link" href="../services/">Services</a></li>
+          <li><a class="footer-link" href="../offers/">Offers</a></li>
+          <li><a class="footer-link" href="../about/">About</a></li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h2 class="footer-heading">Help</h2>
+
+        <ul class="footer-links">
+          <li><a class="footer-link" href="../support/">Support</a></li>
+          <li><a class="footer-link" href="../contact/">Contact</a></li>
+          <li><a class="footer-link" href="/legal/privacy/">Privacy</a></li>
+          <li><a class="footer-link" href="/legal/terms/">Terms</a></li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+
+        <ul class="footer-links">
+          <li>
+            <a
+              class="footer-link"
+              href="mailto:contact@nivak-technologies.com"
+            >
+              Company & Business
+            </a>
+          </li>
+
           <li>
             <a
               class="footer-link"
               href="mailto:support@nivak-technologies.com"
             >
-              Email
-            </a>
-          </li>
-
-          <li>
-            <a
-              class="footer-link"
-              href="/support/"
-            >
-              Support Center
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="footer-heading">
-          Company
-        </h3>
-
-        <ul class="footer-links">
-          <li>
-            <a class="footer-link" href="/apps/">
-              Apps
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="/services/">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="/offers/">
-              Offers
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="/about/">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="/contact/">
-              Contact
+              Customer Support
             </a>
           </li>
         </ul>
       </div>
 
-      <div>
-        <h3 class="footer-heading">
-          Legal
-        </h3>
-
-        <ul class="footer-links">
-          <li>
-            <a class="footer-link" href="/legal/privacy/">
-              Website Privacy Policy
-            </a>
-          </li>
-
-          <li>
-            <a class="footer-link" href="/legal/terms/">
-              Website Terms & Conditions
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>
-        © <span data-current-year></span>
-        NivAk Technologies. All rights reserved.
-      </p>
-
-      <p>
-        Built independently in Germany.
-      </p>
     </div>
 
   </div>
+
+
+  <div class="container footer-bottom">
+
+    <p>
+   &copy; <span data-current-year></span> NivAk Technologies.
+      All rights reserved.
+    </p>
+
+    <div class="footer-contact">
+
+      <a href="mailto:contact@nivak-technologies.com">
+        contact@nivak-technologies.com
+      </a>
+
+      <a href="mailto:support@nivak-technologies.com">
+        support@nivak-technologies.com
+      </a>
+
+    </div>
+
+  </div>
+
 </footer>
-  </div>
 
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/navigation.js"></script>
-  
-  <script src="assets/js/main.js"></script>
+
+<script src="/assets/site/js/products.js"></script>
+
+<script>
+(function () {
+  "use strict";
+
+  const products = window.NIVAK_PRODUCTS || [];
+  const statusMap = window.NIVAK_PRODUCT_STATUS || {};
+  const catalog = document.getElementById("products-catalog");
+  const filters = document.querySelectorAll("[data-product-filter]");
+
+  const iconPath = (path) => "../" + path;
+
+  function createProductCard(product) {
+    const status =
+      statusMap[product.status] || {
+        label: product.status,
+        className: ""
+      };
+
+    const article = document.createElement("article");
+    article.className = "product-card catalog-product-card";
+    article.dataset.status = product.status;
+
+    const action = product.playStore
+      ? `
+        <a
+          class="btn btn--primary btn--small"
+          href="${product.playStore}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on Google Play
+        </a>
+      `
+      : `
+        <span class="catalog-product-card__availability">
+          ${status.label}
+        </span>
+      `;
+
+    article.innerHTML = `
+      <div class="catalog-product-card__top">
+        <img
+          class="catalog-product-card__icon"
+          src="${iconPath(product.icon)}"
+          alt="${product.name} app icon"
+          loading="lazy"
+        >
+
+        <span class="badge ${status.className}">
+          ${status.label}
+        </span>
+      </div>
+
+      <div class="catalog-product-card__content">
+        <span class="catalog-product-card__type">
+          ${product.type}
+        </span>
+
+        <h3>${product.name}</h3>
+
+        <p>${product.description}</p>
+      </div>
+
+      <div class="catalog-product-card__footer">
+        ${action}
+      </div>
+    `;
+
+    return article;
+  }
+
+  function renderProducts(filter = "all") {
+    catalog.innerHTML = "";
+
+    const visibleProducts =
+      filter === "all"
+        ? products
+        : products.filter(product => product.status === filter);
+
+    visibleProducts.forEach(product => {
+      catalog.appendChild(createProductCard(product));
+    });
+  }
+
+  filters.forEach(button => {
+    button.addEventListener("click", () => {
+      filters.forEach(item => item.classList.remove("is-active"));
+      button.classList.add("is-active");
+      renderProducts(button.dataset.productFilter);
+    });
+  });
+
+  renderProducts();
+})();
+</script>
+
+<script src="/assets/site/js/site.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
