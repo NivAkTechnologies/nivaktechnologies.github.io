@@ -1770,3 +1770,277 @@ main > .section--brand-dark > .container,
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
+/* =========================================================
+   MOBILE MENU ICON
+   ========================================================= */
+
+.menu-icon {
+  position: relative;
+  display: block;
+
+  width: 19px;
+  height: 14px;
+
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.menu-icon::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 5px;
+
+  width: 19px;
+
+  border-top: 2px solid currentColor;
+}
+
+
+/* =========================================================
+   MOBILE FIXES — APPS & GAMES
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  /* Force app portfolio into one clean column */
+  .apps-grid,
+  .products-grid,
+  .app-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .app-card,
+  .product-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    overflow: hidden;
+  }
+
+  .app-card__header,
+  .app-card-header,
+  .product-card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    width: 100%;
+  }
+
+  .app-card h2,
+  .app-card h3,
+  .product-card h2,
+  .product-card h3 {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    white-space: normal;
+
+    line-height: 1.25;
+  }
+
+  .app-card p,
+  .product-card p {
+    word-break: normal !important;
+    overflow-wrap: break-word;
+
+    line-height: 1.6;
+  }
+
+  .app-card img,
+  .product-card img {
+    flex-shrink: 0;
+  }
+}
+
+
+/* =========================================================
+   DARK MODE — APPS CAPSULE / BADGE CONTRAST
+   ========================================================= */
+
+html[data-theme="dark"] .status-badge,
+html[data-theme="dark"] .pill,
+html[data-theme="dark"] .badge,
+html[data-theme="dark"] .stat-pill,
+html[data-theme="dark"] .product-status {
+  background: #11284d;
+  border-color: rgba(91, 150, 240, 0.42);
+  color: #f4f8ff;
+}
+
+html[data-theme="dark"] .status-badge strong,
+html[data-theme="dark"] .pill strong,
+html[data-theme="dark"] .badge strong,
+html[data-theme="dark"] .stat-pill strong {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .status-badge span,
+html[data-theme="dark"] .pill span,
+html[data-theme="dark"] .badge span,
+html[data-theme="dark"] .stat-pill span {
+  color: #c8d6ed;
+}
+
+
+/* Production */
+html[data-theme="dark"] .status-production,
+html[data-theme="dark"] .status-badge--production {
+  background: rgba(34, 197, 94, 0.17);
+  border-color: rgba(34, 197, 94, 0.35);
+  color: #74e59a;
+}
+
+
+/* Development */
+html[data-theme="dark"] .status-development,
+html[data-theme="dark"] .status-badge--development {
+  background: rgba(75, 142, 240, 0.18);
+  border-color: rgba(75, 142, 240, 0.38);
+  color: #9bc3ff;
+}
+
+
+/* Coming / Nearly Complete */
+html[data-theme="dark"] .status-coming,
+html[data-theme="dark"] .status-badge--coming {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.17);
+  color: #e4ebf7;
+}
+
+
+/* =========================================================
+   APPS & GAMES — FINAL MOBILE FIX
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+  .apps-page .products-catalog-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .apps-page .products-catalog-grid > * {
+    grid-column: auto !important;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .apps-page .catalog-product-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .apps-page .catalog-product-card__top {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .apps-page .catalog-product-card__icon {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    border-radius: 16px;
+  }
+
+  .apps-page .catalog-product-card__content {
+    min-width: 0;
+  }
+
+  .apps-page .catalog-product-card__content h3 {
+    font-size: 1.18rem;
+    line-height: 1.3;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .apps-page .catalog-product-card__content p {
+    font-size: .9rem;
+    line-height: 1.6;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .apps-page .catalog-product-card .badge {
+    flex: 0 0 auto;
+    max-width: 52%;
+
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .apps-hero-stats {
+    gap: 8px;
+  }
+
+  .apps-hero-stats span {
+    min-height: 36px;
+    padding: 7px 12px;
+
+    font-size: .78rem;
+  }
+}
+
+
+/* =========================================================
+   APPS & GAMES — DARK MODE CONTRAST
+   ========================================================= */
+
+[data-theme="dark"] .apps-hero-stats span {
+  background: #10284f;
+  border-color: rgba(105, 167, 255, .40);
+  color: #dce8fa;
+
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, .16);
+}
+
+[data-theme="dark"] .apps-hero-stats strong {
+  color: #ffffff;
+}
+
+
+/* Production */
+[data-theme="dark"] .apps-page .badge--production {
+  background: rgba(54, 190, 110, .16);
+  border-color: rgba(84, 220, 139, .36);
+  color: #7ce2a4;
+}
+
+
+/* In Development */
+[data-theme="dark"] .apps-page .badge--development {
+  background: rgba(255, 122, 36, .15);
+  border-color: rgba(255, 145, 70, .36);
+  color: #ffad75;
+}
+
+
+/* Nearly Complete */
+[data-theme="dark"] .apps-page .badge--nearly {
+  background: rgba(255, 173, 51, .15);
+  border-color: rgba(255, 193, 92, .38);
+  color: #ffd084;
+}
+
+
+/* Unreleased availability capsule */
+[data-theme="dark"] .apps-page .catalog-product-card__availability {
+  background: #10284f;
+  border-color: rgba(105, 167, 255, .34);
+  color: #a8ccff;
+}
+
