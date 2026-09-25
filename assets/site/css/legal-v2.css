@@ -1002,3 +1002,63 @@ main {
     max-width: 100%;
   }
 }
+/* ---------- Legal mobile footer fix ---------- */
+
+@media (max-width: 760px) {
+
+  .site-footer,
+  .footer-main,
+  .footer-bottom {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .site-footer .container,
+  .footer-main .container,
+  .footer-bottom .container {
+    width: calc(100% - 28px);
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 28px;
+  }
+
+  .footer-grid > *,
+  .footer-brand,
+  .footer-links {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .footer-brand .site-brand {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .footer-brand .site-brand__text {
+    min-width: 0;
+  }
+
+  .footer-description,
+  .footer-link,
+  .footer-contact {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .footer-bottom {
+    overflow: visible;
+  }
+}
