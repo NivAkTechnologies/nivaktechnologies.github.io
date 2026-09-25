@@ -823,3 +823,51 @@ body {
     width: 100%;
   }
 }
+/* ---------- Legal mobile header overflow fix ---------- */
+
+.site-header {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@media (max-width: 760px) {
+
+  .site-header .header-inner {
+    width: calc(100% - 28px);
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .site-header .site-brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .site-header .site-brand__text {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .site-header .site-brand__name,
+  .site-header .site-brand__sub {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .site-header .header-actions {
+    flex: 0 0 auto;
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .site-header .header-cta {
+    display: none !important;
+  }
+
+  .site-header .theme-toggle,
+  .site-header .menu-toggle {
+    flex: 0 0 auto;
+  }
+}
