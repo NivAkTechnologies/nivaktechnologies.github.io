@@ -1129,3 +1129,14 @@ main {
     overflow-wrap: anywhere;
   }
 }
+/* ---------- Legal mobile footer edge adjustment ---------- */
+
+@media (max-width: 760px) {
+
+  .site-footer .footer-main > .container,
+  .site-footer .footer-bottom > .container {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    box-sizing: border-box;
+  }
+}
