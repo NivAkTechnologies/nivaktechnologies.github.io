@@ -1,7 +1,7 @@
 "use strict";
 
 /*
- * NivAk Technologies — Central Product Catalog
+ * NivAk Technologies ï¿½ Central Product Catalog
  *
  * Add or update products here.
  * Home and Apps & Games pages can reuse this same data.
@@ -18,7 +18,7 @@ window.NIVAK_PRODUCTS = [
     name: "QuickCalc Daily",
     type: "Utility App",
     status: "production",
-    icon: "assets/images/apps/quickcalc-daily.png",
+    icon: "/assets/icons/app-icons/quickcalc-daily.png",
     description:
       "A clean everyday calculator with calculation history, favorites and PDF export tools.",
     playStore:
@@ -30,7 +30,7 @@ window.NIVAK_PRODUCTS = [
     name: "ResumeGo",
     type: "Productivity App",
     status: "production",
-    icon: "assets/images/apps/resume-builder.png",
+    icon: "/assets/icons/app-icons/resume-builder.png",
     description:
       "Create structured CVs and resumes, manage profile information and export professional documents to PDF.",
     playStore:
@@ -42,7 +42,7 @@ window.NIVAK_PRODUCTS = [
     name: "Block Quest",
     type: "Puzzle Game",
     status: "production",
-    icon: "assets/images/apps/block-quest.png",
+    icon: "/assets/icons/app-icons/block-quest.png",
     description:
       "A mobile block puzzle experience with progression, lives, checkpoints and rewards.",
     playStore:
@@ -54,7 +54,7 @@ window.NIVAK_PRODUCTS = [
     name: "Quick Play",
     type: "Mini Games",
     status: "production",
-    icon: "assets/images/apps/quick-play.png",
+    icon: "/assets/icons/app-icons/quick-play.png",
     description:
       "A collection of quick mobile mini-games designed for simple and accessible entertainment.",
     playStore:
@@ -66,7 +66,7 @@ window.NIVAK_PRODUCTS = [
     name: "ColourFlow Master",
     type: "Puzzle Game",
     status: "nearly-complete",
-    icon: "assets/images/apps/colourflow-master.png",
+    icon: "/assets/icons/app-icons/colourflow-master.png",
     description:
       "A vibrant colour-based puzzle experience designed around satisfying visual challenges.",
     playStore: ""
@@ -77,7 +77,7 @@ window.NIVAK_PRODUCTS = [
     name: "PhotoPro AI",
     type: "Photo App",
     status: "development",
-    icon: "assets/images/apps/photopro-ai.png",
+    icon: "/assets/icons/app-icons/photopro-ai.png",
     description:
       "A photo-focused mobile application currently being developed as part of the NivAk product portfolio.",
     playStore: ""
@@ -88,7 +88,7 @@ window.NIVAK_PRODUCTS = [
     name: "Carrom King Arena",
     type: "Mobile Game",
     status: "development",
-    icon: "assets/images/apps/carrom-king-arena.png",
+    icon: "/assets/icons/app-icons/carrom-king-arena.png",
     description:
       "A premium digital carrom experience with computer play, multiplayer, challenges, rankings and rewards.",
     playStore: ""
