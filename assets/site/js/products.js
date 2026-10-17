@@ -1,7 +1,7 @@
 "use strict";
 
 /*
- * NivAk Technologies � Central Product Catalog
+ * NivAk Technologies ï¿½ Central Product Catalog
  *
  * Add or update products here.
  * Home and Apps & Games pages can reuse this same data.
@@ -72,6 +72,16 @@ window.NIVAK_PRODUCTS = [
     playStore: ""
   },
 
+  {
+    id: "royal-casino-games",
+    name: "Royal Casino Games",
+    type: "Casino Mini Games",
+    status: "nearly-complete",
+    icon: "/assets/icons/app-icons/royal_casino.png",
+    description:
+      "Step into the excitement of Royal Casino Games! Spin the slots, test your luck on the Lucky Wheel, reveal surprises with Scratch Cards, and explore more thrilling casino-inspired mini-games. Enjoy dazzling wins, exciting rewards, and endless entertainment with virtual coins.",
+    playStore: ""
+  },
   {
     id: "photopro-ai",
     name: "PhotoPro AI",
