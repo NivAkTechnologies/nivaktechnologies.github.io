@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 
 (() => {
   const root = document.documentElement;
@@ -195,7 +195,7 @@
           >
 
           <span class="badge ${escapeHtml(status.className)}">
-            ${escapeHtml(status.label)}
+            ${escapeHtml(product.id === "colourflow-master" ? "Closed Testing" : status.label)}
           </span>
 
         </div>

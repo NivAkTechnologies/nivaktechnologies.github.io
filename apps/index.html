@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -355,7 +355,7 @@
 </footer>
 
 
-<script src="/assets/site/js/products.js"></script>
+<script src="/assets/site/js/products.js?v=20261017-1"></script>
 
 <script>
 (function () {
@@ -375,6 +375,10 @@
         className: ""
       };
 
+    const displayStatus = product.id === "colourflow-master"
+      ? { ...status, label: "Closed Testing" }
+      : status;
+
     const article = document.createElement("article");
     article.className = "product-card catalog-product-card";
     article.dataset.status = product.status;
@@ -392,7 +396,7 @@
       `
       : `
         <span class="catalog-product-card__availability">
-          ${status.label}
+          ${displayStatus.label}
         </span>
       `;
 
@@ -406,7 +410,7 @@
         >
 
         <span class="badge ${status.className}">
-          ${status.label}
+          ${displayStatus.label}
         </span>
       </div>
 
@@ -453,7 +457,7 @@
 })();
 </script>
 
-<script src="/assets/site/js/site.js"></script>
+<script src="/assets/site/js/site.js?v=20261017-1"></script>
 
 </body>
 </html>
