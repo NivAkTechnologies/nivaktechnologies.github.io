@@ -59,15 +59,15 @@ NivAk Technologies develops a growing portfolio of Android applications and mobi
 
 Our products include:
 
-| Application | Category |
-|---|---|
-| Calculator – Simple & Smart | Utility & Productivity |
-| ResumeGo – CV & Resume Maker | Resume & CV Builder |
-| Block Quest | Puzzle Game |
-| QuickPlay | Mini Games |
-| ColourFlow Master | Colour Sorting Puzzle |
-| Royal Casino Games | Casino-Inspired Mini Games |
-| PhotoPro AI | Photo Editing |
+Application	Category
+Calculator – Simple & Smart	Utility & Productivity
+ResumeGo – CV & Resume Maker	Resume & CV Builder
+Block Quest	Puzzle Game
+QuickPlay	Mini Games
+ColourFlow Master	Colour Sorting Puzzle
+Carrom King Arena	Board Game
+Royal Casino Games	Casino-Inspired Mini Games
+PhotoPro AI	Photo Editing
 
 Product availability and development status may vary.
 
