@@ -1,7 +1,7 @@
 "use strict";
 
 /*
- * NivAk Technologies ï¿½ Central Product Catalog
+ * NivAk Technologies Ã¯Â¿Â½ Central Product Catalog
  *
  * Add or update products here.
  * Home and Apps & Games pages can reuse this same data.
@@ -69,7 +69,7 @@ window.NIVAK_PRODUCTS = [
     icon: "/assets/icons/app-icons/colourflow-master.png",
     description:
       "A vibrant colour-based puzzle experience designed around satisfying visual challenges.",
-    playStore: ""
+    playStore: "https://play.google.com/store/apps/details?id=com.nivaktechnologies.colour_flow_master"
   },
 
   {
