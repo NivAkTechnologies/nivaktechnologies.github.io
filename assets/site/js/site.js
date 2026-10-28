@@ -31,7 +31,7 @@
       dark ? "Switch to light theme" : "Switch to dark theme"
     );
 
-    themeToggle.textContent = dark ? "☀" : "☾";
+    themeToggle.textContent = dark ? "â˜€" : "â˜¾";
   };
 
   const setTheme = (theme) => {
@@ -176,10 +176,10 @@
               href="${escapeHtml(product.playStore)}"
               target="_blank"
               rel="noopener noreferrer">
-             View on Google Play <span aria-hidden="true">→</span>
+             View on Google Play <span aria-hidden="true">â†’</span>
            </a>`
         : `<a class="text-link" href="apps/">
-             View product <span aria-hidden="true">→</span>
+             View product <span aria-hidden="true">â†’</span>
            </a>`;
 
     article.innerHTML = `
@@ -195,7 +195,7 @@
           >
 
           <span class="badge ${escapeHtml(status.className)}">
-            ${escapeHtml(product.id === "colourflow-master" ? "Closed Testing" : status.label)}
+            ${escapeHtml(status.label)}
           </span>
 
         </div>

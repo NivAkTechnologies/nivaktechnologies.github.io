@@ -87,7 +87,7 @@
 
         <div class="apps-hero-stats">
           <span><strong>8</strong> Products</span>
-          <span><strong>4</strong> Available Now</span>
+          <span><strong>5</strong> Available Now</span>
           <span>Apps & Games</span>
         </div>
       </div>
@@ -355,7 +355,7 @@
 </footer>
 
 
-<script src="/assets/site/js/products.js?v=20261028-1"></script>
+<script src="/assets/site/js/products.js?v=20261028-2"></script>
 
 <script>
 (function () {
@@ -375,9 +375,7 @@
         className: ""
       };
 
-    const displayStatus = product.id === "colourflow-master"
-      ? { ...status, label: "Closed Testing" }
-      : status;
+    const displayStatus = status;
 
     const article = document.createElement("article");
     article.className = "product-card catalog-product-card";
@@ -391,7 +389,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          ${product.id === "colourflow-master" ? "View on Google Play (Closed Testing)" : "View on Google Play"}
+          View on Google Play
         </a>
       `
       : `
@@ -457,7 +455,7 @@
 })();
 </script>
 
-<script src="/assets/site/js/site.js?v=20261017-1"></script>
+<script src="/assets/site/js/site.js?v=20261028-2"></script>
 
 </body>
 </html>

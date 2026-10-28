@@ -1,7 +1,7 @@
 "use strict";
 
 /*
- * NivAk Technologies Ã¯Â¿Â½ Central Product Catalog
+ * NivAk Technologies ÃƒÂ¯Ã‚Â¿Ã‚Â½ Central Product Catalog
  *
  * Add or update products here.
  * Home and Apps & Games pages can reuse this same data.
@@ -65,7 +65,7 @@ window.NIVAK_PRODUCTS = [
     id: "colourflow-master",
     name: "ColourFlow Master",
     type: "Puzzle Game",
-    status: "nearly-complete",
+    status: "production",
     icon: "/assets/icons/app-icons/colourflow-master.png",
     description:
       "A vibrant colour-based puzzle experience designed around satisfying visual challenges.",
