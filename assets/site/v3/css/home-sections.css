@@ -1,0 +1,731 @@
+﻿/* NivAk Premium V3 — Homepage Sections */
+
+.services-v3 {
+  background: #ffffff;
+  color: #071b3d;
+  padding: 95px 0;
+}
+
+.services-v3 .section-eyebrow {
+  color: #f36b12;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.services-v3 h2 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(30px, 3.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+  margin: 16px 0;
+}
+
+.services-v3 .section-description {
+  color: #586b83;
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.services-grid-v3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 38px;
+}
+
+.service-v3-card {
+  display: flex;
+  flex-direction: column;
+  background: #f7f9fd;
+  border: 1px solid #e0e8f2;
+  border-radius: 20px;
+  padding: 30px;
+  min-height: 275px;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+
+.service-v3-card:hover {
+  transform: translateY(-6px);
+  border-color: #8bb5ed;
+  box-shadow: 0 18px 45px #102d5915;
+}
+
+.service-v3-card .service-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #e7f0ff;
+  color: #1465c0;
+  font-size: 23px;
+  margin-bottom: 22px;
+}
+
+.service-v3-card h3 {
+  font: 800 18px Manrope, sans-serif;
+  margin: 0 0 12px;
+}
+
+.service-v3-card p {
+  color: #60718a;
+  line-height: 1.7;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.service-v3-card a {
+  color: #e75f08;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.services-v3-footer {
+  text-align: center;
+  margin-top: 38px;
+}
+
+.services-v3-footer a {
+  display: inline-flex;
+  padding: 15px 23px;
+  border-radius: 12px;
+  background: #071b3d;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .services-grid-v3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .services-v3 {
+    padding: 65px 0;
+  }
+
+  .services-grid-v3 {
+    grid-template-columns: 1fr;
+  }
+
+  .service-v3-card {
+    min-height: auto;
+    padding: 25px;
+  }
+}
+
+/* V3 — Featured Apps & Games */
+
+.products-v3 {
+  background: #f4f7fc;
+  color: #071b3d;
+  padding: 95px 0;
+}
+
+.products-v3 .section-eyebrow {
+  color: #f36b12;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.products-v3 h2 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(30px, 3.5vw, 46px);
+  letter-spacing: -1.5px;
+  margin: 16px 0;
+}
+
+.products-v3 .section-description {
+  color: #586b83;
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.products-grid-v3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+.product-v3-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #dce6f2;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 15px 40px #0b28570a;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.product-v3-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px #0b285719;
+}
+
+.product-v3-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.product-v3-icon {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+.product-v3-status {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #eef4fb;
+  color: #426182;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.product-v3-status[data-status="production"] {
+  background: #e9f7ef;
+  color: #167347;
+}
+
+.product-v3-status[data-status="nearly-complete"] {
+  background: #fff2e8;
+  color: #b7500b;
+}
+
+.product-v3-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2369c4;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.product-v3-card h3 {
+  font: 800 19px Manrope, sans-serif;
+  margin: 0 0 12px;
+}
+
+.product-v3-card p {
+  color: #5c6f88;
+  font-size: 13px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.product-v3-link {
+  display: inline-flex;
+  color: #e96912;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.products-v3-footer {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.products-v3-footer a {
+  display: inline-block;
+  padding: 15px 23px;
+  background: #071b3d;
+  color: white;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media(max-width:900px) {
+  .products-grid-v3 {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px) {
+  .products-v3 {padding:65px 0}
+  .products-grid-v3 {grid-template-columns:1fr}
+}
+
+/* V3 — Why NivAk */
+
+.why-v3 {
+  background: #071326;
+  color: #ffffff;
+  padding: 95px 0;
+}
+
+.why-v3-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.why-v3 .section-eyebrow,
+.process-v3 .section-eyebrow {
+  color: #ff7417;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.why-v3 h2,
+.process-v3 h2 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(30px, 3.5vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+  margin: 18px 0;
+}
+
+.why-v3 h2 {
+  color: white;
+}
+
+.why-v3-intro {
+  color: #b8c9df;
+  line-height: 1.85;
+  font-size: 15px;
+}
+
+.why-v3-list {
+  display: grid;
+  gap: 14px;
+}
+
+.why-v3-item {
+  padding: 22px 25px;
+  border: 1px solid #ffffff21;
+  border-radius: 16px;
+  background: linear-gradient(120deg,#173760,#102643);
+}
+
+.why-v3-item strong {
+  display: block;
+  font: 800 15px Manrope,sans-serif;
+  margin-bottom: 6px;
+}
+
+.why-v3-item p {
+  color: #b7c9df;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* V3 — Development Process */
+
+.process-v3 {
+  background: #ffffff;
+  padding: 95px 0;
+  color: #071b3d;
+}
+
+.process-v3-description {
+  color: #586b83;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.process-v3-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.process-v3-step {
+  position: relative;
+  padding: 28px 24px;
+  background: #f5f8fc;
+  border: 1px solid #e0e8f2;
+  border-radius: 18px;
+}
+
+.process-v3-number {
+  display: inline-block;
+  color: #ff7417;
+  font: 800 26px Manrope,sans-serif;
+  margin-bottom: 25px;
+}
+
+.process-v3-step h3 {
+  font: 800 17px Manrope,sans-serif;
+  margin: 0 0 12px;
+}
+
+.process-v3-step p {
+  color: #60718a;
+  font-size: 13px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media(max-width:900px) {
+  .why-v3-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .process-v3-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:600px) {
+  .why-v3,.process-v3 {
+    padding: 65px 0;
+  }
+
+  .process-v3-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* V3 — Current Offers */
+
+.offers-v3 {
+  background: #f4f7fc;
+  color: #071b3d;
+  padding: 90px 0;
+}
+
+.offers-v3 .section-eyebrow {
+  color: #f36b12;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.offers-v3 h2 {
+  font: 800 clamp(30px,3.5vw,46px) Manrope,sans-serif;
+  letter-spacing: -1.5px;
+  margin: 15px 0;
+}
+
+.offers-v3 p {
+  color: #586b83;
+  max-width: 650px;
+  line-height: 1.8;
+}
+
+.offers-v3-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 35px;
+  background: #ffffff;
+  border: 1px solid #dfe7f2;
+  border-radius: 22px;
+  padding: 32px;
+}
+
+.offers-v3-card h3 {
+  font: 800 21px Manrope,sans-serif;
+  margin: 0 0 10px;
+}
+
+.offers-v3-card p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.offers-v3-card a {
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: #071b3d;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* V3 — Contact CTA */
+
+.contact-v3 {
+  background: #ffffff;
+  padding: 95px 0;
+}
+
+.contact-v3-panel {
+  background:
+    radial-gradient(circle at 90% 15%,#ff74172d,transparent 35%),
+    linear-gradient(125deg,#1769d2,#071b3d 70%);
+  border-radius: 26px;
+  padding: 65px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-v3-panel h2 {
+  color: #ffffff;
+  font: 800 clamp(30px,3vw,42px) Manrope,sans-serif;
+  max-width: 560px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.contact-v3-panel p {
+  color: #d1dff0;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.contact-v3-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-v3-actions a {
+  padding: 15px 21px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.contact-v3-primary {background:#ff7417;color:#fff}
+.contact-v3-secondary {
+  border:1px solid #ffffff80;
+  color:#fff;
+}
+
+/* V3 — Footer */
+
+.footer-v3 {
+  background: #051126;
+  color: #ffffff;
+  padding: 65px 0 25px;
+}
+
+.footer-v3-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+
+.footer-v3-brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.footer-v3-brand img {
+  width:50px;
+  height:50px;
+  object-fit:contain;
+  background:#fff;
+  padding:4px;
+  border-radius:10px;
+}
+
+.footer-v3-brand strong {
+  font:800 16px Manrope,sans-serif;
+  display:block;
+}
+
+.footer-v3-brand small {
+  color:#aabbd4;
+  font-size:10px;
+}
+
+.footer-v3-description {
+  color:#9fb0ca;
+  font-size:13px;
+  line-height:1.8;
+  max-width:350px;
+}
+
+.footer-v3 h3 {
+  font:800 13px Manrope,sans-serif;
+  margin:5px 0 20px;
+}
+
+.footer-v3-links {
+  display:grid;
+  gap:13px;
+}
+
+.footer-v3-links a {
+  color:#afbed3;
+  font-size:13px;
+  overflow-wrap:anywhere;
+}
+
+.footer-v3-links a:hover {
+  color:#ff9148;
+}
+
+.footer-v3-bottom {
+  border-top:1px solid #ffffff1c;
+  margin-top:55px;
+  padding-top:25px;
+  color:#91a4bd;
+  font-size:12px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+@media(max-width:900px) {
+  .footer-v3-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .contact-v3-panel {
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+
+@media(max-width:600px) {
+  .offers-v3,.contact-v3 {
+    padding:65px 0;
+  }
+
+  .offers-v3-card {
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .contact-v3-panel {
+    padding:35px 25px;
+  }
+
+  .footer-v3-grid {
+    grid-template-columns:1fr;
+  }
+}
+
+/* NIVAK HOMEPAGE LABELS STEP 46 */
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 8px 14px;
+  border: 1px solid rgba(255,116,23,.38);
+  border-radius: 999px;
+  background: #fff3eb;
+  color: #a43f00;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+/* Dark section labels */
+
+.why-v3 .section-eyebrow,
+.contact-v3 .section-eyebrow {
+  background: rgba(255,116,23,.13);
+  border-color: rgba(255,116,23,.48);
+  color: #ffb17c;
+}
+
+@media (max-width: 600px) {
+  .section-eyebrow {
+    font-size: 11px;
+    padding: 7px 12px;
+    letter-spacing: .035em;
+  }
+}
+
+
+/* NIVAK HIGH CONTRAST LABELS STEP 47 */
+
+/* Light background sections */
+
+.services-v3 .section-eyebrow,
+.products-v3 .section-eyebrow,
+.process-v3 .section-eyebrow,
+.offers-v3 .section-eyebrow {
+  color: #102d59 !important;
+  background: #fff4ec !important;
+  border: 1px solid #e6b58f !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: .025em !important;
+  opacity: 1 !important;
+}
+
+/* Dark background sections */
+
+.why-v3 .section-eyebrow,
+.contact-v3 .section-eyebrow {
+  color: #ffffff !important;
+  background: #172d49 !important;
+  border: 1px solid #b45b27 !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: .025em !important;
+  opacity: 1 !important;
+}
+
+/* Maintain readability on mobile */
+
+@media (max-width: 600px) {
+  .section-eyebrow {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+
+/* NIVAK HERO LABEL STEP 49 */
+/* Match the approved Services hero label */
+
+.hero .eyebrow {
+  display: inline-flex !important;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  padding: 8px 14px !important;
+  border: 1px solid #b45b27 !important;
+  border-radius: 999px !important;
+  background: #172d49 !important;
+  color: #ffffff !important;
+  font-family: "Inter", sans-serif;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  letter-spacing: .025em !important;
+  text-transform: none;
+  opacity: 1 !important;
+}
+
+@media (max-width: 600px) {
+  .hero .eyebrow {
+    font-size: 12px !important;
+    padding: 7px 12px !important;
+  }
+}

@@ -1,0 +1,149 @@
+﻿.mobile-menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  background: #142b49;
+  color: #fff;
+  border: 1px solid #ffffff28;
+  border-radius: 11px;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.nav a[href="/"] {
+  color: #ff9148;
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    position: relative;
+    gap: 12px;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 14px;
+    border: 1px solid #ffffff22;
+    border-radius: 16px;
+    background: #0c203d;
+    box-shadow: 0 24px 50px #0008;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+  }
+
+  .nav.is-open {
+    display: flex;
+  }
+
+  .nav a {
+    padding: 12px 14px;
+    border-radius: 9px;
+    font-size: 14px;
+  }
+
+  .nav a:hover,
+  .nav a:focus-visible {
+    background: #203e65;
+  }
+}
+
+@media (max-width: 390px) {
+  .top-cta {
+    font-size: 9px;
+    padding: 9px;
+  }
+}
+
+/* V3 mobile refinement step 15 */
+
+@media (max-width: 760px) {
+  .brand {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .brand span {
+    min-width: 0;
+  }
+
+  .brand strong {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+
+  .brand small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 0.35px;
+    white-space: nowrap;
+  }
+
+  .header-inner {
+    gap: 10px;
+  }
+
+  .hero-grid {
+    padding-top: 46px;
+    padding-bottom: 12px;
+  }
+
+  .pill-row {
+    margin-top: 25px;
+  }
+
+  .universe {
+    margin-top: -15px;
+  }
+
+  .nav {
+    background: #0b1e38;
+    box-shadow: 0 24px 55px #000b;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand {
+    gap: 7px;
+  }
+
+  .brand img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .brand strong {
+    font-size: 11px;
+  }
+
+  .brand small {
+    font-size: 6.4px;
+  }
+
+  .top-cta {
+    font-size: 9px;
+    padding: 9px 8px;
+  }
+
+  .mobile-menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .universe {
+    margin-top: -80px;
+    margin-bottom: -105px;
+  }
+}

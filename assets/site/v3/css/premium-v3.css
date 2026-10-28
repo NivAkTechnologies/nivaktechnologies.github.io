@@ -1,0 +1,75 @@
+﻿/*
+ * NivAk Technologies — Premium V3
+ * Shared Design Foundation
+ *
+ * Hybrid Premium Design System
+ */
+
+:root {
+  /* Brand */
+  --v3-navy: #071326;
+  --v3-navy-dark: #051126;
+  --v3-royal-blue: #102d59;
+  --v3-blue: #1769d2;
+  --v3-orange: #ff7417;
+  --v3-orange-hover: #eb650e;
+
+  /* Backgrounds */
+  --v3-bg-light: #ffffff;
+  --v3-bg-soft: #f4f7fc;
+  --v3-bg-card: #ffffff;
+  --v3-bg-dark: #071326;
+
+  /* Typography */
+  --v3-text-dark: #071b3d;
+  --v3-text-muted: #586b83;
+  --v3-text-light: #ffffff;
+  --v3-text-light-muted: #b8c9df;
+
+  --v3-font-heading: "Manrope", "Inter", sans-serif;
+  --v3-font-body: "Inter", Arial, sans-serif;
+
+  /* Borders */
+  --v3-border-light: #dfe7f2;
+  --v3-border-dark: rgba(255,255,255,.14);
+
+  /* Radius */
+  --v3-radius-sm: 10px;
+  --v3-radius-md: 14px;
+  --v3-radius-lg: 20px;
+  --v3-radius-xl: 26px;
+
+  /* Layout */
+  --v3-container: 1240px;
+  --v3-section-space: 60px;
+  --v3-section-space-mobile: 44px;
+
+  /* Motion */
+  --v3-transition: 240ms ease;
+
+  /* Shadows */
+  --v3-shadow-card: 0 15px 40px rgba(7,19,38,.08);
+  --v3-shadow-hover: 0 22px 50px rgba(7,19,38,.15);
+}
+
+/* Shared focus styling */
+
+:focus-visible {
+  outline: 2px solid var(--v3-orange);
+  outline-offset: 3px;
+}
+
+/* Consistent text selection */
+
+::selection {
+  background: var(--v3-orange);
+  color: #ffffff;
+}
+
+/* Accessible reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

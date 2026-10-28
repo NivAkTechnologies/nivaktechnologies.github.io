@@ -1,0 +1,789 @@
+/* NivAk Technologies — Hybrid Premium V3 Offers */
+
+.offers-v3-page {
+  margin: 0;
+  background: #ffffff;
+  font-family: var(--v3-font-body);
+}
+
+.offers-v3-page main {
+  width: 100%;
+}
+
+.offers-v3-page main .container {
+  width: min(1160px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.offers-v3-page h1,
+.offers-v3-page h2,
+.offers-v3-page h3 {
+  font-family: var(--v3-font-heading);
+}
+
+/* Active navigation */
+
+.offers-v3-page .header .nav a[href="/"] {
+  color: #ffffff !important;
+}
+
+.offers-v3-page .header .nav a[href="/offers/"] {
+  color: #ff7417 !important;
+  font-weight: 800;
+}
+
+/* Hero */
+
+.offers-v3-page .offers-hero {
+  min-height: 0;
+  padding: 52px 0;
+  background:
+    radial-gradient(circle at 82% 25%,
+      rgba(40,110,210,.30),transparent 43%),
+    linear-gradient(115deg,#071326,#102d59);
+  color: #ffffff;
+}
+
+.offers-v3-page .offers-hero h1 {
+  max-width: 850px;
+  margin: 14px 0;
+  color: #ffffff;
+  font-size: clamp(36px,4vw,56px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.04em;
+}
+
+.offers-v3-page .offers-hero p {
+  max-width: 720px;
+  color: #c8d8eb;
+  line-height: 1.75;
+}
+
+/* High-contrast section labels */
+
+.offers-v3-page main .eyebrow,
+.offers-v3-page main .section-kicker,
+.offers-v3-page main .section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 14px;
+  border: 1px solid #e6b58f;
+  border-radius: 999px;
+  background: #fff4ec;
+  color: #102d59 !important;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .025em;
+  opacity: 1;
+}
+
+.offers-v3-page .offers-hero .eyebrow,
+.offers-v3-page .offers-hero .section-kicker,
+.offers-v3-page .offers-hero .section-eyebrow {
+  border-color: #b45b27;
+  background: #172d49;
+  color: #ffffff !important;
+}
+
+/* Offers catalog */
+
+.offers-v3-page .offers-section {
+  padding: 52px 0;
+  background: #f4f7fc;
+}
+
+.offers-v3-page .section-heading {
+  max-width: 850px;
+  margin-bottom: 25px;
+}
+
+.offers-v3-page .section-heading h2 {
+  margin: 14px 0 10px;
+  color: #071b3d;
+  font-size: clamp(28px,3vw,40px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.offers-v3-page .section-heading p {
+  color: #586b83;
+  line-height: 1.7;
+}
+
+.offers-v3-page .offers-v2-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.offers-v3-page .offers-v2-grid > * {
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  padding: 24px;
+  border: 1px solid #dfe7f2;
+  border-radius: 19px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(7,19,38,.06);
+}
+
+.offers-v3-page .offers-v2-grid h3 {
+  margin: 12px 0 8px;
+  color: #071b3d;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.offers-v3-page .offers-v2-grid p {
+  color: #586b83;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.offers-v3-page .offer-v2-discount {
+  display: inline-flex;
+  padding: 8px 13px;
+  border-radius: 10px;
+  background: #fff0e5;
+  color: #9c3e00;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-v2-grid a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 12px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #ff7417;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Three-step redemption process */
+
+.offers-v3-page .offers-how-section {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+.offers-v3-page .offers-steps {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 18px;
+}
+
+.offers-v3-page .offers-step {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #dfe7f2;
+  border-radius: 18px;
+  background: #f4f7fc;
+}
+
+.offers-v3-page .offers-step h3 {
+  color: #071b3d;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-step p {
+  color: #586b83;
+  line-height: 1.7;
+}
+
+/* Terms */
+
+.offers-v3-page .offers-terms-section {
+  padding: 48px 0;
+  background: #f4f7fc;
+}
+
+.offers-v3-page .offer-v2-terms {
+  padding: 28px;
+  border: 1px solid #dfe7f2;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #485d78;
+  line-height: 1.8;
+}
+
+/* Bottom CTA */
+
+.offers-v3-page main > .section:last-child {
+  padding: 45px 0;
+  background: #ffffff;
+}
+
+.offers-v3-page main > .section:last-child .cta-panel {
+  padding: 42px;
+  border-radius: 22px;
+  background: linear-gradient(
+    90deg,#071326 0%,#102d59 55%,#1769d2 100%
+  );
+  color: #ffffff;
+}
+
+.offers-v3-page main > .section:last-child .cta-panel h2,
+.offers-v3-page main > .section:last-child .cta-panel p {
+  color: #ffffff;
+}
+
+.offers-v3-page main > .section:last-child .cta-panel a {
+  display: inline-flex;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #ff7417;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .offers-v3-page .offers-v2-grid,
+  .offers-v3-page .offers-steps {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .offers-v3-page main .container {
+    width: calc(100% - 32px);
+  }
+
+  .offers-v3-page .offers-hero {
+    padding: 38px 0;
+  }
+
+  .offers-v3-page .offers-section,
+  .offers-v3-page .offers-how-section,
+  .offers-v3-page .offers-terms-section {
+    padding: 36px 0;
+  }
+
+  .offers-v3-page .offers-v2-grid,
+  .offers-v3-page .offers-steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .offers-v3-page .offers-v2-grid > *,
+  .offers-v3-page .offers-step {
+    padding: 20px;
+  }
+
+  .offers-v3-page main > .section:last-child .cta-panel {
+    padding: 28px 22px;
+  }
+}
+
+/* NIVAK OFFERS FIX STEP 74 */
+
+/* Hero buttons */
+
+.offers-v3-page .offers-hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.offers-v3-page .offers-hero .hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.offers-v3-page .offers-hero .hero-actions a:first-child {
+  background: #ff7417;
+  color: #ffffff;
+}
+
+.offers-v3-page .offers-hero .hero-actions a:not(:first-child) {
+  background: #ffffff;
+  color: #071326;
+}
+
+/* Three-step process */
+
+.offers-v3-page .offers-step {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offers-v3-page .offers-step > span,
+.offers-v3-page .offers-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #102d59;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 800;
+  opacity: 1;
+}
+
+/* Bottom contact CTA */
+
+.offers-v3-page .offers-cta-panel {
+  padding: 44px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 22px;
+  background: linear-gradient(
+    90deg,
+    #071326 0%,
+    #102d59 55%,
+    #1769d2 100%
+  );
+  color: #ffffff;
+}
+
+.offers-v3-page .offers-cta-panel h2,
+.offers-v3-page .offers-cta-panel h3 {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-cta-panel p {
+  color: #e2ebf8;
+  line-height: 1.7;
+}
+
+.offers-v3-page .offers-cta-panel a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  margin-top: 18px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #ff7417;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .offers-v3-page .offers-cta-panel {
+    padding: 28px 22px;
+  }
+
+  .offers-v3-page .offers-hero .hero-actions {
+    gap: 10px;
+  }
+}
+
+
+/* NIVAK PREMIUM PROCESS AND TERMS STEP 75 */
+
+/* Premium process section */
+
+.offers-v3-page .offers-how-section {
+  background: #ffffff;
+  padding: 48px 0 54px;
+}
+
+.offers-v3-page .offers-steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.offers-v3-page .offers-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  min-height: 0;
+  padding: 26px;
+  border: 1px solid #dce5f2;
+  border-top: 3px solid #ff7417;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 13px 35px rgba(7,19,38,.07);
+}
+
+.offers-v3-page .offers-step > span,
+.offers-v3-page .offers-step__number {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #102d59;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-step h3 {
+  margin: 6px 0 0;
+  color: #071b3d;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-step p {
+  margin: 0;
+  color: #586b83;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Premium terms panel */
+
+.offers-v3-page .offers-terms-section {
+  padding: 45px 0;
+  background: #f4f7fc;
+}
+
+.offers-v3-page .offer-v2-terms {
+  position: relative;
+  padding: 32px 36px;
+  border: 1px solid #dce5f2;
+  border-left: 5px solid #ff7417;
+  border-radius: 19px;
+  background: #ffffff;
+  box-shadow: 0 14px 38px rgba(7,19,38,.06);
+}
+
+.offers-v3-page .offer-v2-terms h2,
+.offers-v3-page .offer-v2-terms h3 {
+  margin: 16px 0 14px;
+  color: #071b3d;
+  font-weight: 800;
+  font-size: clamp(22px,2.4vw,29px);
+}
+
+.offers-v3-page .offer-v2-terms p {
+  max-width: 900px;
+  margin: 0;
+  color: #485d78;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+@media (max-width: 750px) {
+  .offers-v3-page .offers-steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .offers-v3-page .offers-step {
+    padding: 20px;
+  }
+
+  .offers-v3-page .offer-v2-terms {
+    padding: 24px;
+  }
+}
+
+
+/* NIVAK PROPOSED OFFERS DESIGN STEP 76 */
+
+.offers-v3-page .offers-how-section {
+  padding: 38px 0 20px;
+  background: #f4f7fc;
+}
+
+.offers-v3-page .offers-how-section .section-heading {
+  margin-bottom: 18px;
+}
+
+.offers-v3-page .offers-steps {
+  gap: 12px;
+}
+
+.offers-v3-page .offers-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 18px;
+  border: 1px solid #dce5f2;
+  border-radius: 13px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.offers-v3-page .offers-v3-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  background: #102d59;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-step > span:first-of-type:not(.offers-v3-icon),
+.offers-v3-page .offers-step__number {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  color: #c87543 !important;
+  font-size: 13px;
+}
+
+.offers-v3-page .offers-step h3 {
+  margin: 2px 0;
+  font-size: 17px;
+}
+
+.offers-v3-page .offers-step p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Terms panel aligned with process cards */
+
+.offers-v3-page .offers-terms-section {
+  padding: 0 0 40px;
+  background: #f4f7fc;
+}
+
+.offers-v3-page .offer-v2-terms {
+  padding: 22px 26px;
+  border: 1px solid #dce5f2;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.offers-v3-page .offer-v2-terms h2,
+.offers-v3-page .offer-v2-terms h3 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.offers-v3-page .offer-v2-terms p {
+  padding-top: 14px;
+  border-top: 1px solid #dce5f2;
+}
+
+@media (max-width: 750px) {
+  .offers-v3-page .offers-step {
+    padding: 18px;
+  }
+
+  .offers-v3-page .offer-v2-terms {
+    padding: 20px;
+  }
+}
+
+/* NIVAK CLEAN PROCESS STEP 77 */
+
+.offers-v3-page .offers-v3-process {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.offers-v3-page .offers-v3-process-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #dce5f2;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(7,19,38,.035);
+}
+
+.offers-v3-page .offers-v3-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.offers-v3-page .offers-v3-process-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: #102d59;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-v3-process-number {
+  color: #b65a25;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-v3-process-card h3 {
+  margin: 0 0 7px;
+  color: #071b3d;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-v3-process-card p {
+  margin: 0;
+  color: #586b83;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+@media (max-width: 750px) {
+  .offers-v3-page .offers-v3-process {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* NIVAK PREMIUM TERMS STEP 78 */
+
+.offers-v3-page .offers-v3-terms-card {
+  padding: 24px 28px;
+  border: 1px solid #dce5f2;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 26px rgba(7,19,38,.04);
+}
+
+.offers-v3-page .offers-v3-terms-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.offers-v3-page .offers-v3-terms-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #fff1e6;
+  color: #c45a13;
+}
+
+.offers-v3-page .offers-v3-terms-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.offers-v3-page .offers-v3-terms-heading h2 {
+  margin: 0 0 5px;
+  color: #071b3d;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.offers-v3-page .offers-v3-terms-subtitle {
+  margin: 0;
+  padding: 0 !important;
+  border: 0 !important;
+  color: #586b83;
+  font-size: 13px;
+}
+
+.offers-v3-page .offers-v3-terms-divider {
+  height: 1px;
+  margin: 20px 0;
+  background: #dce5f2;
+}
+
+.offers-v3-page .offers-v3-terms-content p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #485d78;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 600px) {
+  .offers-v3-page .offers-v3-terms-card {
+    padding: 20px;
+  }
+
+  .offers-v3-page .offers-v3-terms-heading h2 {
+    font-size: 17px;
+  }
+}
+
+
+/* NIVAK OFFERS CTA BUTTONS STEP 79 */
+
+.offers-v3-page .offers-cta-panel .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  margin: 0;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.offers-v3-page .offers-cta-panel .button--accent {
+  background: #ff7417 !important;
+  color: #ffffff !important;
+}
+
+.offers-v3-page .offers-cta-panel .button--secondary {
+  background: #ffffff !important;
+  color: #071326 !important;
+  border: 1px solid #ffffff;
+}
+
+/* Consistent spacing between the two actions */
+
+.offers-v3-page .offers-cta-panel .feature-panel__actions,
+.offers-v3-page .offers-cta-panel .cta-panel__actions,
+.offers-v3-page .offers-cta-panel .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+@media (max-width: 600px) {
+  .offers-v3-page .offers-cta-panel .feature-panel__actions,
+  .offers-v3-page .offers-cta-panel .cta-panel__actions,
+  .offers-v3-page .offers-cta-panel .hero-actions {
+    gap: 10px;
+  }
+}

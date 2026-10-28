@@ -1,0 +1,396 @@
+﻿/* NivAk Technologies — Legal Hybrid Premium V3 */
+
+.legal-v3-page {
+  --legal-navy: #071326;
+  --legal-blue: #102d59;
+  --legal-orange: #ff7417;
+  --legal-ink: #102443;
+  --legal-muted: #53657d;
+  --legal-line: #dce5f1;
+  --legal-light: #f4f7fc;
+  background: #fff;
+}
+
+.legal-v3-page main {
+  color: var(--legal-ink);
+}
+
+.legal-v3-page main .container {
+  width: min(1160px,calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.legal-v3-page main h1,
+.legal-v3-page main h2,
+.legal-v3-page main h3 {
+  font-family: "Manrope","Inter",sans-serif;
+  letter-spacing: -.025em;
+}
+
+/* Hero */
+
+.legal-v3-page .legal-hero {
+  padding: 42px 0;
+  min-height: 0;
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 25%,
+      rgba(35,112,215,.27),transparent 43%),
+    linear-gradient(110deg,#071326,#102d59);
+}
+
+.legal-v3-page .legal-hero .container > :has(> .legal-meta-card) {
+  display: grid;
+  grid-template-columns: minmax(0,1.45fr) minmax(280px,.75fr);
+  gap: 26px;
+  align-items: center;
+}
+
+.legal-v3-page .legal-hero h1 {
+  margin: 12px 0;
+  color: #fff !important;
+  font-size: clamp(32px,3.7vw,50px);
+  font-weight: 800;
+  line-height: 1.16;
+}
+
+.legal-v3-page .legal-hero p {
+  color: #d2e0f1 !important;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.legal-v3-page .legal-hero .eyebrow,
+.legal-v3-page .legal-hero .section-kicker {
+  display: inline-flex;
+  padding: 8px 14px;
+  border: 1px solid #b9602c;
+  border-radius: 999px;
+  background: #183655;
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Document metadata */
+
+.legal-v3-page .legal-meta-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid rgba(152,192,237,.35);
+  border-radius: 18px;
+  background: rgba(15,45,83,.85);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+.legal-v3-page .legal-meta-card dl {
+  margin: 0;
+}
+
+.legal-v3-page .legal-meta-card dt {
+  margin-top: 11px;
+  color: #afcae8 !important;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.legal-v3-page .legal-meta-card dd {
+  margin: 4px 0 0;
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.legal-v3-page .legal-meta-card a {
+  color: #ffbf91;
+}
+
+/* Legal reading area */
+
+.legal-v3-page .legal-hero + .section {
+  padding: 38px 0 46px;
+  background: #f4f7fc;
+}
+
+/* Match the actual common parent of sidebar and document. */
+
+.legal-v3-page main :has(> .legal-sidebar):has(> .legal-content) {
+  display: grid;
+  grid-template-columns: 245px minmax(0,1fr);
+  align-items: start;
+  gap: 25px;
+}
+
+/* Table of contents */
+
+.legal-v3-page .legal-sidebar {
+  position: sticky;
+  top: 88px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #dce5f1;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(7,19,38,.045);
+}
+
+.legal-v3-page .legal-sidebar h2 {
+  margin: 0 0 15px;
+  color: #102443 !important;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.legal-v3-page .legal-sidebar a,
+.legal-v3-page .legal-toc-link {
+  display: block;
+  padding: 9px 11px;
+  border-radius: 9px;
+  color: #304b6a !important;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.legal-v3-page .legal-sidebar a:hover,
+.legal-v3-page .legal-sidebar a:focus-visible {
+  background: #fff0e5;
+  color: #a7470b !important;
+}
+
+/* Legal document */
+
+.legal-v3-page .legal-content {
+  min-width: 0;
+}
+
+.legal-v3-page .legal-section {
+  min-width: 0;
+  margin-bottom: 15px;
+  padding: 25px 29px;
+  border: 1px solid #dce5f1;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 5px 19px rgba(7,19,38,.035);
+  scroll-margin-top: 94px;
+}
+
+.legal-v3-page .legal-section h2 {
+  margin: 0 0 12px;
+  color: #102443 !important;
+  font-size: clamp(19px,2vw,24px);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.legal-v3-page .legal-section h3 {
+  color: #102443 !important;
+  font-size: 17px;
+}
+
+.legal-v3-page .legal-section p,
+.legal-v3-page .legal-section li {
+  color: #435973 !important;
+  font-size: 14px;
+  line-height: 1.85;
+  opacity: 1 !important;
+}
+
+.legal-v3-page .legal-section p {
+  margin: 0 0 12px;
+}
+
+.legal-v3-page .legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-v3-page .legal-section ul,
+.legal-v3-page .legal-section ol {
+  padding-left: 22px;
+}
+
+.legal-v3-page .legal-content a {
+  color: #a7470b;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-underline-offset: 3px;
+}
+
+/* Contact details inside legal documents */
+
+.legal-v3-page .legal-contact-value {
+  color: #102443;
+  font-weight: 750;
+}
+
+.legal-v3-page .legal-content a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  padding: 11px 19px;
+  border-radius: 999px;
+  background: #ff7417;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Avoid hidden content if legacy reveal JS isn't included */
+
+.legal-v3-page main .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .legal-v3-page .legal-hero .container > :has(> .legal-meta-card) {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-v3-page main :has(> .legal-sidebar):has(> .legal-content) {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-v3-page .legal-sidebar {
+    position: static;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .legal-v3-page main .container {
+    width: calc(100% - 32px);
+  }
+
+  .legal-v3-page .legal-hero {
+    padding: 32px 0;
+  }
+
+  .legal-v3-page .legal-hero + .section {
+    padding: 28px 0;
+  }
+
+  .legal-v3-page .legal-meta-card,
+  .legal-v3-page .legal-sidebar {
+    padding: 18px;
+  }
+
+  .legal-v3-page .legal-section {
+    padding: 21px 18px;
+  }
+
+  .legal-v3-page .legal-section p,
+  .legal-v3-page .legal-section li {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
+
+/* NIVAK LEGAL CONTACT REFINEMENT STEP 125 */
+
+/* Separate contact information from the heading and description. */
+
+.legal-v3-page .legal-section[id="contact"] {
+  padding: 30px 34px;
+}
+
+.legal-v3-page .legal-section[id="contact"] h2 {
+  margin-bottom: 16px;
+}
+
+.legal-v3-page .legal-section[id="contact"] > p {
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+
+/* Contact details: structured, readable rows. */
+
+.legal-v3-page .legal-section[id="contact"]
+.legal-contact-value {
+  display: inline-block;
+  margin-left: 6px;
+  color: #102443;
+  font-weight: 800;
+}
+
+.legal-v3-page .legal-section[id="contact"] a[href^="mailto:"],
+.legal-v3-page .legal-section[id="contact"] a[href^="https://"] {
+  display: inline-block;
+  margin-left: 6px;
+  color: #a7470b;
+  font-weight: 750;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Give each information item its own visual breathing room. */
+
+.legal-v3-page .legal-section[id="contact"]
+.legal-contact-row,
+.legal-v3-page .legal-section[id="contact"]
+.legal-contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin-bottom: 13px;
+  line-height: 1.7;
+}
+
+/* Contact action stays clearly separated. */
+
+.legal-v3-page .legal-section[id="contact"]
+a.button {
+  margin-top: 22px;
+  min-height: 45px;
+  padding: 12px 21px;
+}
+
+/* More comfortable spacing for small screens. */
+
+@media (max-width: 600px) {
+  .legal-v3-page .legal-section[id="contact"] {
+    padding: 24px 20px;
+  }
+
+  .legal-v3-page .legal-section[id="contact"]
+  .legal-contact-row,
+  .legal-v3-page .legal-section[id="contact"]
+  .legal-contact-item {
+    gap: 4px 9px;
+    margin-bottom: 15px;
+  }
+
+  .legal-v3-page .legal-section[id="contact"]
+  a.button {
+    margin-top: 19px;
+  }
+}
+
+/* NIVAK LEGAL NAVIGATION FIX STEP 126 */
+
+/* Legal pages are outside the eight main navigation destinations.
+   Do not highlight Home as the active page. */
+
+.legal-v3-page .site-header .nav a[href="/"],
+.legal-v3-page header .nav a[href="/"] {
+  color: #e0e7f1 !important;
+}
+
+/* Preserve normal hover and keyboard-focus feedback. */
+
+.legal-v3-page .site-header .nav a[href="/"]:hover,
+.legal-v3-page .site-header .nav a[href="/"]:focus-visible,
+.legal-v3-page header .nav a[href="/"]:hover,
+.legal-v3-page header .nav a[href="/"]:focus-visible {
+  color: #ff7417 !important;
+}

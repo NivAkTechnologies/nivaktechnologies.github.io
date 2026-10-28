@@ -1,0 +1,639 @@
+/* NivAk Technologies — Support Hybrid Premium V3 */
+
+.support-v3-page {
+  --support-navy: #071326;
+  --support-blue: #102d59;
+  --support-orange: #ff7417;
+  --support-ink: #102443;
+  --support-muted: #53657d;
+  --support-light: #f4f7fc;
+  --support-border: #dce5f1;
+  background: #fff;
+}
+
+.support-v3-page main {
+  overflow: clip;
+}
+
+.support-v3-page main .container {
+  width: min(1160px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.support-v3-page main h1,
+.support-v3-page main h2,
+.support-v3-page main h3 {
+  font-family: "Manrope", "Inter", sans-serif;
+  letter-spacing: -.025em;
+}
+
+/* Shared navigation */
+
+.support-v3-page .header .nav a[href="/"] {
+  color: #fff !important;
+}
+
+.support-v3-page .header .nav a[href="/support/"] {
+  color: #ff7417 !important;
+  font-weight: 800;
+}
+
+/* Hero */
+
+.support-v3-page .support-hero {
+  min-height: 0;
+  padding: 48px 0;
+  color: #fff;
+  background:
+    radial-gradient(
+      circle at 84% 25%,
+      rgba(38,112,215,.28),
+      transparent 42%
+    ),
+    linear-gradient(110deg,#071326,#102d59);
+}
+
+.support-v3-page .support-hero h1 {
+  max-width: 800px;
+  margin: 12px 0;
+  color: #fff !important;
+  font-size: clamp(35px,4vw,54px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.support-v3-page .support-hero p {
+  max-width: 710px;
+  color: #d1e0f1 !important;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* Section labels */
+
+.support-v3-page main .eyebrow,
+.support-v3-page main .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 14px;
+  border: 1px solid #e1aa82;
+  border-radius: 999px;
+  background: #fff1e7;
+  color: #102d59 !important;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.support-v3-page .support-hero .eyebrow,
+.support-v3-page .support-hero .section-kicker {
+  color: #fff !important;
+  background: #183655;
+  border-color: #c16b35;
+}
+
+/* Hero action buttons */
+
+.support-v3-page .support-hero a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 19px;
+  margin: 14px 9px 0 0;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 999px;
+  background: #fff;
+  color: #102d59;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.support-v3-page .support-hero a.button--accent {
+  border-color: #ff7417;
+  background: #ff7417;
+  color: #fff;
+}
+
+/* Section spacing and text contrast */
+
+.support-v3-page .support-topics-section,
+.support-v3-page .support-faq-section,
+.support-v3-page .support-contact-section {
+  padding: 42px 0;
+}
+
+.support-v3-page .support-topics-section {
+  background: #fff;
+}
+
+.support-v3-page .support-faq-section {
+  background: #f4f7fc;
+}
+
+.support-v3-page .support-faq-section:nth-of-type(even) {
+  background: #fff;
+}
+
+.support-v3-page main h2 {
+  color: #102443 !important;
+  font-size: clamp(25px,2.7vw,34px);
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.support-v3-page .support-topics-section p,
+.support-v3-page .support-faq-section p,
+.support-v3-page .support-section-heading p {
+  color: #53657d !important;
+  opacity: 1 !important;
+  line-height: 1.7;
+}
+
+.support-v3-page .support-section-heading {
+  margin-bottom: 18px;
+}
+
+.support-v3-page .support-section-heading h2 {
+  margin: 9px 0 8px;
+}
+
+/* Three clickable support topic cards */
+
+.support-v3-page .support-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.support-v3-page .support-topic-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  height: 100%;
+  padding: 24px;
+  border: 1px solid #dce5f1;
+  border-radius: 19px;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(7,19,38,.055);
+  transition:
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.support-v3-page .support-topic-card:hover,
+.support-v3-page .support-topic-card:focus-visible {
+  border-color: #ff9b5d;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(7,19,38,.1);
+}
+
+.support-v3-page .support-topic-number {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 34px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background: #102d59;
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.support-v3-page .support-topic-card h3 {
+  margin: 0 0 8px;
+  color: #102443 !important;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.support-v3-page .support-topic-card p {
+  flex: 1;
+  margin: 0 0 16px;
+  color: #53657d !important;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.support-v3-page .support-topic-link {
+  margin-top: auto;
+  color: #a7470b !important;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Expandable support questions */
+
+.support-v3-page .support-content-container {
+  max-width: 1050px;
+}
+
+.support-v3-page .support-accordion {
+  display: grid;
+  gap: 11px;
+}
+
+.support-v3-page .support-faq-item {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #dce5f1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(7,19,38,.035);
+}
+
+.support-v3-page .support-faq-item[open] {
+  border-color: #a7bbd7;
+}
+
+.support-v3-page .support-faq-item summary {
+  position: relative;
+  display: block;
+  padding: 18px 55px 18px 20px;
+  color: #102443 !important;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+
+.support-v3-page .support-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.support-v3-page .support-faq-item summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 9px;
+  background: #fff0e5;
+  color: #a74408;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.support-v3-page .support-faq-item[open] summary::after {
+  content: "\2212";
+  background: #102d59;
+  color: #fff;
+}
+
+.support-v3-page .support-faq-answer {
+  padding: 0 20px 20px;
+  color: #4e617a !important;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.support-v3-page .support-faq-answer p,
+.support-v3-page .support-faq-answer li {
+  color: #4e617a !important;
+}
+
+.support-v3-page .support-faq-answer a {
+  color: #ac4a0e;
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+/* Contact Support CTA */
+
+.support-v3-page .support-contact-section {
+  background: #fff;
+}
+
+.support-v3-page .support-contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 36px;
+  border-radius: 23px;
+  background: linear-gradient(
+    105deg,#071326 0%,#102d59 60%,#1769d2 100%
+  );
+}
+
+.support-v3-page .support-contact-panel h2,
+.support-v3-page .support-contact-panel h3 {
+  color: #fff !important;
+}
+
+.support-v3-page .support-contact-panel p {
+  color: #d8e7f7 !important;
+  opacity: 1 !important;
+}
+
+.support-v3-page .support-contact-panel .support-email {
+  color: #ffba89 !important;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.support-v3-page .support-contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 11px;
+}
+
+.support-v3-page .support-contact-actions a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: #ff7417;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.support-v3-page .support-contact-actions a.button--secondary,
+.support-v3-page .support-contact-actions a.button--outline-light {
+  background: #fff;
+  color: #102d59;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .support-v3-page .support-topic-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .support-v3-page .support-contact-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .support-v3-page main .container {
+    width: calc(100% - 32px);
+  }
+
+  .support-v3-page .support-hero {
+    padding: 36px 0;
+  }
+
+  .support-v3-page .support-topics-section,
+  .support-v3-page .support-faq-section,
+  .support-v3-page .support-contact-section {
+    padding: 32px 0;
+  }
+
+  .support-v3-page .support-topic-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .support-v3-page .support-topic-card {
+    padding: 21px;
+  }
+
+  .support-v3-page .support-faq-item summary {
+    padding: 16px 50px 16px 17px;
+    font-size: 14px;
+  }
+
+  .support-v3-page .support-faq-answer {
+    padding: 0 17px 17px;
+  }
+
+  .support-v3-page .support-contact-panel {
+    padding: 26px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .support-v3-page .support-topic-card {
+    transition: none;
+  }
+}
+
+/* NIVAK SUPPORT DASHBOARD STEP 110B */
+
+.support-v3-page .support-topics-section {
+  display: none !important;
+}
+
+.support-v3-page .support-v3-dashboard-section {
+  padding: 40px 0;
+  background: #f4f7fc;
+}
+
+.support-v3-page .support-v3-dashboard-heading {
+  margin-bottom: 20px;
+}
+
+.support-v3-page .support-v3-dashboard-heading h2 {
+  margin: 10px 0 7px;
+}
+
+.support-v3-page .support-v3-dashboard-heading p {
+  color: #53657d;
+  font-size: 14px;
+}
+
+.support-v3-page .support-v3-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 14px;
+}
+
+.support-v3-page .support-v3-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  gap: 10px;
+  padding: 21px;
+  border: 1px solid #dce5f1;
+  border-radius: 17px;
+  background: #fff;
+  color: #102443;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(7,19,38,.045);
+  transition: transform .2s ease,border-color .2s ease;
+}
+
+.support-v3-page .support-v3-action:hover,
+.support-v3-page .support-v3-action:focus-visible {
+  transform: translateY(-3px);
+  border-color: #ff9954;
+}
+
+.support-v3-page .support-v3-action-icon {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 10px;
+  background: #fff0e5;
+  color: #a7470b;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.support-v3-page .support-v3-action strong {
+  color: #102443;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.support-v3-page .support-v3-action > span:nth-of-type(2) {
+  flex: 1;
+  color: #53657d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.support-v3-page .support-v3-action-link {
+  color: #a7470b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.support-v3-page .support-v3-action--contact {
+  background: linear-gradient(140deg,#102d59,#174a86);
+  border-color: #315d92;
+}
+
+.support-v3-page .support-v3-action--contact strong,
+.support-v3-page .support-v3-action--contact > span:nth-of-type(2) {
+  color: #fff;
+}
+
+.support-v3-page .support-v3-action--contact .support-v3-action-link {
+  color: #ffba86;
+}
+
+/* Troubleshooting */
+
+.support-v3-page .support-v3-troubleshoot {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1.45fr);
+  align-items: center;
+  gap: 25px;
+  margin-top: 21px;
+  padding: 27px;
+  border: 1px solid #dce5f1;
+  border-radius: 19px;
+  background: #fff;
+}
+
+.support-v3-page .support-v3-troubleshoot h3 {
+  margin: 10px 0;
+  color: #102443;
+  font-size: 23px;
+}
+
+.support-v3-page .support-v3-troubleshoot p {
+  margin: 0;
+  color: #53657d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.support-v3-page .support-v3-troubleshoot-steps {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.support-v3-page .support-v3-troubleshoot-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.support-v3-page .support-v3-step-number {
+  display: grid;
+  place-items: center;
+  flex: 0 0 35px;
+  height: 33px;
+  border-radius: 10px;
+  background: #102d59;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.support-v3-page .support-v3-troubleshoot-steps strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #102443;
+  font-size: 14px;
+}
+
+.support-v3-page #support-v3-dashboard,
+.support-v3-page #general-support,
+.support-v3-page #installation-updates,
+.support-v3-page #privacy-data,
+.support-v3-page #contact-support {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 900px) {
+  .support-v3-page .support-v3-dashboard-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .support-v3-page .support-v3-troubleshoot {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .support-v3-page .support-v3-dashboard-section {
+    padding: 30px 0;
+  }
+
+  .support-v3-page .support-v3-dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .support-v3-page .support-v3-troubleshoot {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .support-v3-page .support-v3-action {
+    transition: none;
+  }
+}
+
+/* NIVAK SUPPORT SINGLE CTA STEP 112 */
+
+.support-v3-page .support-contact-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.support-v3-page .support-contact-actions a.button {
+  width: 100%;
+  margin: 0;
+}

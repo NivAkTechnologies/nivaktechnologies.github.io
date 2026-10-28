@@ -1,78 +1,436 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071326">
+<title>Support Center | NivAk Technologies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#071326;
+  --deep:#0d2343;
+  --orange:#ff7417;
+  --muted:#aabbd4;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;
+  background:var(--navy);
+  color:#fff;
+  font-family:Inter,Arial,sans-serif;
+}
+a {color:inherit;text-decoration:none}
+button {font:inherit}
+.wrap {width:min(1240px,calc(100% - 64px));margin:auto}
 
-  <title>Support Center | NivAk Technologies</title>
+/* Header */
+.header {
+  position:relative;
+  z-index:10;
+  border-bottom:1px solid #ffffff14;
+  background:#071326e8;
+}
+.header-inner {
+  min-height:84px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand img {
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:10px;
+  padding:4px;
+}
+.brand strong {
+  font-family:Manrope,sans-serif;
+  font-size:16px;
+  display:block;
+}
+.brand small {
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:1px;
+}
+.nav {
+  display:flex;
+  align-items:center;
+  gap:25px;
+  color:#ccd7e7;
+  font-size:13px;
+  font-weight:500;
+}
+.nav a:hover {color:var(--orange)}
+.top-cta {
+  padding:12px 20px;
+  background:var(--orange);
+  border-radius:12px;
+  font-weight:700;
+  font-size:13px;
+  white-space:nowrap;
+}
 
-  <meta
-    name="description"
-    content="Get help with NivAk Technologies apps, troubleshooting, installation, updates, privacy, data and technical support."
-  >
+/* Hero */
+.hero {
+  position:relative;
+  isolation:isolate;
+  min-height:670px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse at 80% 42%,#164d9b45,transparent 48%),
+    radial-gradient(ellipse at 65% 90%,#ff74171c,transparent 35%),
+    linear-gradient(125deg,#071326,#0a1b35 65%,#071326);
+}
+.hero:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background-image:
+    linear-gradient(#ffffff07 1px,transparent 1px),
+    linear-gradient(90deg,#ffffff07 1px,transparent 1px);
+  background-size:58px 58px;
+  mask-image:linear-gradient(90deg,transparent 25%,#000);
+}
+.hero-grid {
+  display:grid;
+  grid-template-columns:48% 52%;
+  align-items:center;
+  gap:24px;
+  padding:68px 0 74px;
+}
+.copy {position:relative;z-index:2}
+.eyebrow {
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 14px;
+  border:1px solid #ff741744;
+  background:#ff741712;
+  border-radius:50px;
+  color:#ff9a5d;
+  font-weight:700;
+  letter-spacing:1.8px;
+  font-size:11px;
+}
+.eyebrow:before {
+  content:"";
+  width:7px;
+  height:7px;
+  background:var(--orange);
+  border-radius:50%;
+  box-shadow:0 0 13px var(--orange);
+}
+h1 {
+  font-family:Manrope,sans-serif;
+  font-weight:800;
+  font-size:clamp(43px,5.1vw,71px);
+  letter-spacing:-3px;
+  line-height:1.11;
+  margin:26px 0;
+}
+h1 span {
+  background:linear-gradient(100deg,#ff7417,#ffb06a);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.intro {
+  color:#bbcbe0;
+  max-width:520px;
+  font-size:17px;
+  line-height:1.9;
+}
+.actions {display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn {
+  padding:15px 22px;
+  border-radius:12px;
+  font-size:13px;
+  font-weight:700;
+  border:1px solid #637994;
+  transition:transform .2s,background .2s;
+}
+.btn:hover {transform:translateY(-3px)}
+.btn.main {
+  border-color:var(--orange);
+  background:var(--orange);
+  box-shadow:0 12px 30px #ff74172c;
+}
+.btn.other {background:#ffffff08}
+.pill-row {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:45px;
+}
+.pill {
+  border:1px solid #ffffff20;
+  border-radius:40px;
+  padding:8px 12px;
+  color:#c0cee0;
+  font-size:11px;
+}
 
-  <link rel="stylesheet" href="/assets/site/css/theme.css">
-  <link rel="stylesheet" href="/assets/site/css/components.css?v=20260924-3">
-  <link rel="stylesheet" href="/assets/site/css/layout.css?v=20260925-mobile-2">
-  <link rel="stylesheet" href="/assets/site/css/responsive.css?v=20260924-3">
+/* Technology universe */
+.universe {
+  height:510px;
+  position:relative;
+  display:grid;
+  place-items:center;
+  perspective:900px;
+}
+.halo {
+  position:absolute;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  background:radial-gradient(circle,#2878f14d,transparent 67%);
+  filter:blur(14px);
+}
+.orbit {
+  position:absolute;
+  width:390px;
+  height:390px;
+  border:1px solid #64a8ff45;
+  border-radius:50%;
+  transform:rotateX(62deg) rotateZ(-27deg);
+  box-shadow:0 0 45px #278cff24,inset 0 0 35px #278cff12;
+}
+.orbit.two {
+  width:465px;
+  height:465px;
+  border-color:#ff74173d;
+  transform:rotateX(70deg) rotateZ(42deg);
+}
+.orbit.three {
+  width:315px;
+  height:315px;
+  border-style:dashed;
+  border-color:#9ec7ff42;
+  transform:rotateY(68deg) rotateZ(-20deg);
+}
+.core {
+  position:relative;
+  width:205px;
+  height:205px;
+  border-radius:48px;
+  transform:rotate(-13deg);
+  background:
+    radial-gradient(circle at 25% 20%,#68b1ff65,transparent 48%),
+    linear-gradient(140deg,#1b5ca8,#0c2041 65%,#07162d);
+  border:1px solid #75adff77;
+  box-shadow:
+    0 30px 90px #0009,
+    0 0 95px #1874ff54,
+    inset 0 0 35px #86b8ff32;
+  display:grid;
+  place-items:center;
+  animation:coreFloat 7s ease-in-out infinite;
+}
+.core:before {
+  content:"";
+  position:absolute;
+  inset:12px;
+  border:1px solid #ffffff30;
+  border-radius:36px;
+}
+.core-inner {
+  text-align:center;
+  transform:rotate(13deg);
+}
+.core-inner svg {
+  width:64px;
+  height:64px;
+  margin:0 auto 8px;
+  stroke:#fff;
+  fill:none;
+  stroke-width:1.7;
+}
+.core-inner strong {
+  display:block;
+  font:800 13px Manrope,sans-serif;
+  letter-spacing:2px;
+}
+.node {
+  position:absolute;
+  min-width:142px;
+  padding:16px;
+  border-radius:17px;
+  border:1px solid #83b4ff42;
+  background:linear-gradient(145deg,#17365cdd,#091a32ed);
+  box-shadow:0 20px 44px #0007,inset 0 1px #ffffff24;
+  backdrop-filter:blur(12px);
+  animation:nodeFloat 6s ease-in-out infinite;
+}
+.node-icon {
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:#3189ff24;
+  color:#86bdff;
+  font-size:18px;
+  margin-bottom:10px;
+}
+.node strong {
+  font:700 12px Manrope,sans-serif;
+  display:block;
+}
+.node small {
+  color:#9fb6d3;
+  font-size:10px;
+  display:block;
+  margin-top:4px;
+}
+.n1 {top:27px;left:8%;animation-delay:-1s}
+.n2 {top:38px;right:2%;animation-delay:-3s}
+.n3 {bottom:36px;left:6%;animation-delay:-4s}
+.n4 {bottom:30px;right:1%;animation-delay:-2s}
+.n2 .node-icon,.n4 .node-icon {
+  color:#ffa469;
+  background:#ff741721;
+}
+.spark {
+  position:absolute;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#ff8a39;
+  box-shadow:0 0 22px #ff7417;
+}
+.s1 {top:16%;left:48%}
+.s2 {bottom:19%;right:33%;background:#67b6ff;box-shadow:0 0 20px #4c9cff}
+.s3 {top:54%;right:6%}
+@keyframes coreFloat {
+  0%,100% {translate:0 0}
+  50% {translate:0 -12px}
+}
+@keyframes nodeFloat {
+  0%,100% {translate:0 0}
+  50% {translate:0 -9px}
+}
+
+/* Teaser */
+.teaser {
+  border-top:1px solid #ffffff13;
+  background:#f5f7fb;
+  color:#0d2442;
+  padding:60px 0;
+}
+.teaser h2 {
+  font:800 clamp(26px,3vw,38px) Manrope,sans-serif;
+  margin:0 0 12px;
+}
+.teaser p {color:#53647d;max-width:650px;line-height:1.7}
+.cards {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:25px;
+}
+.card {
+  background:white;
+  border:1px solid #e1e8f0;
+  border-radius:18px;
+  padding:24px 19px;
+  box-shadow:0 12px 35px #0713260a;
+}
+.card strong {font:800 14px Manrope,sans-serif}
+.card p {font-size:12px;margin-bottom:0}
+
+@media(max-width:1050px) {
+  .nav {gap:12px;font-size:11px}
+  .hero-grid {grid-template-columns:1fr 1fr}
+  .universe {transform:scale(.83)}
+}
+@media(max-width:760px) {
+  .wrap {width:calc(100% - 36px)}
+  .header-inner {min-height:74px}
+  .nav {display:none}
+  .top-cta {font-size:11px;padding:11px 13px}
+  .hero {min-height:auto}
+  .hero-grid {
+    grid-template-columns:1fr;
+    padding:65px 0 25px;
+    gap:0;
+  }
+  .copy {text-align:center}
+  h1 {font-size:clamp(39px,9vw,58px);letter-spacing:-2px}
+  .intro {margin:auto;font-size:15px}
+  .actions,.pill-row {justify-content:center}
+  .universe {
+    width:100%;
+    max-width:500px;
+    margin:0 auto;
+    transform:scale(.78);
+    transform-origin:center center;
+  }
+  .cards {grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:430px) {
+  .brand strong {font-size:13px}
+  .brand small {font-size:8px}
+  .brand img {width:38px;height:38px}
+  .top-cta {padding:10px;font-size:10px}
+  .universe {transform:scale(.58);width:500px;left:50%;margin-left:-250px;margin-top:-80px;margin-bottom:-85px}
+  .cards {grid-template-columns:1fr}
+  .pill-row {margin-top:28px}
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*:before,*:after {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+  <link rel="stylesheet" href="/assets/site/v3/css/mobile-navigation.css?v=1">
+  <link rel="stylesheet" href="/assets/site/v3/css/home-sections.css?v=4">
+  <link rel="stylesheet" href="/assets/site/v3/css/spacing-v3.css?v=1">
+  <link rel="stylesheet" href="/assets/site/v3/css/premium-v3.css?v=2">
+  <link rel="stylesheet" href="/assets/site/v3/css/support-v3.css?v=3">
+  <link rel="stylesheet" href="/assets/site/v3/css/support-v3-hero.css?v=1">
+  <meta name="description" content="Get technical support for NivAk Technologies apps and games, including troubleshooting, installation, updates, privacy and account enquiries.">
 </head>
+<body class="support-page support-v3-page">
+<header class="header">
+ <div class="wrap header-inner">
+  <a class="brand" href="/">
+   <img src="/assets/site/images/nivak-logo.png" alt="">
+   <span>
+    <strong>NivAk Technologies</strong>
+    <small>DIGITAL PRODUCTS & SOLUTIONS</small>
+   </span>
+  </a>
+  <nav class="nav" aria-label="Main navigation">
+   <a href="/">Home</a>
+   <a href="/apps/">Apps & Games</a>
+   <a href="/services/">Services</a>
+   <a href="/offers/">Offers</a>
+   <a href="/about/">About</a>
+        <a href="/faq/">FAQ</a>
 
-<body class="support-page">
-
-<header class="site-header">
-    <div class="container header-inner">
-
-      <a class="site-brand" href="../" aria-label="NivAk Technologies home">
-        <img
-          class="site-brand__logo"
-          src="/assets/site/images/nivak-logo.png"
-          alt=""
-        >
-
-        <span class="site-brand__text">
-          <span class="site-brand__name">NivAk Technologies</span>
-          <span class="site-brand__sub">Digital Products & Solutions</span>
-        </span>
-      </a>
-
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link" href="../">Home</a>
-        <a class="nav-link" href="../apps/">Apps & Games</a>
-        <a class="nav-link" href="../services/">Services</a>
-        <a class="nav-link" href="../offers/">Offers</a>
-        <a class="nav-link" href="../faq/">FAQ</a>
-        <a class="nav-link" href="../about/">About</a>
-        <a class="nav-link is-active" href="./">Support</a>
-        <a class="nav-link" href="../contact/">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-
-        <button
-          class="theme-toggle"
-          type="button"
-          aria-label="Switch theme"
-          title="Change theme"
-        >
-          ?
-        </button>
-
-        <a class="button button--accent button--small header-cta" href="../contact/">
-          Work With Us
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Open navigation"
-          aria-expanded="false"
-        >
-          <span class="menu-icon" aria-hidden="true"></span>
-        </button>
-
-      </div>
-    </div>
-  </header>
+   <a href="/support/">Support</a>
+   <a href="/contact/">Contact</a>
+  </nav>
+  <a class="top-cta" href="/contact/">Work With Us ↗</a>
+ </div>
+</header>
 
 <main>
 
@@ -96,25 +454,126 @@
           NivAk Technologies when you need additional support.
         </p>
 
-        <div class="hero-actions">
-
-          <a class="button button--primary" href="#support-topics">
-            View Support Topics
-          </a>
-
-          <a class="button button--accent" href="#contact-support">
-            Contact Support
-          </a>
-
-        </div>
-
       </div>
 
+
+<div class="support-v3-hero-panel" aria-label="NivAk technical support areas">
+  <div class="support-v3-hero-panel__header">
+    <span class="support-v3-hero-panel__symbol" aria-hidden="true">?</span>
+    <strong>NivAk Support Center</strong>
+    <span class="support-v3-hero-panel__status">HELP CENTER</span>
+  </div>
+
+  <div class="support-v3-hero-panel__body">
+    <div class="support-v3-hero-panel__row is-active">
+      <span class="support-v3-hero-panel__number">01</span>
+      <span class="support-v3-hero-panel__copy">
+        <strong>App Assistance</strong>
+        <small>Application issues and performance</small>
+      </span>
+      <span class="support-v3-hero-panel__indicator" aria-hidden="true"></span>
     </div>
+
+    <div class="support-v3-hero-panel__row">
+      <span class="support-v3-hero-panel__number">02</span>
+      <span class="support-v3-hero-panel__copy">
+        <strong>Troubleshooting</strong>
+        <small>Installation, updates and fixes</small>
+      </span>
+      <span class="support-v3-hero-panel__indicator" aria-hidden="true"></span>
+    </div>
+
+    <div class="support-v3-hero-panel__row">
+      <span class="support-v3-hero-panel__number">03</span>
+      <span class="support-v3-hero-panel__copy">
+        <strong>Privacy Support</strong>
+        <small>Data and privacy guidance</small>
+      </span>
+      <span class="support-v3-hero-panel__indicator" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="support-v3-hero-panel__footer">
+    <span>HELP WITH NIVAK PRODUCTS</span>
+    <span>SUPPORT • GUIDANCE • SOLUTIONS</span>
+  </div>
+</div>
+</div>
   </section>
 
 
-  <!-- QUICK HELP -->
+  <section class="support-v3-dashboard-section" id="support-v3-dashboard">
+  <div class="container">
+    <div class="support-v3-dashboard-heading">
+      <span class="eyebrow">HOW CAN WE HELP?</span>
+      <h2>Find the Right Support</h2>
+      <p>Select a support area or follow our quick troubleshooting steps.</p>
+    </div>
+
+    <div class="support-v3-dashboard-grid">
+      <a class="support-v3-action" href="#general-support">
+        <span class="support-v3-action-icon" aria-hidden="true">⚙</span>
+        <strong>App Issues</strong>
+        <span>Crashes, performance problems and unexpected behaviour.</span>
+        <span class="support-v3-action-link">Explore solutions →</span>
+      </a>
+
+      <a class="support-v3-action" href="#installation-updates">
+        <span class="support-v3-action-icon" aria-hidden="true">↓</span>
+        <strong>Installation &amp; Updates</strong>
+        <span>Installing, updating and accessing applications.</span>
+        <span class="support-v3-action-link">View guidance →</span>
+      </a>
+
+      <a class="support-v3-action" href="#privacy-data">
+        <span class="support-v3-action-icon" aria-hidden="true">◆</span>
+        <strong>Privacy &amp; Data</strong>
+        <span>Privacy information, local data and related assistance.</span>
+        <span class="support-v3-action-link">Privacy assistance →</span>
+      </a>
+
+      <a class="support-v3-action support-v3-action--contact" href="#contact-support">
+        <span class="support-v3-action-icon" aria-hidden="true">✉</span>
+        <strong>Contact Support</strong>
+        <span>Get in touch when you need additional assistance.</span>
+        <span class="support-v3-action-link">Contact us →</span>
+      </a>
+    </div>
+
+    <div class="support-v3-troubleshoot">
+      <div class="support-v3-troubleshoot-intro">
+        <span class="eyebrow">QUICK TROUBLESHOOTING</span>
+        <h3>Try These Steps First</h3>
+        <p>Simple checks can help identify or resolve common app problems.</p>
+      </div>
+
+      <ol class="support-v3-troubleshoot-steps">
+        <li>
+          <span class="support-v3-step-number">01</span>
+          <div>
+            <strong>Check for Updates</strong>
+            <p>Install the latest available version of the application.</p>
+          </div>
+        </li>
+        <li>
+          <span class="support-v3-step-number">02</span>
+          <div>
+            <strong>Restart &amp; Test</strong>
+            <p>Close the application, reopen it and test again.</p>
+          </div>
+        </li>
+        <li>
+          <span class="support-v3-step-number">03</span>
+          <div>
+            <strong>Report the Issue</strong>
+            <p>If the issue continues, describe the problem through our support channels.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<!-- QUICK HELP -->
   <section class="section support-topics-section" id="support-topics">
     <div class="container">
 
@@ -471,16 +930,9 @@
 
           <a
             class="button button--accent"
-            href="../contact/?topic=Support"
+            href="/contact/?topic=Support"
           >
             Contact Support
-          </a>
-
-          <a
-            class="button button--outline-light"
-            href="../apps/"
-          >
-            Apps &amp; Games
           </a>
 
         </div>
@@ -491,120 +943,71 @@
   </section>
 
 </main>
+  <script src="/assets/site/v3/js/mobile-navigation.js?v=1"></script>
+<script src="/assets/site/js/products.js"></script>
+<footer class="footer-v3">
+ <div class="wrap">
 
-<footer class="site-footer">
+  <div class="footer-v3-grid">
 
-    <div class="container footer-main">
+   <div>
+    <a class="footer-v3-brand" href="/">
+     <img src="/assets/site/images/nivak-logo.png" alt="">
+     <span>
+      <strong>NivAk Technologies</strong>
+      <small>DIGITAL PRODUCTS & SOLUTIONS</small>
+     </span>
+    </a>
 
-      <div class="footer-grid">
+    <p class="footer-v3-description">
+     Building modern mobile applications, games,
+     software and digital solutions with a focus
+     on quality, usability and meaningful experiences.
+    </p>
+   </div>
 
-        <div class="footer-brand">
-
-          <a class="site-brand" href="../">
-            <img
-              class="site-brand__logo"
-              src="/assets/site/images/nivak-logo.png"
-              alt=""
-            >
-
-            <span class="site-brand__text">
-              <span class="site-brand__name">NivAk Technologies</span>
-              <span class="site-brand__sub">Digital Products & Solutions</span>
-            </span>
-          </a>
-
-          <p class="footer-description">
-            Building smart mobile apps, games and digital solutions
-            for a growing connected world.
-          </p>
-
-        </div>
-
-
-        <div>
-          <h2 class="footer-heading">Explore</h2>
-
-          <ul class="footer-links">
-            <li><a class="footer-link" href="../apps/">Apps & Games</a></li>
-            <li><a class="footer-link" href="../services/">Services</a></li>
-            <li><a class="footer-link" href="../offers/">Offers</a></li>
-            <li><a class="footer-link" href="../about/">About</a></li>
-          </ul>
-        </div>
-
-
-        <div>
-          <h2 class="footer-heading">Help</h2>
-
-          <ul class="footer-links">
-            <li><a class="footer-link" href="./">Support</a></li>
-            <li><a class="footer-link" href="../contact/">Contact</a></li>
-            <li><a class="footer-link" href="/legal/privacy/">Privacy</a></li>
-            <li><a class="footer-link" href="/legal/terms/">Terms</a></li>
-          </ul>
-        </div>
-
-
-        <div>
-          <h2 class="footer-heading">Contact</h2>
-
-          <ul class="footer-links">
-            <li>
-              <a
-                class="footer-link"
-                href="mailto:contact@nivak-technologies.com"
-              >
-                Company & Business
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="footer-link"
-                href="mailto:support@nivak-technologies.com"
-              >
-                Customer Support
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
+   <div>
+    <h3>Explore</h3>
+    <div class="footer-v3-links">
+     <a href="/apps/">Apps & Games</a>
+     <a href="/services/">Services</a>
+     <a href="/offers/">Offers</a>
+     <a href="/about/">About</a>
     </div>
+   </div>
 
-
-    <div class="container footer-bottom">
-
-      <p>
-     &copy; <span data-current-year></span> NivAk Technologies.
-        All rights reserved.
-      </p>
-
-      <div class="footer-contact">
-
-        <a href="mailto:contact@nivak-technologies.com">
-          contact@nivak-technologies.com
-        </a>
-
-        <a href="mailto:support@nivak-technologies.com">
-          support@nivak-technologies.com
-        </a>
-
-      </div>
-
+   <div>
+    <h3>Help & Legal</h3>
+    <div class="footer-v3-links">
+     <a href="/faq/">FAQ</a>
+     <a href="/support/">Support</a>
+     <a href="/contact/">Contact</a>
+     <a href="/legal/privacy/">Privacy Policy</a>
+     <a href="/legal/terms/">Terms & Conditions</a>
     </div>
+   </div>
 
-  </footer>
+   <div>
+    <h3>Contact</h3>
+    <div class="footer-v3-links">
+     <a href="mailto:contact@nivak-technologies.com">
+      contact@nivak-technologies.com
+     </a>
+     <a href="mailto:support@nivak-technologies.com">
+      support@nivak-technologies.com
+     </a>
+    </div>
+   </div>
 
-<script src="/assets/site/js/site.js"></script>
+  </div>
 
+  <div class="footer-v3-bottom">
+   <span>© 2026 NivAk Technologies. All rights reserved.</span>
+   <span>Digital Products & Solutions</span>
+  </div>
+
+ </div>
+</footer>
+  <script src="/assets/site/v3/js/support-v3-hero.js?v=1" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-

@@ -1,0 +1,186 @@
+﻿/*
+ * NivAk Technologies V3
+ * Compact Premium Section Spacing
+ */
+
+/* Hero */
+
+@media (min-width: 761px) {
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-grid {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .universe {
+    height: 480px;
+  }
+}
+
+/* Expertise */
+
+.teaser {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.teaser .cards {
+  margin-top: 22px;
+}
+
+/* Development Services */
+
+.services-v3 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.services-grid-v3 {
+  margin-top: 28px;
+  gap: 16px;
+}
+
+.service-v3-card {
+  min-height: 235px;
+  padding: 24px;
+}
+
+.service-v3-card .service-icon {
+  margin-bottom: 16px;
+}
+
+.services-v3-footer {
+  margin-top: 26px;
+}
+
+/* Apps & Games */
+
+.products-v3 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.products-grid-v3 {
+  margin-top: 28px;
+  gap: 18px;
+}
+
+.product-v3-card {
+  padding: 24px;
+}
+
+.products-v3-footer {
+  margin-top: 26px;
+}
+
+/* Why NivAk */
+
+.why-v3 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.why-v3-layout {
+  gap: 45px;
+}
+
+.why-v3-list {
+  gap: 12px;
+}
+
+.why-v3-item {
+  padding: 18px 22px;
+}
+
+/* Development Process */
+
+.process-v3 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.process-v3-grid {
+  margin-top: 28px;
+  gap: 16px;
+}
+
+.process-v3-step {
+  padding: 23px 20px;
+}
+
+.process-v3-number {
+  margin-bottom: 16px;
+}
+
+/* Offers */
+
+.offers-v3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.offers-v3-card {
+  margin-top: 24px;
+  padding: 25px;
+}
+
+/* Contact */
+
+.contact-v3 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.contact-v3-panel {
+  padding: 45px 50px;
+}
+
+/* Footer */
+
+.footer-v3 {
+  padding-top: 55px;
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+  .teaser,
+  .services-v3,
+  .products-v3,
+  .why-v3,
+  .process-v3 {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .offers-v3 {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .contact-v3 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .services-grid-v3,
+  .products-grid-v3,
+  .process-v3-grid {
+    margin-top: 25px;
+  }
+
+  .service-v3-card {
+    min-height: auto;
+  }
+
+  .contact-v3-panel {
+    padding: 30px 24px;
+  }
+
+  .footer-v3 {
+    padding-top: 42px;
+  }
+}

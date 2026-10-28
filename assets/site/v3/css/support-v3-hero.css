@@ -1,0 +1,180 @@
+﻿/* NivAk Technologies — Support V3 Hero Dashboard */
+
+.support-v3-page .support-hero > .container {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  align-items: center;
+  gap: 36px;
+}
+
+.support-v3-page .support-hero .page-hero__content {
+  min-width: 0;
+}
+
+.support-v3-page .support-hero h1 {
+  font-size: clamp(33px,3.6vw,49px);
+}
+
+.support-v3-hero-panel {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  width: 100%;
+  max-width: 470px;
+  height: 335px;
+  overflow: hidden;
+  border: 1px solid #426c9a;
+  border-radius: 19px;
+  background: linear-gradient(145deg,#112c50,#08192f);
+  box-shadow: 0 18px 45px rgba(0,0,0,.22);
+  color: #fff;
+}
+
+.support-v3-hero-panel__header,
+.support-v3-hero-panel__footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 0 0 auto;
+  padding: 14px 16px;
+}
+
+.support-v3-hero-panel__header {
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.support-v3-hero-panel__header strong {
+  font-size: 13px;
+  color: #fff;
+}
+
+.support-v3-hero-panel__symbol {
+  display: grid;
+  place-items: center;
+  flex: 0 0 29px;
+  height: 29px;
+  border-radius: 9px;
+  background: #ff7417;
+  color: #fff;
+  font-weight: 800;
+}
+
+.support-v3-hero-panel__status {
+  margin-left: auto;
+  color: #ffb27c;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.support-v3-hero-panel__body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  min-height: 0;
+  padding: 17px;
+}
+
+.support-v3-hero-panel__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 68px;
+  padding: 12px;
+  border: 1px solid #325171;
+  border-radius: 12px;
+  background: #132e4e;
+  transition: background .3s ease,border-color .3s ease;
+}
+
+.support-v3-hero-panel__row.is-active {
+  border-color: #ff9856;
+  background: #21466e;
+}
+
+.support-v3-hero-panel__number {
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #1d456f;
+  color: #ffaf7b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.support-v3-hero-panel__copy {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+
+.support-v3-hero-panel__copy strong {
+  color: #fff;
+  font-size: 13px;
+}
+
+.support-v3-hero-panel__copy small {
+  color: #c3d5e9;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.support-v3-hero-panel__indicator {
+  flex: 0 0 9px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #627d9d;
+}
+
+.support-v3-hero-panel__row.is-active
+.support-v3-hero-panel__indicator {
+  background: #ff924c;
+  box-shadow: 0 0 0 4px rgba(255,116,23,.13);
+}
+
+.support-v3-hero-panel__footer {
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,.12);
+  color: #a8c4e1;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 900px) {
+  .support-v3-page .support-hero > .container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .support-v3-hero-panel {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .support-v3-hero-panel {
+    height: 330px;
+  }
+
+  .support-v3-hero-panel__body {
+    padding: 13px;
+  }
+
+  .support-v3-hero-panel__footer {
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .support-v3-hero-panel__row {
+    transition: none;
+  }
+}

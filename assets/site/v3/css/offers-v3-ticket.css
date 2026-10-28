@@ -1,0 +1,225 @@
+/* NivAk Technologies — Offers Premium Digital Ticket */
+
+.offers-v3-page .offers-hero > .container {
+  display: grid;
+  grid-template-columns: minmax(0,1.08fr) minmax(0,.92fr);
+  align-items: center;
+  gap: 34px;
+}
+
+.offers-v3-page .offers-hero .page-hero__content {
+  min-width: 0;
+}
+
+.offers-v3-page .offers-hero h1 {
+  font-size: clamp(34px,3.7vw,50px);
+}
+
+.offers-v3-ticket-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  height: 300px;
+  isolation: isolate;
+}
+
+.offers-v3-ticket-stage::before {
+  content: "";
+  position: absolute;
+  inset: 5%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(40,118,222,.35),
+    transparent 70%
+  );
+}
+
+.offers-v3-ticket {
+  position: relative;
+  z-index: 1;
+  width: min(100%,330px);
+  padding: 25px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 22px;
+  background: linear-gradient(145deg,#174578,#0b1f3b);
+  box-shadow: 0 22px 55px rgba(0,0,0,.28);
+  color: #ffffff;
+  animation: offersTicketFloat 6s ease-in-out infinite;
+}
+
+.offers-v3-ticket__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e4edfa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+
+.offers-v3-ticket__spark {
+  color: #ff9954;
+  font-size: 22px;
+}
+
+.offers-v3-ticket__main {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.offers-v3-ticket__main strong {
+  color: #ffffff;
+  font-family: "Manrope",sans-serif;
+  font-size: clamp(65px,7vw,95px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.offers-v3-ticket__main span {
+  color: #ff9954;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.offers-v3-ticket__divider {
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255,255,255,.45) 0 8px,
+    transparent 8px 15px
+  );
+}
+
+.offers-v3-ticket p {
+  margin: 17px 0 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.offers-v3-ticket small {
+  display: block;
+  color: #b8c9df;
+  font-size: 12px;
+  text-align: center;
+}
+
+@keyframes offersTicketFloat {
+  0%,100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+}
+
+@media(max-width:900px) {
+  .offers-v3-page .offers-hero > .container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .offers-v3-ticket-stage {
+    height: 270px;
+  }
+}
+
+@media(max-width:600px) {
+  .offers-v3-ticket-stage {
+    height: 245px;
+  }
+
+  .offers-v3-ticket {
+    width: min(100%,285px);
+    padding: 20px;
+  }
+
+  .offers-v3-ticket__main strong {
+    font-size: 70px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .offers-v3-ticket {
+    animation: none;
+  }
+}
+
+/* NIVAK TICKET TYPOGRAPHY STEP 82 */
+
+.offers-v3-ticket {
+  width: min(100%, 340px);
+  padding: 27px 28px;
+  background: linear-gradient(
+    145deg,
+    #1b4c82 0%,
+    #102d59 55%,
+    #071326 100%
+  );
+}
+
+.offers-v3-ticket__main {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  margin: 24px 0 20px;
+}
+
+.offers-v3-ticket__main strong {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  color: #ffffff;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.055em;
+  font-variant-numeric: tabular-nums;
+}
+
+.offers-v3-ticket__main #offers-discount-value {
+  color: #ffffff;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.offers-v3-ticket__main .offers-v3-percent {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.offers-v3-ticket__main > span {
+  color: #ff9954;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .offers-v3-ticket {
+    width: min(100%, 285px);
+    padding: 22px;
+  }
+
+  .offers-v3-ticket__main strong {
+    font-size: 62px;
+  }
+
+  .offers-v3-ticket__main .offers-v3-percent {
+    font-size: 37px;
+  }
+
+  .offers-v3-ticket__main > span {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,1003 @@
+﻿/* NivAk Technologies — About Hybrid Premium V3 */
+
+.about-v3-page {
+  --about-navy: #071326;
+  --about-blue: #102d59;
+  --about-orange: #ff7417;
+  --about-ink: #102443;
+  --about-muted: #53657d;
+  --about-surface: #f4f7fc;
+  --about-line: #dce5f1;
+  background: #fff;
+}
+
+.about-v3-page main {
+  overflow: clip;
+}
+
+.about-v3-page main .container {
+  width: min(1160px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.about-v3-page main h1,
+.about-v3-page main h2,
+.about-v3-page main h3 {
+  font-family: "Manrope", "Inter", sans-serif;
+  letter-spacing: -.025em;
+}
+
+.about-v3-page main h2 {
+  font-size: clamp(25px, 2.7vw, 36px);
+  line-height: 1.22;
+  color: var(--about-ink);
+}
+
+.about-v3-page main p {
+  line-height: 1.75;
+}
+
+/* Navigation: About is the active page */
+
+.about-v3-page .header .nav a[href="/"] {
+  color: #fff !important;
+}
+
+.about-v3-page .header .nav a[href="/about/"] {
+  color: #ff7417 !important;
+  font-weight: 800;
+}
+
+/* Hero */
+
+.about-v3-page .about-hero {
+  padding: 60px 0;
+  min-height: 0;
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 35%, rgba(37,115,220,.28), transparent 42%),
+    linear-gradient(115deg,#071326,#102d59);
+}
+
+.about-v3-page .about-hero h1 {
+  max-width: 840px;
+  margin: 16px 0;
+  color: #fff;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.about-v3-page .about-hero p {
+  max-width: 700px;
+  color: #d4e1f1;
+}
+
+/* Consistent section spacing */
+
+.about-v3-page .about-intro-section,
+.about-v3-page .about-mission-section,
+.about-v3-page .about-process-section,
+.about-v3-page .about-values-section,
+.about-v3-page .about-founder-section,
+.about-v3-page .about-build-section,
+.about-v3-page .about-cta-section {
+  padding: 58px 0;
+}
+
+.about-v3-page .about-intro-section,
+.about-v3-page .about-process-section,
+.about-v3-page .about-founder-section {
+  background: #fff;
+}
+
+.about-v3-page .about-mission-section,
+.about-v3-page .about-build-section {
+  background: var(--about-surface);
+}
+
+/* High-contrast section labels */
+
+.about-v3-page main .eyebrow,
+.about-v3-page main .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 7px 13px;
+  border: 1px solid #e5ac82;
+  border-radius: 999px;
+  background: #fff0e5;
+  color: #102d59;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.about-v3-page .about-hero .eyebrow,
+.about-v3-page .about-values-section .eyebrow,
+.about-v3-page .about-cta-section .eyebrow {
+  background: #183557;
+  border-color: #b9602c;
+  color: #fff;
+}
+
+/* Introduction */
+
+.about-v3-page .about-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.about-v3-page .about-intro-copy {
+  min-width: 0;
+  color: var(--about-muted);
+}
+
+/* Mission and vision */
+
+.about-v3-page .about-mission-grid,
+.about-v3-page .about-build-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.about-v3-page .about-mission-card,
+.about-v3-page .about-build-card {
+  min-width: 0;
+  padding: 27px;
+  border: 1px solid var(--about-line);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(7,19,38,.045);
+}
+
+.about-v3-page .about-mission-card h3,
+.about-v3-page .about-build-card h3 {
+  color: var(--about-ink);
+  font-size: 20px;
+}
+
+.about-v3-page .about-mission-card p,
+.about-v3-page .about-build-card p {
+  color: var(--about-muted);
+}
+
+.about-v3-page .about-card-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: 37px;
+  min-height: 34px;
+  padding: 6px 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: var(--about-blue);
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Development process */
+
+.about-v3-page .about-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.about-v3-page .about-process-card {
+  min-width: 0;
+  padding: 24px 20px;
+  border: 1px solid var(--about-line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(7,19,38,.045);
+}
+
+.about-v3-page .about-process-card h3 {
+  color: var(--about-ink);
+  font-size: 18px;
+}
+
+.about-v3-page .about-process-card p {
+  color: var(--about-muted);
+  font-size: 14px;
+}
+
+/* Values */
+
+.about-v3-page .about-values-section {
+  background: #071326;
+  color: #fff;
+}
+
+.about-v3-page .about-values-panel {
+  padding: 34px;
+  border-radius: 23px;
+  background: linear-gradient(120deg,#102d59,#102442);
+}
+
+.about-v3-page .about-values-section h2,
+.about-v3-page .about-values-section h3 {
+  color: #fff;
+}
+
+.about-v3-page .about-values-section p {
+  color: #d4e1f1;
+}
+
+.about-v3-page .about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.about-v3-page .about-value {
+  padding: 21px 17px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 15px;
+  background: rgba(255,255,255,.055);
+}
+
+.about-v3-page .about-value h3 {
+  font-size: 16px;
+}
+
+/* Founder section */
+
+.about-v3-page .about-founder-panel {
+  padding: 36px;
+  border: 1px solid var(--about-line);
+  border-radius: 23px;
+  background: #f4f7fc;
+}
+
+.about-v3-page .about-founder-main {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 16px;
+}
+
+.about-v3-page .about-founder-section h2,
+.about-v3-page .about-founder-section h3 {
+  color: var(--about-ink);
+}
+
+.about-v3-page .about-founder-section p {
+  color: var(--about-muted);
+}
+
+.about-v3-page .about-founder-role {
+  color: #ac4b0e !important;
+  font-weight: 800;
+}
+
+.about-v3-page .about-founder-focus {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.about-v3-page .about-founder-focus-item {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--about-line);
+  border-radius: 16px;
+  background: #fff;
+}
+
+/* Final CTA */
+
+.about-v3-page .about-cta-section {
+  background: #fff;
+}
+
+.about-v3-page .about-cta-panel {
+  padding: 45px;
+  border-radius: 24px;
+  background: linear-gradient(100deg,#071326,#102d59 56%,#1768ce);
+  color: #fff;
+}
+
+.about-v3-page .about-cta-section h2,
+.about-v3-page .about-cta-section p {
+  color: #fff;
+}
+
+.about-v3-page .about-cta-section a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  min-height: 45px;
+  margin: 12px 10px 0 0;
+  border-radius: 999px;
+  background: #ff7417;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.about-v3-page .about-cta-section a.button--outline-light {
+  background: #fff;
+  color: #102d59;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .about-v3-page .about-intro-grid,
+  .about-v3-page .about-mission-grid,
+  .about-v3-page .about-build-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-v3-page .about-process-grid,
+  .about-v3-page .about-values-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .about-v3-page .about-founder-focus {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-v3-page main .container {
+    width: calc(100% - 32px);
+  }
+
+  .about-v3-page .about-hero {
+    padding: 40px 0;
+  }
+
+  .about-v3-page .about-intro-section,
+  .about-v3-page .about-mission-section,
+  .about-v3-page .about-process-section,
+  .about-v3-page .about-values-section,
+  .about-v3-page .about-founder-section,
+  .about-v3-page .about-build-section,
+  .about-v3-page .about-cta-section {
+    padding: 40px 0;
+  }
+
+  .about-v3-page .about-process-grid,
+  .about-v3-page .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-v3-page .about-values-panel,
+  .about-v3-page .about-founder-panel,
+  .about-v3-page .about-cta-panel {
+    padding: 25px 20px;
+  }
+}
+
+/* NIVAK ABOUT READABILITY STEP 97 */
+
+/* High-contrast descriptions in light sections */
+
+.about-v3-page .about-intro-section p,
+.about-v3-page .about-mission-section p,
+.about-v3-page .about-process-section p,
+.about-v3-page .about-build-section p,
+.about-v3-page .about-founder-section p {
+  color: #4a5e79;
+  opacity: 1;
+}
+
+/* Clear section descriptions */
+
+.about-v3-page .about-mission-section .section-heading p,
+.about-v3-page .about-process-section .section-heading p,
+.about-v3-page .about-build-section .section-heading p,
+.about-v3-page .about-mission-section .section-description,
+.about-v3-page .about-process-section .section-description,
+.about-v3-page .about-build-section .section-description {
+  color: #53657d !important;
+  opacity: 1 !important;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Development process */
+
+.about-v3-page .about-process-card {
+  padding: 25px 21px;
+  min-height: 170px;
+}
+
+.about-v3-page .about-process-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.about-v3-page .about-process-card p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* Founder profile */
+
+.about-v3-page .about-founder-panel {
+  padding: 40px;
+  border-color: #c9d9eb;
+  background: linear-gradient(120deg,#f4f7fc,#eaf1fc);
+}
+
+.about-v3-page .about-founder-section h2 {
+  font-size: clamp(27px,2.8vw,37px);
+  font-weight: 800;
+}
+
+.about-v3-page .about-founder-role {
+  color: #a94709 !important;
+  font-size: 15px;
+}
+
+.about-v3-page .about-founder-focus-item {
+  padding: 23px;
+  border-color: #d5e1ef;
+  box-shadow: 0 5px 16px rgba(7,19,38,.04);
+}
+
+/* What we build */
+
+.about-v3-page .about-build-card {
+  padding: 29px;
+}
+
+.about-v3-page .about-build-card h3 {
+  font-size: 21px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-v3-page .about-founder-panel {
+    padding: 26px 21px;
+  }
+
+  .about-v3-page .about-process-card {
+    min-height: 0;
+  }
+}
+
+
+/* NIVAK ABOUT COMPACT SPACING STEP 98 */
+
+/* Global section spacing */
+
+.about-v3-page .about-intro-section,
+.about-v3-page .about-mission-section,
+.about-v3-page .about-process-section,
+.about-v3-page .about-values-section,
+.about-v3-page .about-founder-section,
+.about-v3-page .about-build-section,
+.about-v3-page .about-cta-section {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+/* Compact hero */
+
+.about-v3-page .about-hero {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.about-v3-page .about-hero h1 {
+  margin: 10px 0;
+}
+
+.about-v3-page .about-hero p {
+  margin-bottom: 0;
+}
+
+/* Intro */
+
+.about-v3-page .about-intro-grid {
+  gap: 22px;
+}
+
+.about-v3-page .about-intro-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Reduce heading-to-card gaps */
+
+.about-v3-page .about-mission-grid,
+.about-v3-page .about-process-grid,
+.about-v3-page .about-values-grid,
+.about-v3-page .about-build-grid {
+  margin-top: 16px;
+}
+
+/* Remove excessive heading margins */
+
+.about-v3-page main .section-heading {
+  margin-bottom: 14px;
+}
+
+.about-v3-page main .section-heading h2 {
+  margin-top: 8px;
+  margin-bottom: 7px;
+}
+
+.about-v3-page main .section-heading p {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* Compact content cards */
+
+.about-v3-page .about-mission-card,
+.about-v3-page .about-build-card {
+  padding: 23px;
+}
+
+.about-v3-page .about-process-card {
+  padding: 20px;
+  min-height: 0;
+}
+
+.about-v3-page .about-value {
+  padding: 17px;
+}
+
+/* Founder panel */
+
+.about-v3-page .about-founder-panel {
+  padding: 30px;
+}
+
+.about-v3-page .about-founder-focus {
+  margin-top: 16px;
+}
+
+.about-v3-page .about-founder-focus-item {
+  padding: 19px;
+}
+
+/* Final CTA */
+
+.about-v3-page .about-cta-panel {
+  padding: 34px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-v3-page .about-intro-section,
+  .about-v3-page .about-mission-section,
+  .about-v3-page .about-process-section,
+  .about-v3-page .about-values-section,
+  .about-v3-page .about-founder-section,
+  .about-v3-page .about-build-section,
+  .about-v3-page .about-cta-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .about-v3-page .about-founder-panel,
+  .about-v3-page .about-cta-panel {
+    padding: 23px 20px;
+  }
+}
+
+/* NIVAK PREMIUM FOUNDER STEP 99 */
+
+.about-v3-page .about-founder-section {
+  padding: 38px 0;
+  background: #ffffff;
+}
+
+.about-v3-page .about-founder-panel {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 34px 38px !important;
+  border: 1px solid #284b79;
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      circle at 92% 5%,
+      rgba(42,119,223,.24),
+      transparent 40%
+    ),
+    linear-gradient(
+      115deg,
+      #071326 0%,
+      #102d59 100%
+    ) !important;
+  box-shadow: 0 18px 42px rgba(7,19,38,.13);
+}
+
+/* Decorative technology accents */
+
+.about-v3-page .about-founder-panel::before {
+  content: "";
+  position: absolute;
+  top: -76px;
+  right: -65px;
+  width: 245px;
+  height: 245px;
+  border: 1px solid rgba(119,171,233,.2);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.about-v3-page .about-founder-panel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 38px;
+  width: 95px;
+  height: 3px;
+  border-radius: 99px;
+  background: #ff7417;
+}
+
+/* Remove inherited large vertical gaps */
+
+.about-v3-page .about-founder-main {
+  display: block;
+}
+
+.about-v3-page .about-founder-main > * {
+  margin-top: 0;
+}
+
+.about-v3-page .about-founder-panel h2 {
+  margin: 16px 0 7px !important;
+  color: #ffffff !important;
+  font-size: clamp(27px,3vw,39px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+.about-v3-page .about-founder-panel .eyebrow,
+.about-v3-page .about-founder-panel .section-kicker {
+  background: #193755;
+  border: 1px solid #b35b28;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: .06em;
+}
+
+.about-v3-page .about-founder-role {
+  margin: 0 0 12px !important;
+  color: #ffac71 !important;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.about-v3-page .about-founder-panel p {
+  color: #cfdded !important;
+  line-height: 1.7;
+}
+
+.about-v3-page .about-founder-main p {
+  max-width: 900px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Three founder focus cards */
+
+.about-v3-page .about-founder-focus {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.about-v3-page .about-founder-focus-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 136px;
+  padding: 48px 19px 19px;
+  border: 1px solid rgba(168,198,234,.25);
+  border-radius: 16px;
+  background: rgba(255,255,255,.055);
+  box-shadow: none;
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.about-v3-page .about-founder-focus-item::before {
+  position: absolute;
+  left: 19px;
+  top: 17px;
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 25px;
+  border-radius: 8px;
+  background: rgba(255,116,23,.15);
+  color: #ffac71;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.about-v3-page .about-founder-focus-item:nth-child(1)::before {
+  content: "01";
+}
+
+.about-v3-page .about-founder-focus-item:nth-child(2)::before {
+  content: "02";
+}
+
+.about-v3-page .about-founder-focus-item:nth-child(3)::before {
+  content: "03";
+}
+
+.about-v3-page .about-founder-focus-item p,
+.about-v3-page .about-founder-focus-item {
+  color: #e3edfa !important;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.about-v3-page .about-founder-focus-item p {
+  margin: 0 !important;
+}
+
+@media (hover: hover) {
+  .about-v3-page .about-founder-focus-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,.09);
+    border-color: rgba(255,154,80,.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-v3-page .about-founder-focus-item {
+    transition: none;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .about-v3-page .about-founder-focus {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  .about-v3-page .about-founder-focus-item:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-v3-page .about-founder-panel {
+    padding: 28px 21px !important;
+  }
+
+  .about-v3-page .about-founder-panel::after {
+    left: 21px;
+  }
+
+  .about-v3-page .about-founder-focus {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .about-v3-page .about-founder-focus-item:last-child {
+    grid-column: auto;
+  }
+
+  .about-v3-page .about-founder-focus-item {
+    min-height: 0;
+    padding: 46px 17px 17px;
+  }
+}
+
+
+/* NIVAK FOUNDER HEADER REFINEMENT STEP 100 */
+
+/* Remove decorative orange line */
+
+.about-v3-page .about-founder-panel::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Larger, more premium founder label */
+
+.about-v3-page .about-founder-panel .eyebrow,
+.about-v3-page .about-founder-panel .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  width: fit-content;
+  padding: 9px 17px !important;
+  border: 1px solid #d87a3c !important;
+  border-radius: 999px;
+  background: #183755 !important;
+  color: #ffffff !important;
+  font-family: "Inter", sans-serif;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.3;
+  letter-spacing: .025em;
+}
+
+/* Maintain balanced spacing beneath label */
+
+.about-v3-page .about-founder-panel h2 {
+  margin-top: 16px !important;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 600px) {
+  .about-v3-page .about-founder-panel .eyebrow,
+  .about-v3-page .about-founder-panel .section-kicker {
+    min-height: 34px;
+    padding: 8px 14px !important;
+    font-size: 12px !important;
+  }
+}
+
+
+/* NIVAK FOUNDER VISION STEP 101 */
+
+.about-v3-page .about-founder-biography {
+  max-width: 920px;
+  margin: 0 0 12px !important;
+  color: #d9e6f5 !important;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about-v3-page .about-founder-biography:first-of-type {
+  margin-top: 14px !important;
+}
+
+.about-v3-page .about-founder-vision {
+  margin-top: 19px;
+  padding: 19px 22px;
+  border: 1px solid rgba(255,154,80,.4);
+  border-left: 4px solid #ff7417;
+  border-radius: 13px;
+  background: rgba(255,116,23,.075);
+}
+
+.about-v3-page .about-founder-vision__label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffb27e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .09em;
+}
+
+.about-v3-page .about-founder-vision p {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.7;
+}
+
+/* Remove duplicate number badges generated by CSS.
+   Keep existing HTML numbers. */
+
+.about-v3-page .about-founder-focus-item::before {
+  content: none !important;
+  display: none !important;
+}
+
+.about-v3-page .about-founder-focus-item {
+  min-height: 0;
+  padding: 19px !important;
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .about-v3-page .about-founder-vision {
+    padding: 16px;
+  }
+
+  .about-v3-page .about-founder-vision p {
+    font-size: 14px;
+  }
+}
+
+/* NIVAK ABOUT CLICKABLE CARDS STEP 102 */
+
+.about-v3-page .about-build-clickable {
+  position: relative;
+  min-width: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  outline-offset: 4px;
+}
+
+.about-v3-page .about-build-clickable .about-build-card {
+  height: 100%;
+  padding-right: 55px;
+  transition:
+    transform .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease;
+}
+
+.about-v3-page .about-build-clickable::after {
+  content: "↗";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #fff0e5;
+  color: #b54a08;
+  font-size: 19px;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.about-v3-page .about-build-clickable:hover .about-build-card,
+.about-v3-page .about-build-clickable:focus-visible .about-build-card {
+  transform: translateY(-3px);
+  border-color: #ffad73;
+  box-shadow: 0 15px 32px rgba(7,19,38,.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-v3-page .about-build-clickable .about-build-card {
+    transition: none;
+  }
+}
+
+/* NIVAK CARD ARROW REFINEMENT STEP 103 */
+
+.about-v3-page .about-build-clickable::after {
+  content: "\2192" !important;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: #102d59 !important;
+  color: #ffffff !important;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1;
+  transition:
+    background .2s ease,
+    transform .2s ease;
+}
+
+.about-v3-page .about-build-clickable:hover::after,
+.about-v3-page .about-build-clickable:focus-visible::after {
+  background: #ff7417 !important;
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-v3-page .about-build-clickable::after {
+    transition: none;
+  }
+}
