@@ -55,22 +55,26 @@ Visitors can explore our products, learn about our services, access important le
 
 ## 📱 Our Apps & Games
 
-NivAk Technologies develops a growing portfolio of Android applications and mobile games.
+NivAk Technologies is building a growing portfolio of Android applications and mobile games.
 
-Our products include:
+Currently, **5 applications are published on Google Play**, with **3 additional projects in development**.
 
-| Application | Category |
-|---|---|
-| Calculator – Simple & Smart | Utility & Productivity |
-| ResumeGo – CV & Resume Maker | Resume & CV Builder |
-| Block Quest | Puzzle Game |
-| QuickPlay | Mini Games |
-| ColourFlow Master | Colour Sorting Puzzle |
-| Carrom King Arena | Board Game |
-| Royal Casino Games | Casino-Inspired Mini Games |
-| PhotoPro AI | Photo Editing |
+| Application | Category | Status |
+|---|---|---|
+| Calculator – Simple & Smart | Utility & Productivity | ✅ Published |
+| ResumeGo – CV & Resume Maker | Resume & CV Builder | ✅ Published |
+| Block Quest | Puzzle Game | ✅ Published |
+| QuickPlay | Mini Games | ✅ Published |
+| ColourFlow Master | Colour Sorting Puzzle | ✅ Published |
+| Carrom King Arena | Board Game | 🚧 In Development |
+| Royal Casino Games | Casino-Inspired Mini Games | 🚧 In Development |
+| PhotoPro AI | Photo Editing | 🚧 In Development |
 
-Product availability and development status may vary.
+### 📊 Portfolio Overview
+
+- **Total Applications:** 8
+- **Published on Google Play:** 5
+- **In Development:** 3
 
 **[Explore All Apps & Games](https://nivak-technologies.com/apps/)**
 
