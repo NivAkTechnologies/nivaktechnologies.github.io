@@ -1,0 +1,258 @@
+/* NivAk Technologies — Founder & CEO Executive Leadership */
+/* Scoped to the About page only */
+
+body.about-v3-page .executive-v4-section {
+  padding: 60px 0;
+  background: #f4f7fc;
+}
+
+body.about-v3-page .executive-v4-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(25px, 3.6vw, 48px);
+  border: 1px solid #294b76;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 92% 8%,
+      rgba(55,125,215,.18),transparent 42%),
+    linear-gradient(125deg,#071326,#102d59);
+  box-shadow: 0 20px 48px rgba(7,19,38,.16);
+  color: #fff;
+}
+
+.executive-v4-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.executive-v4-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid #a5653a;
+  border-radius: 999px;
+  background: #213957;
+  color: #ffbd8d;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+
+.executive-v4-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff873a;
+}
+
+.executive-v4-brand {
+  color: #a9c3e0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.executive-v4-profile {
+  display: grid;
+  grid-template-columns: minmax(0,1.45fr) minmax(0,1fr);
+  align-items: center;
+  gap: clamp(25px,4vw,52px);
+}
+
+.executive-v4-main {
+  min-width: 0;
+}
+
+body.about-v3-page .executive-v4-kicker {
+  margin: 0 0 13px;
+  color: #acc4e2 !important;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+body.about-v3-page .executive-v4-main h2 {
+  margin: 0 0 10px;
+  color: #fff !important;
+  font-size: clamp(29px,3.3vw,44px);
+  line-height: 1.18;
+  letter-spacing: -.035em;
+}
+
+body.about-v3-page .executive-v4-role {
+  margin: 0 0 25px;
+  color: #ffad76 !important;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body.about-v3-page .executive-v4-statement {
+  margin: 0 0 16px;
+  color: #fff !important;
+  font-size: clamp(18px,2vw,23px);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+body.about-v3-page .executive-v4-biography {
+  max-width: 650px;
+  margin: 0 0 15px;
+  color: #d4e1f0 !important;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.executive-v4-vision {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid #426184;
+  border-radius: 19px;
+  background: rgba(30,60,98,.75);
+}
+
+.executive-v4-vision-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #ffb27c;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .12em;
+}
+
+body.about-v3-page .executive-v4-vision h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 15px;
+  color: #fff !important;
+  font-size: clamp(19px,2vw,24px);
+  line-height: 1.35;
+}
+
+body.about-v3-page .executive-v4-vision p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #d0dfef !important;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.executive-v4-vision-mark {
+  position: absolute;
+  right: -8px;
+  bottom: -13px;
+  color: rgba(255,255,255,.045);
+  font-size: 85px;
+  font-weight: 900;
+  letter-spacing: -.09em;
+  pointer-events: none;
+}
+
+.executive-v4-divider {
+  height: 1px;
+  margin: 32px 0 24px;
+  background: rgba(175,204,236,.2);
+}
+
+.executive-v4-pillars {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 15px;
+}
+
+.executive-v4-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  padding: 19px;
+  border: 1px solid #365578;
+  border-radius: 15px;
+  background: #1a3457;
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.executive-v4-pillar:hover {
+  transform: translateY(-3px);
+  border-color: #b97b50;
+}
+
+.executive-v4-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: #294b73;
+  color: #ffab75;
+}
+
+.executive-v4-icon svg {
+  width: 23px;
+  height: 23px;
+}
+
+body.about-v3-page .executive-v4-pillar h3 {
+  margin: 2px 0 6px;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+body.about-v3-page .executive-v4-pillar p {
+  margin: 0;
+  color: #c3d5e9 !important;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .executive-v4-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .executive-v4-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  body.about-v3-page .executive-v4-section {
+    padding: 38px 0;
+  }
+
+  body.about-v3-page .executive-v4-panel {
+    padding: 23px;
+    border-radius: 18px;
+  }
+
+  .executive-v4-topline {
+    margin-bottom: 25px;
+  }
+
+  .executive-v4-vision {
+    padding: 22px;
+  }
+
+  .executive-v4-divider {
+    margin: 26px 0 20px;
+  }
+
+  .executive-v4-pillar {
+    padding: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .executive-v4-pillar {
+    transition: none;
+  }
+}
