@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
   const number = document.getElementById("offers-discount-value");
@@ -8,30 +8,58 @@ document.addEventListener("DOMContentLoaded", function () {
     "(prefers-reduced-motion: reduce)"
   );
 
-  // Reduced-motion visitors see the final discount immediately.
+  const finalValue = 10;
+  const startingValue = 1;
+  const duration = 1980;
+
+  let interval = null;
+  let startTime = null;
+
+  function finish() {
+    if (interval !== null) {
+      window.clearInterval(interval);
+      interval = null;
+    }
+
+    number.textContent = String(finalValue);
+  }
+
   if (reduceMotion.matches) {
-    number.textContent = "10";
+    finish();
     return;
   }
 
-  let value = 1;
-  number.textContent = String(value);
+  number.textContent = String(startingValue);
 
-  const interval = window.setInterval(function () {
-    if (value >= 10) {
-      window.clearInterval(interval);
-      return;
+  function tick() {
+    if (startTime === null) {
+      startTime = Date.now();
     }
 
-    value += 1;
+    const elapsed = Math.max(0, Date.now() - startTime);
+    const steps = Math.floor(elapsed / 220);
+    const value = Math.min(finalValue, startingValue + steps);
+
     number.textContent = String(value);
 
-    if (value === 10) {
-      window.clearInterval(interval);
+    if (value >= finalValue) {
+      finish();
     }
-  }, 220);
+  }
 
-  window.addEventListener("pagehide", function () {
-    window.clearInterval(interval);
+  startTime = Date.now();
+  interval = window.setInterval(tick, 50);
+
+  // Complete the counter when navigation suspends the page,
+  // so browser history restoration cannot leave a partial value.
+  window.addEventListener("pagehide", finish, { once: true });
+
+  // Recover immediately if the browser restores a cached page.
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      finish();
+    }
   });
+
+  // Clicking anywhere does not cancel the animation.
 });
